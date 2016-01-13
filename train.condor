@@ -1,0 +1,15 @@
+universe = vanilla
+executable = train.sh
+notification = Never
+output = logs/train-$(Process)-$(Cluster).out
+error = logs/train-$(Process)-$(Cluster).err
+log = logs/train-$(Process)-$(Cluster).log
+getenv = True
+arguments = $(Process) $(Cluster) arxiv
+queue 300
+arguments = $(Process) $(Cluster) imdb
+queue 300
+arguments = $(Process) $(Cluster) nyt
+queue 300
+arguments = $(Process) $(Cluster) yelp
+queue 300

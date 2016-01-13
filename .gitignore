@@ -1,0 +1,7 @@
+corpora/**
+diagnostics/**
+evaluators/**
+keys/**
+logs/**
+outs/**
+states/**

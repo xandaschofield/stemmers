@@ -1,0 +1,9 @@
+universe = vanilla
+executable = import-datasets.sh
+notification = Never
+output = logs/import-datasets-$(Process).out
+error = logs/import-datasets-$(Process).err
+log = logs/import-datasets-$(Process).log
+arguments = $(Process)
+getenv = True
+queue 1

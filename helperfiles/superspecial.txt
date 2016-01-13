@@ -1,0 +1,21 @@
+nostemmer: 222927
+trunc4: 46100
+trunc5: 97728
+lovins: 146485
+porter: 169767
+porter2: 167178
+paicehusk: 140992
+sstemmer: 198809
+krovetz: 177841
+lemmatized: 202545
+Example 455
+nostemmer:	location good service drive forgot drinks sides preparing forgot girl back obvious phone kfc
+trunc4:	loca good serv driv forg drin side prep forg girl back obvi phon kfc
+trunc5:	locat good servi drive forgo drink sides prepa forgo girl back obvio phone kfc
+lovins:	loc good servic dr forgot drink sid prepar forgot girl back obv phon kfc
+porter:	locat good servic drive forgot drink side prepar forgot girl back obviou phone kfc
+porter2:	locat good servic drive forgot drink side prepar forgot girl back obvious phone kfc
+paicehusk:	loc good serv driv forgot drink sid prep forgot girl back obvy phon kfc
+sstemmer:	location good service drive forgot drink side preparing forgot girl back obvious phone kfc
+krovetz:	location good service drive forgot drink side prepare forgot girl back obvious phone kfc
+lemmatized:	location good service drive forget drink side prepare forget girl back obvious phone kfc
