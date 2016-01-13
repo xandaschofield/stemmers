@@ -20,6 +20,8 @@ with open('corpora/{}-{}-nostemmer-stopped.txt'.format(corp, ty)) as readref:
         for wl, v in zip(wordlists, vocabs):
             v.update(wl)
 
+        if len(wordlists[0]) > 15:
+            continue
         # Check if it's interesting enough to report out
         different = len(set([' '.join(wl) for wl in wordlists]))
         if different > max_different:
@@ -32,8 +34,6 @@ with open('corpora/{}-{}-nostemmer-stopped.txt'.format(corp, ty)) as readref:
 for st, v in zip(stemmers, vocabs):
     specialfile.write('{}: {}\n'.format(st, len(v)))
 for i, wls in enumerate(different_lines):
-    if len(wls[0] > 15):
-        continue
     specialfile.write('Example {}\n'.format(i))
     for st, wl in zip(stemmers, wls):
         specialfile.write('{} & {} \\\\ \n'.format(st, ' & '.join(wl)))

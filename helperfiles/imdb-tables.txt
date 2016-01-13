@@ -1,0 +1,1561 @@
+nostemmer: 224467
+trunc4: 49978
+trunc5: 112919
+lovins: 161276
+porter: 187961
+porter2: 186845
+paicehusk: 157799
+sstemmer: 208307
+krovetz: 206661
+lemmatized: 201363
+Example 0
+nostemmer & stemming & diverse & artistic & upbringing & minnesota & native & sam & alsadi & brodie & began & career & martial & arts & theatre \\ 
+trunc4 & stem & dive & arti & upbr & minn & nati & sam & alsa & brod & bega & care & mart & arts & thea \\ 
+trunc5 & stemm & diver & artis & upbri & minne & nativ & sam & alsad & brodi & began & caree & marti & arts & theat \\ 
+lovins & stem & divers & art & upbring & minnesot & nat & sam & alsad & brodi & began & career & mart & art & theatr \\ 
+porter & stemm & divers & artist & upbring & minnesota & nativ & sam & alsadi & brodi & began & career & martial & art & theatr \\ 
+porter2 & stem & divers & artist & upbring & minnesota & nativ & sam & alsadi & brodi & began & career & martial & art & theatr \\ 
+paicehusk & stem & divers & art & upbr & minnesot & nat & sam & alsad & brody & beg & car & mart & art & the \\ 
+sstemmer & stemming & diverse & artistic & upbringing & minnesota & native & sam & alsadi & brodie & began & career & martial & art & theatre \\ 
+krovetz & stem & diverse & artistic & upbringing & minnesota & native & sam & alsadi & brodie & began & career & martial & arts & theatre \\ 
+lemmatized & stem & diverse & artistic & upbringing & minnesota & native & sam & alsadi & brodie & begin & career & martial & art & theatre \\ 
+Example 1
+nostemmer & david & ambrose & award & winning & screenwriter & worked & internationally & theatre & television & film & lives & switzerland \\ 
+trunc4 & davi & ambr & awar & winn & scre & work & inte & thea & tele & film & live & swit \\ 
+trunc5 & david & ambro & award & winni & scree & worke & inter & theat & telev & film & lives & switz \\ 
+lovins & david & ambros & award & win & screenwriter & work & intern & theatr & televis & film & liv & switzerland \\ 
+porter & david & ambros & award & winn & screenwrit & work & internation & theatr & televis & film & live & switzerland \\ 
+porter2 & david & ambros & award & win & screenwrit & work & intern & theatr & televis & film & live & switzerland \\ 
+paicehusk & david & ambros & award & win & screenwrit & work & intern & the & televid & film & liv & switzerland \\ 
+sstemmer & david & ambrose & award & winning & screenwriter & worked & internationally & theatre & television & film & live & switzerland \\ 
+krovetz & david & ambrose & award & winning & screenwriter & work & international & theatre & television & film & lives & switzerland \\ 
+lemmatized & david & ambrose & award & win & screenwriter & work & internationally & theatre & television & film & live & switzerland \\ 
+Example 2
+nostemmer & considered & greatest & formula & driver & won & grand & prix & drove & ferrari & 1967 & potential & victories & slip & helplessly & grasp \\ 
+trunc4 & cons & grea & form & driv & won & gran & prix & drov & ferr & 1967 & pote & vict & slip & help & gras \\ 
+trunc5 & consi & great & formu & drive & won & grand & prix & drove & ferra & 1967 & poten & victo & slip & helpl & grasp \\ 
+lovins & consider & greatest & forml & driver & won & grand & pric & drov & ferrar & 1967 & pot & victor & slip & help & grasp \\ 
+porter & consid & greatest & formula & driver & won & grand & prix & drove & ferrari & 1967 & potenti & victori & slip & helplessli & grasp \\ 
+porter2 & consid & greatest & formula & driver & won & grand & prix & drove & ferrari & 1967 & potenti & victori & slip & helpless & grasp \\ 
+paicehusk & consid & greatest & formul & driv & won & grand & prix & drov & ferrar & 1967 & pot & vict & slip & helpless & grasp \\ 
+sstemmer & considered & greatest & formula & driver & won & grand & prix & drove & ferrari & 1967 & potential & victory & slip & helplessly & grasp \\ 
+krovetz & considered & greatest & formula & driver & won & grand & prix & drove & ferrari & 1967 & potential & victory & slip & helpless & grasp \\ 
+lemmatized & consider & great & formula & driver & win & grand & prix & drive & ferrari & 1967 & potential & victory & slip & helplessly & grasp \\ 
+Example 3
+nostemmer & fred & grew & jersey & acted & career & evenly & devided & stage & couple & movies \\ 
+trunc4 & fred & grew & jers & acte & care & even & devi & stag & coup & movi \\ 
+trunc5 & fred & grew & jerse & acted & caree & evenl & devid & stage & coupl & movie \\ 
+lovins & fr & grew & jerse & act & career & ev & devid & stag & coupl & mov \\ 
+porter & fred & grew & jersei & act & career & evenli & devid & stage & coupl & movi \\ 
+porter2 & fred & grew & jersey & act & career & even & devid & stage & coupl & movi \\ 
+paicehusk & fred & grew & jersey & act & car & ev & devid & stag & coupl & movy \\ 
+sstemmer & fred & grew & jersey & acted & career & evenly & devided & stage & couple & movy \\ 
+krovetz & fred & grew & jersey & act & career & even & devide & stage & couple & movies \\ 
+lemmatized & fred & grow & jersey & act & career & evenly & devided & stage & couple & movie \\ 
+Example 4
+nostemmer & sheldon & performed & hundreds & regional & national & television & commercials & thousands & radio & ads & community & theatre & production \\ 
+trunc4 & shel & perf & hund & regi & nati & tele & comm & thou & radi & ads & comm & thea & prod \\ 
+trunc5 & sheld & perfo & hundr & regio & natio & telev & comme & thous & radio & ads & commu & theat & produ \\ 
+lovins & sheldon & perform & hundred & reg & nat & televis & commerc & thousand & radi & ad & commun & theatr & produc \\ 
+porter & sheldon & perform & hundr & region & nation & televis & commerci & thousand & radio & ad & commun & theatr & product \\ 
+porter2 & sheldon & perform & hundr & region & nation & televis & commerci & thousand & radio & ad & communiti & theatr & product \\ 
+paicehusk & sheldon & perform & hundr & reg & nat & televid & commerc & thousand & radio & ad & commun & the & produc \\ 
+sstemmer & sheldon & performed & hundred & regional & national & television & commercial & thousand & radio & ads & community & theatre & production \\ 
+krovetz & sheldon & perform & hundred & regional & national & television & commercial & thousand & radio & ads & community & theatre & production \\ 
+lemmatized & sheldon & perform & hundred & regional & national & television & commercial & thousand & radio & ad & community & theatre & production \\ 
+Example 5
+nostemmer & 1997 & graduated & mass & communications & middle & tennessee & state & university \\ 
+trunc4 & 1997 & grad & mass & comm & midd & tenn & stat & univ \\ 
+trunc5 & 1997 & gradu & mass & commu & middl & tenne & state & unive \\ 
+lovins & 1997 & gradu & mas & communic & middl & tennesse & st & univers \\ 
+porter & 1997 & graduat & mass & commun & middl & tennesse & state & univers \\ 
+porter2 & 1997 & graduat & mass & communic & middl & tennesse & state & univers \\ 
+paicehusk & 1997 & gradu & mass & commun & middl & ten & stat & univers \\ 
+sstemmer & 1997 & graduated & mass & communication & middle & tennessee & state & university \\ 
+krovetz & 1997 & graduate & mass & communications & middle & tennessee & state & university \\ 
+lemmatized & 1997 & graduate & mass & communication & middle & tennessee & state & university \\ 
+Example 6
+nostemmer & victoria & baldesarra & born & canada & started & dance & career & age & 2011 & auditioned & hit & series & step & stars & michelle \\ 
+trunc4 & vict & bald & born & cana & star & danc & care & age & 2011 & audi & hit & seri & step & star & mich \\ 
+trunc5 & victo & balde & born & canad & start & dance & caree & age & 2011 & audit & hit & serie & step & stars & miche \\ 
+lovins & victor & baldesar & born & canad & start & danc & career & ag & 2011 & audit & hit & ser & step & star & michel \\ 
+porter & victoria & baldesarra & born & canada & start & danc & career & ag & 2011 & audit & hit & seri & step & star & michel \\ 
+porter2 & victoria & baldesarra & born & canada & start & danc & career & age & 2011 & audit & hit & seri & step & star & michell \\ 
+paicehusk & victor & baldesarr & born & canad & start & dant & car & ag & 2011 & audit & hit & sery & step & star & michel \\ 
+sstemmer & victoria & baldesarra & born & canada & started & dance & career & age & 2011 & auditioned & hit & sery & step & star & michelle \\ 
+krovetz & victoria & baldesarra & born & canada & start & dance & career & age & 2011 & audition & hit & series & step & stars & michelle \\ 
+lemmatized & victoria & baldesarra & bear & canada & start & dance & career & age & 2011 & audition & hit & series & step & star & michelle \\ 
+Example 7
+nostemmer & melissa & bellin & born & meadville & original & nitro & girls & works & chiropractic & office & atlanta & dancing & wcw & nitro \\ 
+trunc4 & meli & bell & born & mead & orig & nitr & girl & work & chir & offi & atla & danc & wcw & nitr \\ 
+trunc5 & melis & belli & born & meadv & origi & nitro & girls & works & chiro & offic & atlan & danci & wcw & nitro \\ 
+lovins & melis & bellin & born & meadvil & origin & nitr & girl & work & chiropract & offic & atlant & danc & wcw & nitr \\ 
+porter & melissa & bellin & born & meadvil & origin & nitro & girl & work & chiropract & offic & atlanta & danc & wcw & nitro \\ 
+porter2 & melissa & bellin & born & meadvill & origin & nitro & girl & work & chiropract & offic & atlanta & danc & wcw & nitro \\ 
+paicehusk & meliss & bellin & born & meadvil & origin & nitro & girl & work & chiropract & off & atlant & dant & wcw & nitro \\ 
+sstemmer & melissa & bellin & born & meadville & original & nitro & girl & work & chiropractic & office & atlanta & dancing & wcw & nitro \\ 
+krovetz & melissa & bellin & born & meadville & original & nitro & girl & works & chiropractic & office & atlanta & dance & wcw & nitro \\ 
+lemmatized & melissa & bellin & bear & meadville & original & nitro & girl & work & chiropractic & office & atlanta & dance & wcw & nitro \\ 
+Example 8
+nostemmer & born & israel & lives & los & angeles & usa & produced & films & shows & israel & europe & immigrating & 1980 \\ 
+trunc4 & born & isra & live & los & ange & usa & prod & film & show & isra & euro & immi & 1980 \\ 
+trunc5 & born & israe & lives & los & angel & usa & produ & films & shows & israe & europ & immig & 1980 \\ 
+lovins & born & israel & liv & lo & angel & us & produc & film & show & israel & europ & immigr & 1980 \\ 
+porter & born & israel & live & lo & angel & usa & produc & film & show & israel & europ & immigrat & 1980 \\ 
+porter2 & born & israel & live & los & angel & usa & produc & film & show & israel & europ & immigr & 1980 \\ 
+paicehusk & born & israel & liv & los & angel & us & produc & film & show & israel & europ & immigr & 1980 \\ 
+sstemmer & born & israel & live & los & angele & usa & produced & film & show & israel & europe & immigrating & 1980 \\ 
+krovetz & born & israel & lives & los & angeles & usa & produce & film & show & israel & europe & immigrate & 1980 \\ 
+lemmatized & bear & israel & life & los & angeles & usa & produce & film & show & israel & europe & immigrate & 1980 \\ 
+Example 9
+nostemmer & colorado & born & actress & trained & stage & chicago & goodman & school & drama & late & 1960s & early & 1970s \\ 
+trunc4 & colo & born & actr & trai & stag & chic & good & scho & dram & late & 1960 & earl & 1970 \\ 
+trunc5 & color & born & actre & train & stage & chica & goodm & schoo & drama & late & 1960s & early & 1970s \\ 
+lovins & colorad & born & actres & train & stag & chicag & goodman & school & dram & lat & 1960 & ear & 1970 \\ 
+porter & colorado & born & actress & train & stage & chicago & goodman & school & drama & late & 1960 & earli & 1970 \\ 
+porter2 & colorado & born & actress & train & stage & chicago & goodman & school & drama & late & 1960s & earli & 1970s \\ 
+paicehusk & colorado & born & actress & train & stag & chicago & goodm & school & dram & lat & 1960s & ear & 1970s \\ 
+sstemmer & colorado & born & actress & trained & stage & chicago & goodman & school & drama & late & 1960 & early & 1970 \\ 
+krovetz & colorado & born & actress & train & stage & chicago & goodman & school & drama & late & 1960s & early & 1970s \\ 
+lemmatized & colorado & bear & actress & train & stage & chicago & goodman & school & drama & late & 1960s & early & 1970s \\ 
+Example 10
+nostemmer & started & juggling & playing & music & years & background & theater & started & acting & movies \\ 
+trunc4 & star & jugg & play & musi & year & back & thea & star & acti & movi \\ 
+trunc5 & start & juggl & playi & music & years & backg & theat & start & actin & movie \\ 
+lovins & start & juggl & pla & mus & year & background & theater & start & act & mov \\ 
+porter & start & juggl & plai & music & year & background & theater & start & act & movi \\ 
+porter2 & start & juggl & play & music & year & background & theater & start & act & movi \\ 
+paicehusk & start & juggl & play & mus & year & background & the & start & act & movy \\ 
+sstemmer & started & juggling & playing & music & year & background & theater & started & acting & movy \\ 
+krovetz & start & juggle & play & music & years & background & theater & start & acting & movies \\ 
+lemmatized & start & juggle & play & music & year & background & theater & start & act & movie \\ 
+Example 11
+nostemmer & jamal & blair & wrote & directed & full & length & independent & film & big & numbers & age & buget & 5000 \\ 
+trunc4 & jama & blai & wrot & dire & full & leng & inde & film & big & numb & age & buge & 5000 \\ 
+trunc5 & jamal & blair & wrote & direc & full & lengt & indep & film & big & numbe & age & buget & 5000 \\ 
+lovins & jam & blair & wrot & direct & fl & length & indepens & film & big & number & ag & buges & 5000 \\ 
+porter & jamal & blair & wrote & direct & full & length & independ & film & big & number & ag & buget & 5000 \\ 
+porter2 & jamal & blair & wrote & direct & full & length & independ & film & big & number & age & buget & 5000 \\ 
+paicehusk & jam & blair & wrot & direct & ful & leng & independ & film & big & numb & ag & buget & 5000 \\ 
+sstemmer & jamal & blair & wrote & directed & full & length & independent & film & big & number & age & buget & 5000 \\ 
+krovetz & jam & blair & wrote & direct & full & length & independent & film & big & numbers & age & buget & 5000 \\ 
+lemmatized & jamal & blair & write & direct & full & length & independent & film & big & number & age & buget & 5000 \\ 
+Example 12
+nostemmer & fastest & hardest & working & players & nba & mention & shortest & plays & charlotte & hornets & attended & wake & forest & university \\ 
+trunc4 & fast & hard & work & play & nba & ment & shor & play & char & horn & atte & wake & fore & univ \\ 
+trunc5 & faste & harde & worki & playe & nba & menti & short & plays & charl & horne & atten & wake & fores & unive \\ 
+lovins & fastest & hardest & work & player & nb & ment & shortest & play & charlot & hornet & attens & wak & forest & univers \\ 
+porter & fastest & hardest & work & player & nba & mention & shortest & plai & charlott & hornet & attend & wake & forest & univers \\ 
+porter2 & fastest & hardest & work & player & nba & mention & shortest & play & charlott & hornet & attend & wake & forest & univers \\ 
+paicehusk & fastest & hardest & work & play & nba & ment & shortest & play & charlot & hornet & attend & wak & forest & univers \\ 
+sstemmer & fastest & hardest & working & player & nba & mention & shortest & play & charlotte & hornet & attended & wake & forest & university \\ 
+krovetz & fastest & hardest & working & player & nba & mention & shortest & play & charlotte & hornet & attend & wake & forest & university \\ 
+lemmatized & fast & hard & work & player & nba & mention & short & play & charlotte & hornet & attend & wake & forest & university \\ 
+Example 13
+nostemmer & brianna & born & raised & las & vegas & nevada & wanted & actress & walk \\ 
+trunc4 & bria & born & rais & las & vega & neva & want & actr & walk \\ 
+trunc5 & brian & born & raise & las & vegas & nevad & wante & actre & walk \\ 
+lovins & brian & born & rais & la & veg & nevas & want & actres & walk \\ 
+porter & brianna & born & rais & la & vega & nevada & want & actress & walk \\ 
+porter2 & brianna & born & rais & las & vega & nevada & want & actress & walk \\ 
+paicehusk & briann & born & rais & las & vega & nevad & want & actress & walk \\ 
+sstemmer & brianna & born & raised & las & vega & nevada & wanted & actress & walk \\ 
+krovetz & brianna & born & raise & las & vega & nevada & want & actress & walk \\ 
+lemmatized & brianna & bear & raise & la & vega & nevada & want & actress & walk \\ 
+Example 14
+nostemmer & production & executive & warner & bros & features & 1983 & 1987 & production & walt & disney & touchstone & 1987 & 1989 \\ 
+trunc4 & prod & exec & warn & bros & feat & 1983 & 1987 & prod & walt & disn & touc & 1987 & 1989 \\ 
+trunc5 & produ & execu & warne & bros & featu & 1983 & 1987 & produ & walt & disne & touch & 1987 & 1989 \\ 
+lovins & produc & execut & warner & bro & featur & 1983 & 1987 & produc & walt & disne & touchston & 1987 & 1989 \\ 
+porter & product & execut & warner & bro & featur & 1983 & 1987 & product & walt & disnei & touchston & 1987 & 1989 \\ 
+porter2 & product & execut & warner & bros & featur & 1983 & 1987 & product & walt & disney & touchston & 1987 & 1989 \\ 
+paicehusk & produc & execut & warn & bro & feat & 1983 & 1987 & produc & walt & disney & touchston & 1987 & 1989 \\ 
+sstemmer & production & executive & warner & bro & feature & 1983 & 1987 & production & walt & disney & touchstone & 1987 & 1989 \\ 
+krovetz & production & executive & warner & bro & features & 1983 & 1987 & production & walt & disney & touchstone & 1987 & 1989 \\ 
+lemmatized & production & executive & warner & bros & feature & 1983 & 1987 & production & walt & disney & touchstone & 1987 & 1989 \\ 
+Example 15
+nostemmer & graduated & berkeley & honors & 1995 & worked & publishing \\ 
+trunc4 & grad & berk & hono & 1995 & work & publ \\ 
+trunc5 & gradu & berke & honor & 1995 & worke & publi \\ 
+lovins & gradu & berkele & honor & 1995 & work & publish \\ 
+porter & graduat & berkelei & honor & 1995 & work & publish \\ 
+porter2 & graduat & berkeley & honor & 1995 & work & publish \\ 
+paicehusk & gradu & berkeley & hon & 1995 & work & publ \\ 
+sstemmer & graduated & berkeley & honor & 1995 & worked & publishing \\ 
+krovetz & graduate & berkeley & honors & 1995 & work & publishing \\ 
+lemmatized & graduate & berkeley & honor & 1995 & work & publishing \\ 
+Example 16
+nostemmer & jess & neumann & highly & motivated & wardrobe & decor & stylist & completed & foundation & fashion & design & illinois & institute & art & chicago \\ 
+trunc4 & jess & neum & high & moti & ward & deco & styl & comp & foun & fash & desi & illi & inst & art & chic \\ 
+trunc5 & jess & neuma & highl & motiv & wardr & decor & styli & compl & found & fashi & desig & illin & insti & art & chica \\ 
+lovins & jes & neuman & high & motiv & wardrob & decor & styl & comples & found & fash & design & illino & institut & art & chicag \\ 
+porter & jess & neumann & highli & motivat & wardrob & decor & stylist & complet & foundat & fashion & design & illinoi & institut & art & chicago \\ 
+porter2 & jess & neumann & high & motiv & wardrob & decor & stylist & complet & foundat & fashion & design & illinoi & institut & art & chicago \\ 
+paicehusk & jess & neuman & high & mot & wardrob & dec & stylist & complet & found & fash & design & illino & institut & art & chicago \\ 
+sstemmer & jess & neumann & highly & motivated & wardrobe & decor & stylist & completed & foundation & fashion & design & illinoi & institute & art & chicago \\ 
+krovetz & jess & neumann & highly & motivate & wardrobe & decor & stylist & complete & foundation & fashion & design & illinois & institute & art & chicago \\ 
+lemmatized & jess & neumann & highly & motivated & wardrobe & decor & stylist & complete & foundation & fashion & design & illinois & institute & art & chicago \\ 
+Example 17
+nostemmer & author & writer & educated & columbia & university & written & special & material & revues & television & joined & ascap & 1963 \\ 
+trunc4 & auth & writ & educ & colu & univ & writ & spec & mate & revu & tele & join & asca & 1963 \\ 
+trunc5 & autho & write & educa & colum & unive & writt & speci & mater & revue & telev & joine & ascap & 1963 \\ 
+lovins & author & writer & educ & columb & univers & writ & spec & mater & revu & televis & join & ascap & 1963 \\ 
+porter & author & writer & educat & columbia & univers & written & special & materi & revu & televis & join & ascap & 1963 \\ 
+porter2 & author & writer & educ & columbia & univers & written & special & materi & revu & televis & join & ascap & 1963 \\ 
+paicehusk & auth & writ & educ & columb & univers & writ & spec & mat & revu & televid & join & ascap & 1963 \\ 
+sstemmer & author & writer & educated & columbia & university & written & special & material & revue & television & joined & ascap & 1963 \\ 
+krovetz & author & writer & educated & columbia & university & written & special & material & revue & television & join & ascap & 1963 \\ 
+lemmatized & author & writer & educate & columbia & university & write & special & material & revue & television & join & ascap & 1963 \\ 
+Example 18
+nostemmer & composer & conductor & songwriter & arranger & director & ray & charles & singers & joined & ascap & 1954 & made & records \\ 
+trunc4 & comp & cond & song & arra & dire & ray & char & sing & join & asca & 1954 & made & reco \\ 
+trunc5 & compo & condu & songw & arran & direc & ray & charl & singe & joine & ascap & 1954 & made & recor \\ 
+lovins & composer & conduc & songwriter & arranger & direct & ray & charl & singer & join & ascap & 1954 & mad & record \\ 
+porter & compos & conductor & songwrit & arrang & director & rai & charl & singer & join & ascap & 1954 & made & record \\ 
+porter2 & compos & conductor & songwrit & arrang & director & ray & charl & singer & join & ascap & 1954 & made & record \\ 
+paicehusk & compos & conduc & songwrit & arrang & direct & ray & charl & sing & join & ascap & 1954 & mad & record \\ 
+sstemmer & composer & conductor & songwriter & arranger & director & ray & charle & singer & joined & ascap & 1954 & made & record \\ 
+krovetz & composer & conductor & songwriter & arrange & director & ray & charles & singe & join & ascap & 1954 & made & record \\ 
+lemmatized & composer & conductor & songwriter & arranger & director & ray & charles & singer & join & ascap & 1954 & make & record \\ 
+Example 19
+nostemmer & grew & los & angeles & attended & stanford & university & read & political & philosophy & oxford & university \\ 
+trunc4 & grew & los & ange & atte & stan & univ & read & poli & phil & oxfo & univ \\ 
+trunc5 & grew & los & angel & atten & stanf & unive & read & polit & philo & oxfor & unive \\ 
+lovins & grew & lo & angel & attens & stanford & univers & read & polit & philosoph & oxford & univers \\ 
+porter & grew & lo & angel & attend & stanford & univers & read & polit & philosophi & oxford & univers \\ 
+porter2 & grew & los & angel & attend & stanford & univers & read & polit & philosophi & oxford & univers \\ 
+paicehusk & grew & los & angel & attend & stanford & univers & read & polit & philosoph & oxford & univers \\ 
+sstemmer & grew & los & angele & attended & stanford & university & read & political & philosophy & oxford & university \\ 
+krovetz & grew & los & angeles & attend & stanford & university & read & politics & philosophy & oxford & university \\ 
+lemmatized & grow & los & angeles & attend & stanford & university & read & political & philosophy & oxford & university \\ 
+Example 20
+nostemmer & college & educated & ict & professional & based & hague & netherlands & freek & christoffel & regarded & playing & composing & music & true & vocation \\ 
+trunc4 & coll & educ & ict & prof & base & hagu & neth & free & chri & rega & play & comp & musi & true & voca \\ 
+trunc5 & colle & educa & ict & profe & based & hague & nethe & freek & chris & regar & playi & compo & music & true & vocat \\ 
+lovins & colleg & educ & ict & profes & bas & hagu & netherland & freek & christoffel & regard & pla & compos & mus & tru & voc \\ 
+porter & colleg & educat & ict & profession & base & hagu & netherland & freek & christoffel & regard & plai & compos & music & true & vocat \\ 
+porter2 & colleg & educ & ict & profession & base & hagu & netherland & freek & christoffel & regard & play & compos & music & true & vocat \\ 
+paicehusk & colleg & educ & ict & profess & bas & hagu & netherland & freek & christoffel & regard & play & compos & mus & tru & voc \\ 
+sstemmer & college & educated & ict & professional & based & hague & netherland & freek & christoffel & regarded & playing & composing & music & true & vocation \\ 
+krovetz & college & educated & ict & professional & base & hague & netherlands & freek & christoffel & regard & play & compose & music & true & vocation \\ 
+lemmatized & college & educate & ict & professional & base & hague & netherlands & freek & christoffel & regard & playing & compose & music & true & vocation \\ 
+Example 21
+nostemmer & author & producer & director & educated & university & illinois & joined & ascap & 1959 \\ 
+trunc4 & auth & prod & dire & educ & univ & illi & join & asca & 1959 \\ 
+trunc5 & autho & produ & direc & educa & unive & illin & joine & ascap & 1959 \\ 
+lovins & author & producer & direct & educ & univers & illino & join & ascap & 1959 \\ 
+porter & author & produc & director & educat & univers & illinoi & join & ascap & 1959 \\ 
+porter2 & author & produc & director & educ & univers & illinoi & join & ascap & 1959 \\ 
+paicehusk & auth & produc & direct & educ & univers & illino & join & ascap & 1959 \\ 
+sstemmer & author & producer & director & educated & university & illinoi & joined & ascap & 1959 \\ 
+krovetz & author & producer & director & educated & university & illinois & join & ascap & 1959 \\ 
+lemmatized & author & producer & director & educate & university & illinois & join & ascap & 1959 \\ 
+Example 22
+nostemmer & royal & cole & screenplay & writer & republic & pictures & years & considered & contemporaries & screenwriters & time & studio \\ 
+trunc4 & roya & cole & scre & writ & repu & pict & year & cons & cont & scre & time & stud \\ 
+trunc5 & royal & cole & scree & write & repub & pictu & years & consi & conte & scree & time & studi \\ 
+lovins & roy & col & screenpla & writer & republ & pictur & year & consider & contempor & screenwriter & tim & studi \\ 
+porter & royal & cole & screenplai & writer & republ & pictur & year & consid & contemporari & screenwrit & time & studio \\ 
+porter2 & royal & cole & screenplay & writer & republ & pictur & year & consid & contemporari & screenwrit & time & studio \\ 
+paicehusk & roy & col & screenplay & writ & republ & pict & year & consid & contemp & screenwrit & tim & studio \\ 
+sstemmer & royal & cole & screenplay & writer & republic & picture & year & considered & contemporary & screenwriter & time & studio \\ 
+krovetz & royal & cole & screenplay & writer & republic & pictures & years & considered & contemporary & screenwriter & time & studio \\ 
+lemmatized & royal & cole & screenplay & writer & republic & picture & year & consider & contemporary & screenwriter & time & studio \\ 
+Example 23
+nostemmer & mildred & coles & beauty & queen & western & character & actress & favorite & film & badlands & 1948 & starred & alan & rocky & lane \\ 
+trunc4 & mild & cole & beau & quee & west & char & actr & favo & film & badl & 1948 & star & alan & rock & lane \\ 
+trunc5 & mildr & coles & beaut & queen & weste & chara & actre & favor & film & badla & 1948 & starr & alan & rocky & lane \\ 
+lovins & mildr & col & beaut & queen & western & character & actres & favor & film & badland & 1948 & star & alan & rock & lan \\ 
+porter & mildr & cole & beauti & queen & western & charact & actress & favorit & film & badland & 1948 & starr & alan & rocki & lane \\ 
+porter2 & mildr & cole & beauti & queen & western & charact & actress & favorit & film & badland & 1948 & star & alan & rocki & lane \\ 
+paicehusk & mildr & col & beauty & queen & western & charact & actress & favorit & film & badland & 1948 & star & al & rocky & lan \\ 
+sstemmer & mildred & cole & beauty & queen & western & character & actress & favorite & film & badland & 1948 & starred & alan & rocky & lane \\ 
+krovetz & mildre & col & beauty & queen & western & character & actress & favorite & film & badland & 1948 & star & alan & rocky & lane \\ 
+lemmatized & mildred & cole & beauty & queen & western & character & actress & favorite & film & badlands & 1948 & star & alan & rocky & lane \\ 
+Example 24
+nostemmer & good & blond & haired & actress & typically & roles & conveying & severe & brainpower & deprivation & films & 1925 & early \\ 
+trunc4 & good & blon & hair & actr & typi & role & conv & seve & brai & depr & film & 1925 & earl \\ 
+trunc5 & good & blond & haire & actre & typic & roles & conve & sever & brain & depri & films & 1925 & early \\ 
+lovins & good & blons & hair & actres & typ & rol & conve & sever & brainpower & depriv & film & 1925 & ear \\ 
+porter & good & blond & hair & actress & typicalli & role & convei & sever & brainpow & depriv & film & 1925 & earli \\ 
+porter2 & good & blond & hair & actress & typic & role & convey & sever & brainpow & depriv & film & 1925 & earli \\ 
+paicehusk & good & blond & hair & actress & typic & rol & convey & sev & brainpow & depr & film & 1925 & ear \\ 
+sstemmer & good & blond & haired & actress & typically & role & conveying & severe & brainpower & deprivation & film & 1925 & early \\ 
+krovetz & good & blond & hair & actress & typically & role & convey & severe & brainpower & deprivation & film & 1925 & early \\ 
+lemmatized & good & blond & haired & actress & typically & role & convey & severe & brainpower & deprivation & film & 1925 & early \\ 
+Example 25
+nostemmer & vaudeville & comic & conrad & appeared & shubert & stage & shows & married & stage & actress & marian & eddy \\ 
+trunc4 & vaud & comi & conr & appe & shub & stag & show & marr & stag & actr & mari & eddy \\ 
+trunc5 & vaude & comic & conra & appea & shube & stage & shows & marri & stage & actre & maria & eddy \\ 
+lovins & vaudevil & com & conrad & appear & shubers & stag & show & mar & stag & actres & mar & ed \\ 
+porter & vaudevil & comic & conrad & appear & shubert & stage & show & marri & stage & actress & marian & eddi \\ 
+porter2 & vaudevill & comic & conrad & appear & shubert & stage & show & marri & stage & actress & marian & eddi \\ 
+paicehusk & vaudevil & com & conrad & appear & shubert & stag & show & marry & stag & actress & mar & eddy \\ 
+sstemmer & vaudeville & comic & conrad & appeared & shubert & stage & show & married & stage & actress & marian & eddy \\ 
+krovetz & vaudeville & comic & conrad & appear & shubert & stage & show & married & stage & actress & marian & eddy \\ 
+lemmatized & vaudeville & comic & conrad & appear & shubert & stage & show & marry & stage & actress & marian & eddy \\ 
+Example 26
+nostemmer & suzanne & graduate & pierce & college & 1993 & owned & operated & bookstore & lives & husband & daughters & samantha & alexandra & temecula & california \\ 
+trunc4 & suza & grad & pier & coll & 1993 & owne & oper & book & live & husb & daug & sama & alex & teme & cali \\ 
+trunc5 & suzan & gradu & pierc & colle & 1993 & owned & opera & books & lives & husba & daugh & saman & alexa & temec & calif \\ 
+lovins & suzan & gradu & pierc & colleg & 1993 & own & oper & bookstor & liv & husband & daughter & samanth & alexandr & temecl & californ \\ 
+porter & suzann & graduat & pierc & colleg & 1993 & own & operat & bookstor & live & husband & daughter & samantha & alexandra & temecula & california \\ 
+porter2 & suzann & graduat & pierc & colleg & 1993 & own & oper & bookstor & live & husband & daughter & samantha & alexandra & temecula & california \\ 
+paicehusk & suzan & gradu & pierc & colleg & 1993 & own & op & bookst & liv & husband & daught & samanth & alexandr & temecul & californ \\ 
+sstemmer & suzanne & graduate & pierce & college & 1993 & owned & operated & bookstore & live & husband & daughter & samantha & alexandra & temecula & california \\ 
+krovetz & suzanne & graduate & pierce & college & 1993 & own & operate & bookstore & lives & husband & daughter & samantha & alexandra & temecula & california \\ 
+lemmatized & suzanne & graduate & pierce & college & 1993 & own & operate & bookstore & live & husband & daughter & samantha & alexandra & temecula & california \\ 
+Example 27
+nostemmer & living & trademark & 1949 & 1964 & general & mills & betty & crocker \\ 
+trunc4 & livi & trad & 1949 & 1964 & gene & mill & bett & croc \\ 
+trunc5 & livin & trade & 1949 & 1964 & gener & mills & betty & crock \\ 
+lovins & liv & trademark & 1949 & 1964 & gener & mil & bes & crocker \\ 
+porter & live & trademark & 1949 & 1964 & gener & mill & betti & crocker \\ 
+porter2 & live & trademark & 1949 & 1964 & general & mill & betti & crocker \\ 
+paicehusk & liv & trademark & 1949 & 1964 & gen & mil & betty & crock \\ 
+sstemmer & living & trademark & 1949 & 1964 & general & mill & betty & crocker \\ 
+krovetz & living & trademark & 1949 & 1964 & general & mill & betty & crock \\ 
+lemmatized & live & trademark & 1949 & 1964 & general & mill & betty & crocker \\ 
+Example 28
+nostemmer & michael & bassist & punk & rock & quartet & ataris & professional & skilled & musician & plays & bass & exceptionally & live & performances \\ 
+trunc4 & mich & bass & punk & rock & quar & atar & prof & skil & musi & play & bass & exce & live & perf \\ 
+trunc5 & micha & bassi & punk & rock & quart & atari & profe & skill & music & plays & bass & excep & live & perfo \\ 
+lovins & michael & bas & punk & rock & quartes & atar & profes & skil & mus & play & bas & except & liv & perform \\ 
+porter & michael & bassist & punk & rock & quartet & atari & profession & skill & musician & plai & bass & exception & live & perform \\ 
+porter2 & michael & bassist & punk & rock & quartet & atari & profession & skill & musician & play & bass & except & live & perform \\ 
+paicehusk & michael & bassist & punk & rock & quartet & at & profess & skil & mus & play & bass & exceiv & liv & perform \\ 
+sstemmer & michael & bassist & punk & rock & quartet & atari & professional & skilled & musician & play & bass & exceptionally & live & performance \\ 
+krovetz & michael & bassist & punk & rock & quartet & atari & professional & skilled & musician & play & bass & exceptional & live & performance \\ 
+lemmatized & michael & bassist & punk & rock & quartet & ataris & professional & skilled & musician & play & bass & exceptionally & live & performance \\ 
+Example 29
+nostemmer & juvenile & actor & british & films & director & monty & python & flying & circus \\ 
+trunc4 & juve & acto & brit & film & dire & mont & pyth & flyi & circ \\ 
+trunc5 & juven & actor & briti & films & direc & monty & pytho & flyin & circu \\ 
+lovins & juvenil & act & brit & film & direct & mont & python & fly & circ \\ 
+porter & juvenil & actor & british & film & director & monti & python & fly & circu \\ 
+porter2 & juvenil & actor & british & film & director & monti & python & fli & circus \\ 
+paicehusk & juvenil & act & brit & film & direct & monty & python & flying & circ \\ 
+sstemmer & juvenile & actor & british & film & director & monty & python & flying & circus \\ 
+krovetz & juvenile & actor & britain & film & director & monty & python & flying & circus \\ 
+lemmatized & juvenile & actor & british & film & director & monty & python & fly & circus \\ 
+Example 30
+nostemmer & head & baseball & coach & usc & seasons & won & 1332 & games & ncaa & titles & played & 1935 & brooklyn & dodgers \\ 
+trunc4 & head & base & coac & usc & seas & won & 1332 & game & ncaa & titl & play & 1935 & broo & dodg \\ 
+trunc5 & head & baseb & coach & usc & seaso & won & 1332 & games & ncaa & title & playe & 1935 & brook & dodge \\ 
+lovins & head & basebal & coach & usc & season & won & 1332 & gam & nca & titl & play & 1935 & brooklyn & dodger \\ 
+porter & head & basebal & coach & usc & season & won & 1332 & game & ncaa & titl & plai & 1935 & brooklyn & dodger \\ 
+porter2 & head & basebal & coach & usc & season & won & 1332 & game & ncaa & titl & play & 1935 & brooklyn & dodger \\ 
+paicehusk & head & basebal & coach & usc & season & won & 1332 & gam & nca & titl & play & 1935 & brooklyn & dodg \\ 
+sstemmer & head & baseball & coach & usc & season & won & 1332 & game & ncaa & title & played & 1935 & brooklyn & dodger \\ 
+krovetz & head & baseball & coach & usc & season & won & 1332 & games & ncaa & title & play & 1935 & brooklyn & dodger \\ 
+lemmatized & head & baseball & coach & usc & season & win & 1332 & game & ncaa & title & play & 1935 & brooklyn & dodger \\ 
+Example 31
+nostemmer & dee & dee & acting & late & life & successful & career & military & specialized & playing & feisty & ladies \\ 
+trunc4 & dee & dee & acti & late & life & succ & care & mili & spec & play & feis & ladi \\ 
+trunc5 & dee & dee & actin & late & life & succe & caree & milit & speci & playi & feist & ladie \\ 
+lovins & de & de & act & lat & lif & succes & career & milit & special & pla & feist & lad \\ 
+porter & dee & dee & act & late & life & success & career & militari & specializ & plai & feisti & ladi \\ 
+porter2 & dee & dee & act & late & life & success & career & militari & special & play & feisti & ladi \\ 
+paicehusk & dee & dee & act & lat & lif & success & car & milit & spec & play & feisty & lady \\ 
+sstemmer & dee & dee & acting & late & life & successful & career & military & specialized & playing & feisty & lady \\ 
+krovetz & dee & dee & acting & late & life & successful & career & military & specialized & play & feisty & ladies \\ 
+lemmatized & dee & dee & act & late & life & successful & career & military & specialize & play & feisty & lady \\ 
+Example 32
+nostemmer & widow & producer & robert & dorfmann & worked & producer & stopped & acting & early & didn & performance & trois & femmes & 1952 \\ 
+trunc4 & wido & prod & robe & dorf & work & prod & stop & acti & earl & didn & perf & troi & femm & 1952 \\ 
+trunc5 & widow & produ & rober & dorfm & worke & produ & stopp & actin & early & didn & perfo & trois & femme & 1952 \\ 
+lovins & widow & producer & robers & dorfman & work & producer & stop & act & ear & didn & perform & tro & fem & 1952 \\ 
+porter & widow & produc & robert & dorfmann & work & produc & stopp & act & earli & didn & perform & troi & femm & 1952 \\ 
+porter2 & widow & produc & robert & dorfmann & work & produc & stop & act & earli & didn & perform & troi & femm & 1952 \\ 
+paicehusk & widow & produc & robert & dorfman & work & produc & stop & act & ear & didn & perform & tro & fem & 1952 \\ 
+sstemmer & widow & producer & robert & dorfmann & worked & producer & stopped & acting & early & didn & performance & troi & femme & 1952 \\ 
+krovetz & widow & producer & robert & dorfmann & work & producer & stop & acting & early & didn & performance & troi & femme & 1952 \\ 
+lemmatized & widow & producer & robert & dorfmann & work & producer & stop & act & early & didn & performance & trois & femmes & 1952 \\ 
+Example 33
+nostemmer & erik & born & san & francisco & bay & area & moved & washington & teens & graduated & brown & university & 1986 & worked & washington \\ 
+trunc4 & erik & born & san & fran & bay & area & move & wash & teen & grad & brow & univ & 1986 & work & wash \\ 
+trunc5 & erik & born & san & franc & bay & area & moved & washi & teens & gradu & brown & unive & 1986 & worke & washi \\ 
+lovins & erik & born & san & francisc & bay & are & mov & washingt & teen & gradu & brown & univers & 1986 & work & washingt \\ 
+porter & erik & born & san & francisco & bai & area & move & washington & teen & graduat & brown & univers & 1986 & work & washington \\ 
+porter2 & erik & born & san & francisco & bay & area & move & washington & teen & graduat & brown & univers & 1986 & work & washington \\ 
+paicehusk & erik & born & san & francisco & bay & are & mov & washington & teen & gradu & brown & univers & 1986 & work & washington \\ 
+sstemmer & erik & born & san & francisco & bay & area & moved & washington & teen & graduated & brown & university & 1986 & worked & washington \\ 
+krovetz & erik & born & san & francisco & bay & area & move & washington & teens & graduate & brown & university & 1986 & work & washington \\ 
+lemmatized & erik & bear & san & francisco & bay & area & move & washington & teen & graduate & brown & university & 1986 & work & washington \\ 
+Example 34
+nostemmer & leading & lady & hollywood & films & 1937 & onwards & promising & career & died & house & fire \\ 
+trunc4 & lead & lady & holl & film & 1937 & onwa & prom & care & died & hous & fire \\ 
+trunc5 & leadi & lady & holly & films & 1937 & onwar & promi & caree & died & house & fire \\ 
+lovins & lead & lad & hollywood & film & 1937 & onward & promis & career & di & hous & fir \\ 
+porter & lead & ladi & hollywood & film & 1937 & onward & promis & career & di & hous & fire \\ 
+porter2 & lead & ladi & hollywood & film & 1937 & onward & promis & career & die & hous & fire \\ 
+paicehusk & lead & lady & hollywood & film & 1937 & onward & prom & car & died & hous & fir \\ 
+sstemmer & leading & lady & hollywood & film & 1937 & onward & promising & career & died & house & fire \\ 
+krovetz & leading & lady & hollywood & film & 1937 & onwards & promising & career & die & house & fire \\ 
+lemmatized & lead & lady & hollywood & film & 1937 & onwards & promising & career & die & house & fire \\ 
+Example 35
+nostemmer & patrick & youngest & official & cast & member & disney & california & adventure & performing & steps & time & age \\ 
+trunc4 & patr & youn & offi & cast & memb & disn & cali & adve & perf & step & time & age \\ 
+trunc5 & patri & young & offic & cast & membe & disne & calif & adven & perfo & steps & time & age \\ 
+lovins & patrick & youngest & offic & cast & member & disne & californ & adventur & perform & step & tim & ag \\ 
+porter & patrick & youngest & offici & cast & member & disnei & california & adventur & perform & step & time & ag \\ 
+porter2 & patrick & youngest & offici & cast & member & disney & california & adventur & perform & step & time & age \\ 
+paicehusk & patrick & youngest & off & cast & memb & disney & californ & adv & perform & step & tim & ag \\ 
+sstemmer & patrick & youngest & official & cast & member & disney & california & adventure & performing & step & time & age \\ 
+krovetz & patrick & youngest & official & cast & member & disney & california & adventure & perform & steps & time & age \\ 
+lemmatized & patrick & young & official & cast & member & disney & california & adventure & perform & step & time & age \\ 
+Example 36
+nostemmer & acted & movies & supporting & roles & 1965 & 1983 & aude & echelard & aude & alexandra & died & 1986 \\ 
+trunc4 & acte & movi & supp & role & 1965 & 1983 & aude & eche & aude & alex & died & 1986 \\ 
+trunc5 & acted & movie & suppo & roles & 1965 & 1983 & aude & echel & aude & alexa & died & 1986 \\ 
+lovins & act & mov & support & rol & 1965 & 1983 & aud & echelard & aud & alexandr & di & 1986 \\ 
+porter & act & movi & support & role & 1965 & 1983 & aud & echelard & aud & alexandra & di & 1986 \\ 
+porter2 & act & movi & support & role & 1965 & 1983 & aud & echelard & aud & alexandra & die & 1986 \\ 
+paicehusk & act & movy & support & rol & 1965 & 1983 & aud & echelard & aud & alexandr & died & 1986 \\ 
+sstemmer & acted & movy & supporting & role & 1965 & 1983 & aude & echelard & aude & alexandra & died & 1986 \\ 
+krovetz & act & movies & support & role & 1965 & 1983 & aude & echelard & aude & alexandra & die & 1986 \\ 
+lemmatized & act & movie & support & role & 1965 & 1983 & aude & echelard & aude & alexandra & die & 1986 \\ 
+Example 37
+nostemmer & born & levittown & long & island & bfa & printmaking & painting & syracuse & university & mfa & california & institute & arts \\ 
+trunc4 & born & levi & long & isla & bfa & prin & pain & syra & univ & mfa & cali & inst & arts \\ 
+trunc5 & born & levit & long & islan & bfa & print & paint & syrac & unive & mfa & calif & insti & arts \\ 
+lovins & born & levittown & long & island & bf & printmak & paint & syracus & univers & mf & californ & institut & art \\ 
+porter & born & levittown & long & island & bfa & printmak & paint & syracuse & univers & mfa & california & institut & art \\ 
+porter2 & born & levittown & long & island & bfa & printmak & paint & syracus & univers & mfa & california & institut & art \\ 
+paicehusk & born & levittown & long & island & bfa & printmak & paint & syracus & univers & mfa & californ & institut & art \\ 
+sstemmer & born & levittown & long & island & bfa & printmaking & painting & syracuse & university & mfa & california & institute & art \\ 
+krovetz & born & levittown & long & island & bfa & printmake & painting & syracuse & university & mfa & california & institute & arts \\ 
+lemmatized & bear & levittown & long & island & bfa & printmaking & painting & syracuse & university & mfa & california & institute & art \\ 
+Example 38
+nostemmer & rodolfo & studied & production & management & professional & institute & arts & sciences & communication & ipac & participated & developing & film & projects & institution \\ 
+trunc4 & rodo & stud & prod & mana & prof & inst & arts & scie & comm & ipac & part & deve & film & proj & inst \\ 
+trunc5 & rodol & studi & produ & manag & profe & insti & arts & scien & commu & ipac & parti & devel & film & proje & insti \\ 
+lovins & rodolf & stud & produc & manag & profes & institut & art & sci & communic & ipac & particip & develop & film & project & institut \\ 
+porter & rodolfo & studi & product & manag & profession & institut & art & scienc & commun & ipac & participat & develop & film & project & institut \\ 
+porter2 & rodolfo & studi & product & manag & profession & institut & art & scienc & communic & ipac & particip & develop & film & project & institut \\ 
+paicehusk & rodolfo & study & produc & man & profess & institut & art & scy & commun & ipac & particip & develop & film & project & institut \\ 
+sstemmer & rodolfo & studied & production & management & professional & institute & art & science & communication & ipac & participated & developing & film & project & institution \\ 
+krovetz & rodolfo & studied & production & management & professional & institute & arts & science & communication & ipac & participate & develop & film & project & institution \\ 
+lemmatized & rodolfo & study & production & management & professional & institute & art & science & communication & ipac & participate & develop & film & project & institution \\ 
+Example 39
+nostemmer & evanko & trained & bristol & vic & theatre & school & sang & english & opera & group & welsh & national & opera & company & 1970s \\ 
+trunc4 & evan & trai & bris & vic & thea & scho & sang & engl & oper & grou & wels & nati & oper & comp & 1970 \\ 
+trunc5 & evank & train & brist & vic & theat & schoo & sang & engli & opera & group & welsh & natio & opera & compa & 1970s \\ 
+lovins & evank & train & bristol & vic & theatr & school & sang & engl & oper & group & welsh & nat & oper & compan & 1970 \\ 
+porter & evanko & train & bristol & vic & theatr & school & sang & english & opera & group & welsh & nation & opera & compani & 1970 \\ 
+porter2 & evanko & train & bristol & vic & theatr & school & sang & english & opera & group & welsh & nation & opera & compani & 1970s \\ 
+paicehusk & evanko & train & bristol & vic & the & school & sang & engl & oper & group & welsh & nat & oper & company & 1970s \\ 
+sstemmer & evanko & trained & bristol & vic & theatre & school & sang & english & opera & group & welsh & national & opera & company & 1970 \\ 
+krovetz & evanko & train & bristol & vic & theatre & school & sang & english & opera & group & welsh & national & opera & company & 1970s \\ 
+lemmatized & evanko & train & bristol & vic & theatre & school & sing & english & opera & group & welsh & national & opera & company & 1970s \\ 
+Example 40
+nostemmer & television & host & entertainer & dickory & doc & adam & android & 1960s & children & programs & philadelphia & pennsylvania & uhf & television & stations \\ 
+trunc4 & tele & host & ente & dick & doc & adam & andr & 1960 & chil & prog & phil & penn & uhf & tele & stat \\ 
+trunc5 & telev & host & enter & dicko & doc & adam & andro & 1960s & child & progr & phila & penns & uhf & telev & stati \\ 
+lovins & televis & host & entertainer & dickor & doc & adam & andr & 1960 & childr & program & philadelph & pennsylvan & uhf & televis & stat \\ 
+porter & televis & host & entertain & dickori & doc & adam & android & 1960 & children & program & philadelphia & pennsylvania & uhf & televis & station \\ 
+porter2 & televis & host & entertain & dickori & doc & adam & android & 1960s & children & program & philadelphia & pennsylvania & uhf & televis & station \\ 
+paicehusk & televid & host & entertain & dick & doc & adam & android & 1960s & childr & program & philadelph & pennsylvan & uhf & televid & stat \\ 
+sstemmer & television & host & entertainer & dickory & doc & adam & android & 1960 & children & program & philadelphia & pennsylvania & uhf & television & station \\ 
+krovetz & television & host & entertainer & dickory & doc & adam & android & 1960s & children & program & philadelphia & pennsylvania & uhf & television & station \\ 
+lemmatized & television & host & entertainer & dickory & doc & adam & android & 1960s & child & program & philadelphia & pennsylvania & uhf & television & station \\ 
+Example 41
+nostemmer & delaney & loves & participate & school & plays & acting & groups & school & dogs \\ 
+trunc4 & dela & love & part & scho & play & acti & grou & scho & dogs \\ 
+trunc5 & delan & loves & parti & schoo & plays & actin & group & schoo & dogs \\ 
+lovins & delane & lov & particip & school & play & act & group & school & dog \\ 
+porter & delanei & love & particip & school & plai & act & group & school & dog \\ 
+porter2 & delaney & love & particip & school & play & act & group & school & dog \\ 
+paicehusk & delaney & lov & particip & school & play & act & group & school & dog \\ 
+sstemmer & delaney & love & participate & school & play & acting & group & school & dog \\ 
+krovetz & delaney & love & participate & school & play & acting & group & school & dogs \\ 
+lemmatized & delaney & love & participate & school & play & act & group & school & dog \\ 
+Example 42
+nostemmer & dodi & fayed & egyptian & born & multimillionaire & father & mohamed & fayed & owns & harrods & chain & ritz & hotel & paris \\ 
+trunc4 & dodi & faye & egyp & born & mult & fath & moha & faye & owns & harr & chai & ritz & hote & pari \\ 
+trunc5 & dodi & fayed & egypt & born & multi & fathe & moham & fayed & owns & harro & chain & ritz & hotel & paris \\ 
+lovins & dod & fay & egypt & born & multimillionair & father & moham & fay & own & harrod & chain & ritz & hotel & par \\ 
+porter & dodi & fai & egyptian & born & multimillionair & father & moham & fai & own & harrod & chain & ritz & hotel & pari \\ 
+porter2 & dodi & fay & egyptian & born & multimillionair & father & moham & fay & own & harrod & chain & ritz & hotel & pari \\ 
+paicehusk & dod & fay & egypt & born & multimillionair & fath & moham & fay & own & harrod & chain & ritz & hotel & par \\ 
+sstemmer & dodi & fayed & egyptian & born & multimillionaire & father & mohamed & fayed & own & harrod & chain & ritz & hotel & pari \\ 
+krovetz & dodi & fay & egypt & born & multimillionaire & father & mohame & fay & own & harrod & chain & ritz & hotel & paris \\ 
+lemmatized & dodi & fayed & egyptian & bear & multimillionaire & father & mohamed & fayed & own & harrod & chain & ritz & hotel & paris \\ 
+Example 43
+nostemmer & graduated & claude & watson & school & performing & arts & performed & roles & community & regional & theater & debuting & years & geometry & venice \\ 
+trunc4 & grad & clau & wats & scho & perf & arts & perf & role & comm & regi & thea & debu & year & geom & veni \\ 
+trunc5 & gradu & claud & watso & schoo & perfo & arts & perfo & roles & commu & regio & theat & debut & years & geome & venic \\ 
+lovins & gradu & claud & watson & school & perform & art & perform & rol & commun & reg & theater & debut & year & geometer & venic \\ 
+porter & graduat & claud & watson & school & perform & art & perform & role & commun & region & theater & debut & year & geometri & venic \\ 
+porter2 & graduat & claud & watson & school & perform & art & perform & role & communiti & region & theater & debut & year & geometri & venic \\ 
+paicehusk & gradu & claud & watson & school & perform & art & perform & rol & commun & reg & the & debut & year & geometry & ven \\ 
+sstemmer & graduated & claude & watson & school & performing & art & performed & role & community & regional & theater & debuting & year & geometry & venice \\ 
+krovetz & graduate & claude & watson & school & perform & arts & perform & role & community & regional & theater & debut & years & geometry & venice \\ 
+lemmatized & graduate & claude & watson & school & perform & art & perform & role & community & regional & theater & debut & year & geometry & venice \\ 
+Example 44
+nostemmer & vaudeville & comedy & partner & joe & weber & appeared & partner & silents & talkies & 1940 \\ 
+trunc4 & vaud & come & part & joe & webe & appe & part & sile & talk & 1940 \\ 
+trunc5 & vaude & comed & partn & joe & weber & appea & partn & silen & talki & 1940 \\ 
+lovins & vaudevil & comed & partner & jo & weber & appear & partner & silens & talk & 1940 \\ 
+porter & vaudevil & comedi & partner & joe & weber & appear & partner & silent & talki & 1940 \\ 
+porter2 & vaudevill & comedi & partner & joe & weber & appear & partner & silent & talki & 1940 \\ 
+paicehusk & vaudevil & comedy & partn & joe & web & appear & partn & sil & talky & 1940 \\ 
+sstemmer & vaudeville & comedy & partner & joe & weber & appeared & partner & silent & talky & 1940 \\ 
+krovetz & vaudeville & comedy & partner & joe & weber & appear & partner & silent & talkie & 1940 \\ 
+lemmatized & vaudeville & comedy & partner & joe & weber & appear & partner & silents & talkie & 1940 \\ 
+Example 45
+nostemmer & nfl & player & green & bay & packers & miami & dolphins & fleming & played & superbowl & games & 1966 & 1972 \\ 
+trunc4 & nfl & play & gree & bay & pack & miam & dolp & flem & play & supe & game & 1966 & 1972 \\ 
+trunc5 & nfl & playe & green & bay & packe & miami & dolph & flemi & playe & super & games & 1966 & 1972 \\ 
+lovins & nfl & player & green & bay & packer & miam & dolphin & flem & play & superbowl & gam & 1966 & 1972 \\ 
+porter & nfl & player & green & bai & packer & miami & dolphin & fleme & plai & superbowl & game & 1966 & 1972 \\ 
+porter2 & nfl & player & green & bay & packer & miami & dolphin & fleme & play & superbowl & game & 1966 & 1972 \\ 
+paicehusk & nfl & play & green & bay & pack & miam & dolphin & flem & play & superbowl & gam & 1966 & 1972 \\ 
+sstemmer & nfl & player & green & bay & packer & miami & dolphin & fleming & played & superbowl & game & 1966 & 1972 \\ 
+krovetz & nfl & player & green & bay & packer & miami & dolphin & fleming & play & superbowl & games & 1966 & 1972 \\ 
+lemmatized & nfl & player & green & bay & packer & miami & dolphin & fleming & play & superbowl & game & 1966 & 1972 \\ 
+Example 46
+nostemmer & abbie & lives & hadleigh & essex & represented & abacus & agency & fantastic & time & filming & public & enemies & appeared & film & flyboys \\ 
+trunc4 & abbi & live & hadl & esse & repr & abac & agen & fant & time & film & publ & enem & appe & film & flyb \\ 
+trunc5 & abbie & lives & hadle & essex & repre & abacu & agenc & fanta & time & filmi & publi & enemi & appea & film & flybo \\ 
+lovins & abbi & liv & hadleigh & essec & repres & abac & ag & fantast & tim & film & publ & enem & appear & film & flyboy \\ 
+porter & abbi & live & hadleigh & essex & repres & abacu & agenc & fantast & time & film & public & enemi & appear & film & flyboi \\ 
+porter2 & abbi & live & hadleigh & essex & repres & abacus & agenc & fantast & time & film & public & enemi & appear & film & flyboy \\ 
+paicehusk & abby & liv & hadleigh & essex & repres & abac & ag & fantast & tim & film & publ & enemy & appear & film & flyboy \\ 
+sstemmer & abbie & live & hadleigh & essex & represented & abacus & agency & fantastic & time & filming & public & enemy & appeared & film & flyboy \\ 
+krovetz & abbie & lives & hadleigh & essex & represent & abacus & agency & fantastic & time & film & public & enemy & appear & film & flyboy \\ 
+lemmatized & abbie & live & hadleigh & essex & represent & abacus & agency & fantastic & time & film & public & enemy & appear & film & flyboys \\ 
+Example 47
+nostemmer & raf & navigator & survived & 1944 & bomber & crash & foxley & burned & save & comrade & lost & fingers & eye & underwent & surgeries \\ 
+trunc4 & raf & navi & surv & 1944 & bomb & cras & foxl & burn & save & comr & lost & fing & eye & unde & surg \\ 
+trunc5 & raf & navig & survi & 1944 & bombe & crash & foxle & burne & save & comra & lost & finge & eye & under & surge \\ 
+lovins & raf & navig & surviv & 1944 & bomber & crash & foxle & burn & sav & comrad & lost & finger & ey & underw & surger \\ 
+porter & raf & navig & surviv & 1944 & bomber & crash & foxlei & burn & save & comrad & lost & finger & eye & underw & surgeri \\ 
+porter2 & raf & navig & surviv & 1944 & bomber & crash & foxley & burn & save & comrad & lost & finger & eye & underw & surgeri \\ 
+paicehusk & raf & navig & surv & 1944 & bomb & crash & foxley & burn & sav & comrad & lost & fing & ey & underw & surgery \\ 
+sstemmer & raf & navigator & survived & 1944 & bomber & crash & foxley & burned & save & comrade & lost & finger & eye & underwent & surgery \\ 
+krovetz & raf & navigator & survive & 1944 & bomber & crash & foxley & burn & save & comrade & lost & finger & eye & underwent & surgery \\ 
+lemmatized & raf & navigator & survive & 1944 & bomber & crash & foxley & burn & save & comrade & lose & finger & eye & undergo & surgery \\ 
+Example 48
+nostemmer & columbia & pictures & starlet & turned & stage & appearing & broadway & 1960s & 70s & 80s & portraying & variety & english & characters \\ 
+trunc4 & colu & pict & star & turn & stag & appe & broa & 1960 & 70s & 80s & port & vari & engl & char \\ 
+trunc5 & colum & pictu & starl & turne & stage & appea & broad & 1960s & 70s & 80s & portr & varie & engli & chara \\ 
+lovins & columb & pictur & starles & turn & stag & appear & broadwa & 1960 & 70 & 80 & portra & varies & engl & character \\ 
+porter & columbia & pictur & starlet & turn & stage & appear & broadwai & 1960 & 70 & 80 & portrai & varieti & english & charact \\ 
+porter2 & columbia & pictur & starlet & turn & stage & appear & broadway & 1960s & 70s & 80s & portray & varieti & english & charact \\ 
+paicehusk & columb & pict & starlet & turn & stag & appear & broadway & 1960s & 70s & 80s & portray & vary & engl & charact \\ 
+sstemmer & columbia & picture & starlet & turned & stage & appearing & broadway & 1960 & 70s & 80s & portraying & variety & english & character \\ 
+krovetz & columbia & pictures & starlet & turn & stage & appear & broadway & 1960s & 70s & 80s & portray & variety & english & character \\ 
+lemmatized & columbia & picture & starlet & turn & stage & appear & broadway & 1960s & 70 & 80 & portray & variety & english & character \\ 
+Example 49
+nostemmer & aaron & born & chicago & illinois & migrated & trinidad & age & youngest & boys & athletic & loves & play & soccer \\ 
+trunc4 & aaro & born & chic & illi & migr & trin & age & youn & boys & athl & love & play & socc \\ 
+trunc5 & aaron & born & chica & illin & migra & trini & age & young & boys & athle & loves & play & socce \\ 
+lovins & aaron & born & chicag & illino & migr & trinidad & ag & youngest & boy & athles & lov & pla & soccer \\ 
+porter & aaron & born & chicago & illinoi & migrat & trinidad & ag & youngest & boi & athlet & love & plai & soccer \\ 
+porter2 & aaron & born & chicago & illinoi & migrat & trinidad & age & youngest & boy & athlet & love & play & soccer \\ 
+paicehusk & aaron & born & chicago & illino & migr & trinidad & ag & youngest & boy & athlet & lov & play & socc \\ 
+sstemmer & aaron & born & chicago & illinoi & migrated & trinidad & age & youngest & boy & athletic & love & play & soccer \\ 
+krovetz & aaron & born & chicago & illinois & migrate & trinidad & age & youngest & boys & athletic & love & play & soccer \\ 
+lemmatized & aaron & bear & chicago & illinois & migrate & trinidad & age & young & boy & athletic & love & play & soccer \\ 
+Example 50
+nostemmer & popular & continental & cabaret & artist & 20s & 30s & starred & demille & buccaneer & 1938 & appeared & films & appeared & sporadically & broadway \\ 
+trunc4 & popu & cont & caba & arti & 20s & 30s & star & demi & bucc & 1938 & appe & film & appe & spor & broa \\ 
+trunc5 & popul & conti & cabar & artis & 20s & 30s & starr & demil & bucca & 1938 & appea & films & appea & spora & broad \\ 
+lovins & popl & contin & cabares & art & 20 & 30 & star & demil & buccaneer & 1938 & appear & film & appear & sporad & broadwa \\ 
+porter & popular & continent & cabaret & artist & 20 & 30 & starr & demil & buccan & 1938 & appear & film & appear & sporad & broadwai \\ 
+porter2 & popular & continent & cabaret & artist & 20s & 30s & star & demill & buccan & 1938 & appear & film & appear & sporad & broadway \\ 
+paicehusk & popul & contin & cabaret & art & 20s & 30s & star & demil & bucc & 1938 & appear & film & appear & sporad & broadway \\ 
+sstemmer & popular & continental & cabaret & artist & 20s & 30s & starred & demille & buccaneer & 1938 & appeared & film & appeared & sporadically & broadway \\ 
+krovetz & popular & continental & cabaret & artist & 20s & 30s & star & demille & buccaneer & 1938 & appear & film & appear & sporadic & broadway \\ 
+lemmatized & popular & continental & cabaret & artist & 20 & 30 & star & demille & buccaneer & 1938 & appear & film & appear & sporadically & broadway \\ 
+Example 51
+nostemmer & vaudeville & entertainer & played & light & roles & hollywood & films & mid & 1920s & early & 50s \\ 
+trunc4 & vaud & ente & play & ligh & role & holl & film & mid & 1920 & earl & 50s \\ 
+trunc5 & vaude & enter & playe & light & roles & holly & films & mid & 1920s & early & 50s \\ 
+lovins & vaudevil & entertainer & play & light & rol & hollywood & film & mid & 1920 & ear & 50 \\ 
+porter & vaudevil & entertain & plai & light & role & hollywood & film & mid & 1920 & earli & 50 \\ 
+porter2 & vaudevill & entertain & play & light & role & hollywood & film & mid & 1920s & earli & 50s \\ 
+paicehusk & vaudevil & entertain & play & light & rol & hollywood & film & mid & 1920s & ear & 50s \\ 
+sstemmer & vaudeville & entertainer & played & light & role & hollywood & film & mid & 1920 & early & 50s \\ 
+krovetz & vaudeville & entertainer & play & light & role & hollywood & film & mid & 1920s & early & 50s \\ 
+lemmatized & vaudeville & entertainer & play & light & role & hollywood & film & mid & 1920s & early & 50 \\ 
+Example 52
+nostemmer & mba & cornell & university & juris & doctor & university & louisville & graduate & university & south & florida & attended & harvard & university \\ 
+trunc4 & mba & corn & univ & juri & doct & univ & loui & grad & univ & sout & flor & atte & harv & univ \\ 
+trunc5 & mba & corne & unive & juris & docto & unive & louis & gradu & unive & south & flori & atten & harva & unive \\ 
+lovins & mb & cornel & univers & jur & doct & univers & louisvil & gradu & univers & south & florid & attens & harvard & univers \\ 
+porter & mba & cornel & univers & juri & doctor & univers & louisvil & graduat & univers & south & florida & attend & harvard & univers \\ 
+porter2 & mba & cornel & univers & juri & doctor & univers & louisvill & graduat & univers & south & florida & attend & harvard & univers \\ 
+paicehusk & mba & cornel & univers & jur & doct & univers & louisvil & gradu & univers & sou & florid & attend & harvard & univers \\ 
+sstemmer & mba & cornell & university & juri & doctor & university & louisville & graduate & university & south & florida & attended & harvard & university \\ 
+krovetz & mba & cornell & university & juri & doctor & university & louisville & graduate & university & south & florida & attend & harvard & university \\ 
+lemmatized & mba & cornell & university & juris & doctor & university & louisville & graduate & university & south & florida & attend & harvard & university \\ 
+Example 53
+nostemmer & born & august & 1969 & son & costa & gavras & director & michle & ray & gavras & producer & graduated & nyu & film & school \\ 
+trunc4 & born & augu & 1969 & son & cost & gavr & dire & mich & ray & gavr & prod & grad & nyu & film & scho \\ 
+trunc5 & born & augus & 1969 & son & costa & gavra & direc & michl & ray & gavra & produ & gradu & nyu & film & schoo \\ 
+lovins & born & august & 1969 & son & cost & gavr & direct & michl & ray & gavr & producer & gradu & nyu & film & school \\ 
+porter & born & august & 1969 & son & costa & gavra & director & michl & rai & gavra & produc & graduat & nyu & film & school \\ 
+porter2 & born & august & 1969 & son & costa & gavra & director & michl & ray & gavra & produc & graduat & nyu & film & school \\ 
+paicehusk & born & august & 1969 & son & cost & gavra & direct & michl & ray & gavra & produc & gradu & nyu & film & school \\ 
+sstemmer & born & august & 1969 & son & costa & gavra & director & michle & ray & gavra & producer & graduated & nyu & film & school \\ 
+krovetz & born & august & 1969 & son & costa & gavra & director & michle & ray & gavra & producer & graduate & nyu & film & school \\ 
+lemmatized & bear & august & 1969 & son & costa & gavras & director & michle & ray & gavras & producer & graduate & nyu & film & school \\ 
+Example 54
+nostemmer & joey & tattoo & expert & running & remodeling & tattoo & shops & years & experience & tattooing & construction & loving & husband & father & children \\ 
+trunc4 & joey & tatt & expe & runn & remo & tatt & shop & year & expe & tatt & cons & lovi & husb & fath & chil \\ 
+trunc5 & joey & tatto & exper & runni & remod & tatto & shops & years & exper & tatto & const & lovin & husba & fathe & child \\ 
+lovins & joe & tatto & expers & run & remodel & tatto & shop & year & experi & tattoo & construc & lov & husband & father & childr \\ 
+porter & joei & tattoo & expert & runn & remodel & tattoo & shop & year & experi & tattoo & construct & love & husband & father & children \\ 
+porter2 & joey & tattoo & expert & run & remodel & tattoo & shop & year & experi & tattoo & construct & love & husband & father & children \\ 
+paicehusk & joey & tattoo & expert & run & remodel & tattoo & shop & year & expery & tattoo & construct & lov & husband & fath & childr \\ 
+sstemmer & joey & tattoo & expert & running & remodeling & tattoo & shop & year & experience & tattooing & construction & loving & husband & father & children \\ 
+krovetz & joey & tattoo & expert & running & remodel & tattoo & shop & years & experience & tattoo & construction & loving & husband & father & children \\ 
+lemmatized & joey & tattoo & expert & run & remodel & tattoo & shop & year & experience & tattooing & construction & loving & husband & father & child \\ 
+Example 55
+nostemmer & fellow & winnipegger & anna & paquin & daniel & born & winnipeg & moved & zealand & young & age & parents & involved & medical & profession \\ 
+trunc4 & fell & winn & anna & paqu & dani & born & winn & move & zeal & youn & age & pare & invo & medi & prof \\ 
+trunc5 & fello & winni & anna & paqui & danie & born & winni & moved & zeala & young & age & paren & invol & medic & profe \\ 
+lovins & fellow & winnipegger & an & paquin & daniel & born & winnipeg & mov & zealand & young & ag & parens & involut & med & profes \\ 
+porter & fellow & winnipegg & anna & paquin & daniel & born & winnipeg & move & zealand & young & ag & parent & involv & medic & profess \\ 
+porter2 & fellow & winnipegg & anna & paquin & daniel & born & winnipeg & move & zealand & young & age & parent & involv & medic & profess \\ 
+paicehusk & fellow & winnipeg & ann & paquin & daniel & born & winnipeg & mov & zealand & young & ag & par & involv & med & profess \\ 
+sstemmer & fellow & winnipegger & anna & paquin & daniel & born & winnipeg & moved & zealand & young & age & parent & involved & medical & profession \\ 
+krovetz & fellow & winnipegger & anna & paquin & daniel & born & winnipeg & move & zealand & young & age & parent & involved & medical & profession \\ 
+lemmatized & fellow & winnipegger & anna & paquin & daniel & bear & winnipeg & move & zealand & young & age & parent & involve & medical & profession \\ 
+Example 56
+nostemmer & silent & screen & star & continue & play & character & leading & roles & early & talkies \\ 
+trunc4 & sile & scre & star & cont & play & char & lead & role & earl & talk \\ 
+trunc5 & silen & scree & star & conti & play & chara & leadi & roles & early & talki \\ 
+lovins & silens & screen & star & continu & pla & character & lead & rol & ear & talk \\ 
+porter & silent & screen & star & continu & plai & charact & lead & role & earli & talki \\ 
+porter2 & silent & screen & star & continu & play & charact & lead & role & earli & talki \\ 
+paicehusk & sil & screen & star & continu & play & charact & lead & rol & ear & talky \\ 
+sstemmer & silent & screen & star & continue & play & character & leading & role & early & talky \\ 
+krovetz & silent & screen & star & continue & play & character & leading & role & early & talkie \\ 
+lemmatized & silent & screen & star & continue & play & character & lead & role & early & talkie \\ 
+Example 57
+nostemmer & born & louisville & 1978 & lives & augusta & cory & works & navy & makes & movies & life & depends \\ 
+trunc4 & born & loui & 1978 & live & augu & cory & work & navy & make & movi & life & depe \\ 
+trunc5 & born & louis & 1978 & lives & augus & cory & works & navy & makes & movie & life & depen \\ 
+lovins & born & louisvil & 1978 & liv & august & cor & work & nav & mak & mov & lif & depens \\ 
+porter & born & louisvil & 1978 & live & augusta & cori & work & navi & make & movi & life & depend \\ 
+porter2 & born & louisvill & 1978 & live & augusta & cori & work & navi & make & movi & life & depend \\ 
+paicehusk & born & louisvil & 1978 & liv & august & cory & work & navy & mak & movy & lif & depend \\ 
+sstemmer & born & louisville & 1978 & live & augusta & cory & work & navy & make & movy & life & depend \\ 
+krovetz & born & louisville & 1978 & lives & augusta & cory & works & navy & make & movies & life & depend \\ 
+lemmatized & bear & louisville & 1978 & live & augusta & cory & work & navy & make & movie & life & depend \\ 
+Example 58
+nostemmer & burnett & guffey & man & loved & family & work & till & days & bull & attitude & loved & remembered & greatness & family \\ 
+trunc4 & burn & guff & man & love & fami & work & till & days & bull & atti & love & reme & grea & fami \\ 
+trunc5 & burne & guffe & man & loved & famil & work & till & days & bull & attit & loved & remem & great & famil \\ 
+lovins & burnet & guffe & man & lov & fam & work & til & day & bl & attitud & lov & remember & great & fam \\ 
+porter & burnett & guffei & man & love & famili & work & till & dai & bull & attitud & love & rememb & great & famili \\ 
+porter2 & burnett & guffey & man & love & famili & work & till & day & bull & attitud & love & rememb & great & famili \\ 
+paicehusk & burnet & guffey & man & lov & famy & work & til & day & bul & attitud & lov & rememb & gre & famy \\ 
+sstemmer & burnett & guffey & man & loved & family & work & till & day & bull & attitude & loved & remembered & greatness & family \\ 
+krovetz & burnett & guffey & man & love & family & work & till & days & bull & attitude & love & remember & great & family \\ 
+lemmatized & burnett & guffey & man & love & family & work & till & day & bull & attitude & love & remember & greatness & family \\ 
+Example 59
+nostemmer & directing & films & anders & photographer & produced & multimedia & productions & clients & ikea & tanqueray & lexus \\ 
+trunc4 & dire & film & ande & phot & prod & mult & prod & clie & ikea & tanq & lexu \\ 
+trunc5 & direc & films & ander & photo & produ & multi & produ & clien & ikea & tanqu & lexus \\ 
+lovins & direct & film & ander & photographer & produc & multimed & produc & cliens & ike & tanquera & lexus \\ 
+porter & direct & film & ander & photograph & produc & multimedia & product & client & ikea & tanquerai & lexu \\ 
+porter2 & direct & film & ander & photograph & produc & multimedia & product & client & ikea & tanqueray & lexus \\ 
+paicehusk & direct & film & and & photograph & produc & multimed & produc & cly & ike & tanqueray & lex \\ 
+sstemmer & directing & film & ander & photographer & produced & multimedia & production & client & ikea & tanqueray & lexus \\ 
+krovetz & direct & film & and & photographer & produce & multimedia & production & client & ikea & tanqueray & lexu \\ 
+lemmatized & direct & film & anders & photographer & produce & multimedia & production & client & ikea & tanqueray & lexus \\ 
+Example 60
+nostemmer & comedian & prominence & 1970s & styling & rochdale & cowboy & musician & folk & circuit & presents & regular & folk & review & bbc & radio \\ 
+trunc4 & come & prom & 1970 & styl & roch & cowb & musi & folk & circ & pres & regu & folk & revi & bbc & radi \\ 
+trunc5 & comed & promi & 1970s & styli & rochd & cowbo & music & folk & circu & prese & regul & folk & revie & bbc & radio \\ 
+lovins & comed & promin & 1970 & styl & rochdal & cowbo & mus & folk & circuit & presens & regl & folk & review & bbc & radi \\ 
+porter & comedian & promin & 1970 & style & rochdal & cowboi & musician & folk & circuit & present & regular & folk & review & bbc & radio \\ 
+porter2 & comedian & promin & 1970s & style & rochdal & cowboy & musician & folk & circuit & present & regular & folk & review & bbc & radio \\ 
+paicehusk & com & promin & 1970s & styling & rochd & cowboy & mus & folk & circuit & pres & regul & folk & review & bbc & radio \\ 
+sstemmer & comedian & prominence & 1970 & styling & rochdale & cowboy & musician & folk & circuit & present & regular & folk & review & bbc & radio \\ 
+krovetz & comedian & prominence & 1970s & style & rochdale & cowboy & musician & folk & circuit & presents & regular & folk & review & bbc & radio \\ 
+lemmatized & comedian & prominence & 1970s & style & rochdale & cowboy & musician & folk & circuit & present & regular & folk & review & bbc & radio \\ 
+Example 61
+nostemmer & hollywood & character & actor & silents & talkies & year & died \\ 
+trunc4 & holl & char & acto & sile & talk & year & died \\ 
+trunc5 & holly & chara & actor & silen & talki & year & died \\ 
+lovins & hollywood & character & act & silens & talk & year & di \\ 
+porter & hollywood & charact & actor & silent & talki & year & di \\ 
+porter2 & hollywood & charact & actor & silent & talki & year & die \\ 
+paicehusk & hollywood & charact & act & sil & talky & year & died \\ 
+sstemmer & hollywood & character & actor & silent & talky & year & died \\ 
+krovetz & hollywood & character & actor & silent & talkie & year & die \\ 
+lemmatized & hollywood & character & actor & silents & talkie & year & die \\ 
+Example 62
+nostemmer & supporting & actress & films & late & 40s & early & 50s \\ 
+trunc4 & supp & actr & film & late & 40s & earl & 50s \\ 
+trunc5 & suppo & actre & films & late & 40s & early & 50s \\ 
+lovins & support & actres & film & lat & 40 & ear & 50 \\ 
+porter & support & actress & film & late & 40 & earli & 50 \\ 
+porter2 & support & actress & film & late & 40s & earli & 50s \\ 
+paicehusk & support & actress & film & lat & 40s & ear & 50s \\ 
+sstemmer & supporting & actress & film & late & 40s & early & 50s \\ 
+krovetz & support & actress & film & late & 40s & early & 50s \\ 
+lemmatized & support & actress & film & late & 40 & early & 50 \\ 
+Example 63
+nostemmer & lifetime & communications & sort & advertising & photography & script & writing & film & video & directing & producing & publishing & internet & publishing \\ 
+trunc4 & life & comm & sort & adve & phot & scri & writ & film & vide & dire & prod & publ & inte & publ \\ 
+trunc5 & lifet & commu & sort & adver & photo & scrip & writi & film & video & direc & produ & publi & inter & publi \\ 
+lovins & lifetim & communic & sort & advertis & photograph & script & writ & film & vide & direct & produc & publish & internet & publish \\ 
+porter & lifetim & commun & sort & advertis & photographi & script & write & film & video & direct & produc & publish & internet & publish \\ 
+porter2 & lifetim & communic & sort & advertis & photographi & script & write & film & video & direct & produc & publish & internet & publish \\ 
+paicehusk & lifetim & commun & sort & advert & photograph & scrib & writ & film & video & direct & produc & publ & internet & publ \\ 
+sstemmer & lifetime & communication & sort & advertising & photography & script & writing & film & video & directing & producing & publishing & internet & publishing \\ 
+krovetz & lifetime & communications & sort & advertising & photography & script & writing & film & video & direct & produce & publishing & internet & publishing \\ 
+lemmatized & lifetime & communication & sort & advertising & photography & script & write & film & video & direct & produce & publishing & internet & publishing \\ 
+Example 64
+nostemmer & personality & opposed & movies & starred & series & spender & crocodile & shoes \\ 
+trunc4 & pers & oppo & movi & star & seri & spen & croc & shoe \\ 
+trunc5 & perso & oppos & movie & starr & serie & spend & croco & shoes \\ 
+lovins & person & oppos & mov & star & ser & spender & crocodil & sho \\ 
+porter & person & oppos & movi & starr & seri & spender & crocodil & shoe \\ 
+porter2 & person & oppos & movi & star & seri & spender & crocodil & shoe \\ 
+paicehusk & person & oppos & movy & star & sery & spend & crocodil & sho \\ 
+sstemmer & personality & opposed & movy & starred & sery & spender & crocodile & shoe \\ 
+krovetz & personality & oppose & movies & star & series & spender & crocodile & shoe \\ 
+lemmatized & personality & oppose & movie & star & series & spender & crocodile & shoe \\ 
+Example 65
+nostemmer & henley & appeared & supporting & roles & 1960 & british & films & television & appeared & stage & london & broadway \\ 
+trunc4 & henl & appe & supp & role & 1960 & brit & film & tele & appe & stag & lond & broa \\ 
+trunc5 & henle & appea & suppo & roles & 1960 & briti & films & telev & appea & stage & londo & broad \\ 
+lovins & henle & appear & support & rol & 1960 & brit & film & televis & appear & stag & london & broadwa \\ 
+porter & henlei & appear & support & role & 1960 & british & film & televis & appear & stage & london & broadwai \\ 
+porter2 & henley & appear & support & role & 1960 & british & film & televis & appear & stage & london & broadway \\ 
+paicehusk & henley & appear & support & rol & 1960 & brit & film & televid & appear & stag & london & broadway \\ 
+sstemmer & henley & appeared & supporting & role & 1960 & british & film & television & appeared & stage & london & broadway \\ 
+krovetz & henley & appear & support & role & 1960 & britain & film & television & appear & stage & london & broadway \\ 
+lemmatized & henley & appear & support & role & 1960 & british & film & television & appear & stage & london & broadway \\ 
+Example 66
+nostemmer & debuted & films & age & enjoy & rounded & career & juvenile & actor & movie & hero & ultimately & character & player & years \\ 
+trunc4 & debu & film & age & enjo & roun & care & juve & acto & movi & hero & ulti & char & play & year \\ 
+trunc5 & debut & films & age & enjoy & round & caree & juven & actor & movie & hero & ultim & chara & playe & years \\ 
+lovins & debut & film & ag & enjo & round & career & juvenil & act & movi & hes & ultim & character & player & year \\ 
+porter & debut & film & ag & enjoi & round & career & juvenil & actor & movi & hero & ultim & charact & player & year \\ 
+porter2 & debut & film & age & enjoy & round & career & juvenil & actor & movi & hero & ultim & charact & player & year \\ 
+paicehusk & debut & film & ag & enjoy & round & car & juvenil & act & movy & hero & ultim & charact & play & year \\ 
+sstemmer & debuted & film & age & enjoy & rounded & career & juvenile & actor & movie & hero & ultimately & character & player & year \\ 
+krovetz & debut & film & age & enjoy & round & career & juvenile & actor & movie & hero & ultimately & character & player & years \\ 
+lemmatized & debut & film & age & enjoy & rounded & career & juvenile & actor & movie & hero & ultimately & character & player & year \\ 
+Example 67
+nostemmer & manager & pixies & boston & days & signed & british & record & label & 4ad \\ 
+trunc4 & mana & pixi & bost & days & sign & brit & reco & labe & 4ad \\ 
+trunc5 & manag & pixie & bosto & days & signe & briti & recor & label & 4ad \\ 
+lovins & manager & pic & bost & day & sign & brit & record & label & 4ad \\ 
+porter & manag & pixi & boston & dai & sign & british & record & label & 4ad \\ 
+porter2 & manag & pixi & boston & day & sign & british & record & label & 4ad \\ 
+paicehusk & man & pixy & boston & day & sign & brit & record & label & 4ad \\ 
+sstemmer & manager & pixy & boston & day & signed & british & record & label & 4ad \\ 
+krovetz & manager & pixie & boston & days & sign & britain & record & label & 4ad \\ 
+lemmatized & manager & pixy & boston & day & sign & british & record & label & 4ad \\ 
+Example 68
+nostemmer & juvenile & actor & graduated & starring & series & 1940 & westerns & playing & solid & supporting & roles & higher & budget & features \\ 
+trunc4 & juve & acto & grad & star & seri & 1940 & west & play & soli & supp & role & high & budg & feat \\ 
+trunc5 & juven & actor & gradu & starr & serie & 1940 & weste & playi & solid & suppo & roles & highe & budge & featu \\ 
+lovins & juvenil & act & gradu & star & ser & 1940 & western & pla & solis & support & rol & highes & budges & featur \\ 
+porter & juvenil & actor & graduat & starr & seri & 1940 & western & plai & solid & support & role & higher & budget & featur \\ 
+porter2 & juvenil & actor & graduat & star & seri & 1940 & western & play & solid & support & role & higher & budget & featur \\ 
+paicehusk & juvenil & act & gradu & star & sery & 1940 & western & play & solid & support & rol & high & budget & feat \\ 
+sstemmer & juvenile & actor & graduated & starring & sery & 1940 & western & playing & solid & supporting & role & higher & budget & feature \\ 
+krovetz & juvenile & actor & graduate & star & series & 1940 & western & play & solid & support & role & higher & budget & features \\ 
+lemmatized & juvenile & actor & graduate & star & series & 1940 & western & play & solid & support & role & high & budget & feature \\ 
+Example 69
+nostemmer & opera & singer & magazine & editor & played & character & roles & films & mid \\ 
+trunc4 & oper & sing & maga & edit & play & char & role & film & mid \\ 
+trunc5 & opera & singe & magaz & edito & playe & chara & roles & films & mid \\ 
+lovins & oper & singer & magaz & edit & play & character & rol & film & mid \\ 
+porter & opera & singer & magazin & editor & plai & charact & role & film & mid \\ 
+porter2 & opera & singer & magazin & editor & play & charact & role & film & mid \\ 
+paicehusk & oper & sing & magazin & edit & play & charact & rol & film & mid \\ 
+sstemmer & opera & singer & magazine & editor & played & character & role & film & mid \\ 
+krovetz & opera & singe & magazine & editor & play & character & role & film & mid \\ 
+lemmatized & opera & singer & magazine & editor & play & character & role & film & mid \\ 
+Example 70
+nostemmer & ingenue & leading & lady & character & actress & appeared & hollywood & films & early & 30s & late & 60s \\ 
+trunc4 & inge & lead & lady & char & actr & appe & holl & film & earl & 30s & late & 60s \\ 
+trunc5 & ingen & leadi & lady & chara & actre & appea & holly & films & early & 30s & late & 60s \\ 
+lovins & ingenu & lead & lad & character & actres & appear & hollywood & film & ear & 30 & lat & 60 \\ 
+porter & ingenu & lead & ladi & charact & actress & appear & hollywood & film & earli & 30 & late & 60 \\ 
+porter2 & ingenu & lead & ladi & charact & actress & appear & hollywood & film & earli & 30s & late & 60s \\ 
+paicehusk & ingenu & lead & lady & charact & actress & appear & hollywood & film & ear & 30s & lat & 60s \\ 
+sstemmer & ingenue & leading & lady & character & actress & appeared & hollywood & film & early & 30s & late & 60s \\ 
+krovetz & ingenue & leading & lady & character & actress & appear & hollywood & film & early & 30s & late & 60s \\ 
+lemmatized & ingenue & lead & lady & character & actress & appear & hollywood & film & early & 30 & late & 60 \\ 
+Example 71
+nostemmer & hard & boiled & blonde & 40s & movies & remains & cult & favorite \\ 
+trunc4 & hard & boil & blon & 40s & movi & rema & cult & favo \\ 
+trunc5 & hard & boile & blond & 40s & movie & remai & cult & favor \\ 
+lovins & hard & boil & blons & 40 & mov & remain & cult & favor \\ 
+porter & hard & boil & blond & 40 & movi & remain & cult & favorit \\ 
+porter2 & hard & boil & blond & 40s & movi & remain & cult & favorit \\ 
+paicehusk & hard & boil & blond & 40s & movy & remain & cult & favorit \\ 
+sstemmer & hard & boiled & blonde & 40s & movy & remain & cult & favorite \\ 
+krovetz & hard & boil & blonde & 40s & movies & remains & cult & favorite \\ 
+lemmatized & hard & boil & blonde & 40 & movie & remain & cult & favorite \\ 
+Example 72
+nostemmer & lilyan & irene & british & character & actress & appeared & laurel & hardy & films & portrayed & maids & films \\ 
+trunc4 & lily & iren & brit & char & actr & appe & laur & hard & film & port & maid & film \\ 
+trunc5 & lilya & irene & briti & chara & actre & appea & laure & hardy & films & portr & maids & films \\ 
+lovins & lilyan & ir & brit & character & actres & appear & laurel & hard & film & portray & maid & film \\ 
+porter & lilyan & iren & british & charact & actress & appear & laurel & hardi & film & portrai & maid & film \\ 
+porter2 & lilyan & iren & british & charact & actress & appear & laurel & hardi & film & portray & maid & film \\ 
+paicehusk & lily & ir & brit & charact & actress & appear & laurel & hardy & film & portray & maid & film \\ 
+sstemmer & lilyan & irene & british & character & actress & appeared & laurel & hardy & film & portrayed & maid & film \\ 
+krovetz & lilyan & irene & britain & character & actress & appear & laurel & hardy & film & portray & maid & film \\ 
+lemmatized & lilyan & irene & british & character & actress & appear & laurel & hardy & film & portray & maid & film \\ 
+Example 73
+nostemmer & comic & performer & mexican & film & 30s & 70s & cast & supporting & roles \\ 
+trunc4 & comi & perf & mexi & film & 30s & 70s & cast & supp & role \\ 
+trunc5 & comic & perfo & mexic & film & 30s & 70s & cast & suppo & roles \\ 
+lovins & com & performer & mexican & film & 30 & 70 & cast & support & rol \\ 
+porter & comic & perform & mexican & film & 30 & 70 & cast & support & role \\ 
+porter2 & comic & perform & mexican & film & 30s & 70s & cast & support & role \\ 
+paicehusk & com & perform & mex & film & 30s & 70s & cast & support & rol \\ 
+sstemmer & comic & performer & mexican & film & 30s & 70s & cast & supporting & role \\ 
+krovetz & comic & performer & mexico & film & 30s & 70s & cast & support & role \\ 
+lemmatized & comic & performer & mexican & film & 30 & 70 & cast & support & role \\ 
+Example 74
+nostemmer & born & town & delanco & jersey & close & parents & older & sisters & american & soccer & player & dominion & university & norfolk & virginia \\ 
+trunc4 & born & town & dela & jers & clos & pare & olde & sist & amer & socc & play & domi & univ & norf & virg \\ 
+trunc5 & born & town & delan & jerse & close & paren & older & siste & ameri & socce & playe & domin & unive & norfo & virgi \\ 
+lovins & born & town & delanc & jerse & clos & parens & older & sister & american & soccer & player & dominion & univers & norfolk & virgin \\ 
+porter & born & town & delanco & jersei & close & parent & older & sister & american & soccer & player & dominion & univers & norfolk & virginia \\ 
+porter2 & born & town & delanco & jersey & close & parent & older & sister & american & soccer & player & dominion & univers & norfolk & virginia \\ 
+paicehusk & born & town & delanco & jersey & clos & par & old & sist & am & socc & play & domin & univers & norfolk & virgin \\ 
+sstemmer & born & town & delanco & jersey & close & parent & older & sister & american & soccer & player & dominion & university & norfolk & virginia \\ 
+krovetz & born & town & delanco & jersey & close & parent & old & sister & america & soccer & player & dominion & university & norfolk & virginia \\ 
+lemmatized & bear & town & delanco & jersey & close & parent & old & sister & american & soccer & player & dominion & university & norfolk & virginia \\ 
+Example 75
+nostemmer & british & actress & played & sweet & ladies \\ 
+trunc4 & brit & actr & play & swee & ladi \\ 
+trunc5 & briti & actre & playe & sweet & ladie \\ 
+lovins & brit & actres & play & swees & lad \\ 
+porter & british & actress & plai & sweet & ladi \\ 
+porter2 & british & actress & play & sweet & ladi \\ 
+paicehusk & brit & actress & play & sweet & lady \\ 
+sstemmer & british & actress & played & sweet & lady \\ 
+krovetz & britain & actress & play & sweet & ladies \\ 
+lemmatized & british & actress & play & sweet & lady \\ 
+Example 76
+nostemmer & chris & runs & production & company & decided & leave & lovejoy & 1994 & concentrate & business & acting & appearances & number \\ 
+trunc4 & chri & runs & prod & comp & deci & leav & love & 1994 & conc & busi & acti & appe & numb \\ 
+trunc5 & chris & runs & produ & compa & decid & leave & lovej & 1994 & conce & busin & actin & appea & numbe \\ 
+lovins & chr & run & produc & compan & decis & leav & lovejo & 1994 & concentr & bus & act & appear & number \\ 
+porter & chri & run & product & compani & decid & leav & lovejoi & 1994 & concentr & busi & act & appear & number \\ 
+porter2 & chris & run & product & compani & decid & leav & lovejoy & 1994 & concentr & busi & act & appear & number \\ 
+paicehusk & chry & run & produc & company & decid & leav & lovejoy & 1994 & cont & busy & act & appear & numb \\ 
+sstemmer & chri & run & production & company & decided & leave & lovejoy & 1994 & concentrate & business & acting & appearance & number \\ 
+krovetz & chri & runs & production & company & decided & leave & lovejoy & 1994 & concentrate & business & acting & appearances & number \\ 
+lemmatized & chris & run & production & company & decide & leave & lovejoy & 1994 & concentrate & business & act & appearance & number \\ 
+Example 77
+nostemmer & ane & loves & dance & danced & norwegian & talent & show & norske & talenter & commercials \\ 
+trunc4 & ane & love & danc & danc & norw & tale & show & nors & tale & comm \\ 
+trunc5 & ane & loves & dance & dance & norwe & talen & show & norsk & talen & comme \\ 
+lovins & an & lov & danc & danc & norweg & talens & show & norsk & talenter & commerc \\ 
+porter & an & love & danc & danc & norwegian & talent & show & norsk & talent & commerci \\ 
+porter2 & ane & love & danc & danc & norwegian & talent & show & norsk & talent & commerci \\ 
+paicehusk & an & lov & dant & dant & norweg & tal & show & norsk & tal & commerc \\ 
+sstemmer & ane & love & dance & danced & norwegian & talent & show & norske & talenter & commercial \\ 
+krovetz & ane & love & dance & dance & norway & talent & show & norske & talent & commercial \\ 
+lemmatized & ane & love & dance & dance & norwegian & talent & show & norske & talenter & commercial \\ 
+Example 78
+nostemmer & studied & theatre & arts & laine & theatre & art & surrey & england & paul & accomplished & actor & dancer & gymnast \\ 
+trunc4 & stud & thea & arts & lain & thea & art & surr & engl & paul & acco & acto & danc & gymn \\ 
+trunc5 & studi & theat & arts & laine & theat & art & surre & engla & paul & accom & actor & dance & gymna \\ 
+lovins & stud & theatr & art & lain & theatr & art & surre & england & paul & accompl & act & dancer & gymnast \\ 
+porter & studi & theatr & art & lain & theatr & art & surrei & england & paul & accomplish & actor & dancer & gymnast \\ 
+porter2 & studi & theatr & art & lain & theatr & art & surrey & england & paul & accomplish & actor & dancer & gymnast \\ 
+paicehusk & study & the & art & lain & the & art & surrey & england & paul & accompl & act & dant & gymnast \\ 
+sstemmer & studied & theatre & art & laine & theatre & art & surrey & england & paul & accomplished & actor & dancer & gymnast \\ 
+krovetz & studied & theatre & arts & laine & theatre & art & surrey & england & paul & accomplished & actor & dance & gymnast \\ 
+lemmatized & study & theatre & art & laine & theatre & art & surrey & england & paul & accomplished & actor & dancer & gymnast \\ 
+Example 79
+nostemmer & heavy & set & actor & wholly & adept & portraying & heavy & handed & hollywood & heavies \\ 
+trunc4 & heav & set & acto & whol & adep & port & heav & hand & holl & heav \\ 
+trunc5 & heavy & set & actor & wholl & adept & portr & heavy & hande & holly & heavi \\ 
+lovins & heav & ses & act & whol & adept & portra & heav & hand & hollywood & heav \\ 
+porter & heavi & set & actor & wholli & adept & portrai & heavi & hand & hollywood & heavi \\ 
+porter2 & heavi & set & actor & wholli & adept & portray & heavi & hand & hollywood & heavi \\ 
+paicehusk & heavy & set & act & whol & adept & portray & heavy & hand & hollywood & heavy \\ 
+sstemmer & heavy & set & actor & wholly & adept & portraying & heavy & handed & hollywood & heavy \\ 
+krovetz & heavy & set & actor & wholly & adept & portray & heavy & hand & hollywood & heavy \\ 
+lemmatized & heavy & set & actor & wholly & adept & portray & heavy & handed & hollywood & heavy \\ 
+Example 80
+nostemmer & born & kristin & danielle & klabunde & accomplished & actress & years & film & broadway & credits & belt & countless & voiceovers & jingles \\ 
+trunc4 & born & kris & dani & klab & acco & actr & year & film & broa & cred & belt & coun & voic & jing \\ 
+trunc5 & born & krist & danie & klabu & accom & actre & years & film & broad & credi & belt & count & voice & jingl \\ 
+lovins & born & kristin & daniel & klabund & accompl & actres & year & film & broadwa & credit & belt & count & voiceover & jingl \\ 
+porter & born & kristin & daniel & klabund & accomplish & actress & year & film & broadwai & credit & belt & countless & voiceov & jingl \\ 
+porter2 & born & kristin & daniell & klabund & accomplish & actress & year & film & broadway & credit & belt & countless & voiceov & jingl \\ 
+paicehusk & born & kristin & daniel & klabund & accompl & actress & year & film & broadway & credit & belt & countless & voiceov & jingl \\ 
+sstemmer & born & kristin & danielle & klabunde & accomplished & actress & year & film & broadway & credit & belt & countless & voiceover & jingle \\ 
+krovetz & born & kristin & danielle & klabunde & accomplished & actress & years & film & broadway & credit & belt & countless & voiceover & jingle \\ 
+lemmatized & bear & kristin & danielle & klabunde & accomplished & actress & year & film & broadway & credit & belt & countless & voiceovers & jingle \\ 
+Example 81
+nostemmer & leading & lady & movies & serials & 30s & early & 40s \\ 
+trunc4 & lead & lady & movi & seri & 30s & earl & 40s \\ 
+trunc5 & leadi & lady & movie & seria & 30s & early & 40s \\ 
+lovins & lead & lad & mov & ser & 30 & ear & 40 \\ 
+porter & lead & ladi & movi & serial & 30 & earli & 40 \\ 
+porter2 & lead & ladi & movi & serial & 30s & earli & 40s \\ 
+paicehusk & lead & lady & movy & ser & 30s & ear & 40s \\ 
+sstemmer & leading & lady & movy & serial & 30s & early & 40s \\ 
+krovetz & leading & lady & movies & serial & 30s & early & 40s \\ 
+lemmatized & lead & lady & movie & serial & 30 & early & 40 \\ 
+Example 82
+nostemmer & ugly & slit & eyed & jut & toothed & cleft & chinned & menace & films & 40s & 50s \\ 
+trunc4 & ugly & slit & eyed & jut & toot & clef & chin & mena & film & 40s & 50s \\ 
+trunc5 & ugly & slit & eyed & jut & tooth & cleft & chinn & menac & films & 40s & 50s \\ 
+lovins & ugl & slit & ey & jut & tooth & cleft & chin & menac & film & 40 & 50 \\ 
+porter & ugli & slit & ei & jut & tooth & cleft & chinn & menac & film & 40 & 50 \\ 
+porter2 & ugli & slit & eye & jut & tooth & cleft & chin & menac & film & 40s & 50s \\ 
+paicehusk & ug & slit & ey & jut & tooth & cleft & chin & menac & film & 40s & 50s \\ 
+sstemmer & ugly & slit & eyed & jut & toothed & cleft & chinned & menace & film & 40s & 50s \\ 
+krovetz & ugly & slit & eye & jut & tooth & cleft & chin & menace & film & 40s & 50s \\ 
+lemmatized & ugly & slit & eyed & jut & toothed & cleft & chin & menace & film & 40 & 50 \\ 
+Example 83
+nostemmer & born & 1980 & tyrone & commerce & student & sites & soccer & acting & hobbies & featured & australian & magazine & march & 2000 & edition \\ 
+trunc4 & born & 1980 & tyro & comm & stud & site & socc & acti & hobb & feat & aust & maga & marc & 2000 & edit \\ 
+trunc5 & born & 1980 & tyron & comme & stude & sites & socce & actin & hobbi & featu & austr & magaz & march & 2000 & editi \\ 
+lovins & born & 1980 & tyr & commerc & stud & sit & soccer & act & hobb & featur & austral & magaz & march & 2000 & edit \\ 
+porter & born & 1980 & tyrone & commerc & student & site & soccer & act & hobbi & featur & australian & magazin & march & 2000 & edit \\ 
+porter2 & born & 1980 & tyron & commerc & student & site & soccer & act & hobbi & featur & australian & magazin & march & 2000 & edit \\ 
+paicehusk & born & 1980 & tyron & commerc & stud & sit & socc & act & hobby & feat & aust & magazin & march & 2000 & edit \\ 
+sstemmer & born & 1980 & tyrone & commerce & student & site & soccer & acting & hobby & featured & australian & magazine & march & 2000 & edition \\ 
+krovetz & born & 1980 & tyrone & commerce & student & site & soccer & acting & hobby & feature & australia & magazine & march & 2000 & edition \\ 
+lemmatized & bear & 1980 & tyrone & commerce & student & site & soccer & act & hobby & feature & australian & magazine & march & 2000 & edition \\ 
+Example 84
+nostemmer & westley & graduated & university & arizona & august & 2003 & bachelors & arts & media & arts & minor & art & history \\ 
+trunc4 & west & grad & univ & ariz & augu & 2003 & bach & arts & medi & arts & mino & art & hist \\ 
+trunc5 & westl & gradu & unive & arizo & augus & 2003 & bache & arts & media & arts & minor & art & histo \\ 
+lovins & westle & gradu & univers & arizon & august & 2003 & bachelor & art & med & art & minor & art & histor \\ 
+porter & westlei & graduat & univers & arizona & august & 2003 & bachelor & art & media & art & minor & art & histori \\ 
+porter2 & westley & graduat & univers & arizona & august & 2003 & bachelor & art & media & art & minor & art & histori \\ 
+paicehusk & westley & gradu & univers & arizon & august & 2003 & bachel & art & med & art & min & art & hist \\ 
+sstemmer & westley & graduated & university & arizona & august & 2003 & bachelor & art & media & art & minor & art & history \\ 
+krovetz & westley & graduate & university & arizona & august & 2003 & bachelor & arts & media & arts & minor & art & history \\ 
+lemmatized & westley & graduate & university & arizona & august & 2003 & bachelor & art & medium & art & minor & art & history \\ 
+Example 85
+nostemmer & hollywood & romantic & lead & 40s & continued & career & continental & films & 1948 \\ 
+trunc4 & holl & roma & lead & 40s & cont & care & cont & film & 1948 \\ 
+trunc5 & holly & roman & lead & 40s & conti & caree & conti & films & 1948 \\ 
+lovins & hollywood & romant & lead & 40 & continu & career & contin & film & 1948 \\ 
+porter & hollywood & romant & lead & 40 & continu & career & continent & film & 1948 \\ 
+porter2 & hollywood & romant & lead & 40s & continu & career & continent & film & 1948 \\ 
+paicehusk & hollywood & rom & lead & 40s & continu & car & contin & film & 1948 \\ 
+sstemmer & hollywood & romantic & lead & 40s & continued & career & continental & film & 1948 \\ 
+krovetz & hollywood & romantic & lead & 40s & continue & career & continental & film & 1948 \\ 
+lemmatized & hollywood & romantic & lead & 40 & continue & career & continental & film & 1948 \\ 
+Example 86
+nostemmer & raised & redlands & california & michelle & pursued & modeling & career & couple & years & ago & appeared & fashion & layouts & playboy & maxim \\ 
+trunc4 & rais & redl & cali & mich & purs & mode & care & coup & year & ago & appe & fash & layo & play & maxi \\ 
+trunc5 & raise & redla & calif & miche & pursu & model & caree & coupl & years & ago & appea & fashi & layou & playb & maxim \\ 
+lovins & rais & redland & californ & michel & pursu & model & career & coupl & year & ag & appear & fash & layout & playbo & maxim \\ 
+porter & rais & redland & california & michel & pursu & model & career & coupl & year & ago & appear & fashion & layout & playboi & maxim \\ 
+porter2 & rais & redland & california & michell & pursu & model & career & coupl & year & ago & appear & fashion & layout & playboy & maxim \\ 
+paicehusk & rais & redland & californ & michel & pursu & model & car & coupl & year & ago & appear & fash & layout & playboy & maxim \\ 
+sstemmer & raised & redland & california & michelle & pursued & modeling & career & couple & year & ago & appeared & fashion & layout & playboy & maxim \\ 
+krovetz & raise & redland & california & michelle & pursue & model & career & couple & years & ago & appear & fashion & layout & playboy & maxim \\ 
+lemmatized & raise & redlands & california & michelle & pursue & modeling & career & couple & year & ago & appear & fashion & layout & playboy & maxim \\ 
+Example 87
+nostemmer & american & actress & villainous & role & studio & club & 1950s & thriller & national & champion & gymnast & juliet & grew & sedona & arizona \\ 
+trunc4 & amer & actr & vill & role & stud & club & 1950 & thri & nati & cham & gymn & juli & grew & sedo & ariz \\ 
+trunc5 & ameri & actre & villa & role & studi & club & 1950s & thril & natio & champ & gymna & julie & grew & sedon & arizo \\ 
+lovins & american & actres & villain & rol & studi & club & 1950 & thriller & nat & champ & gymnast & julies & grew & sedon & arizon \\ 
+porter & american & actress & villain & role & studio & club & 1950 & thriller & nation & champion & gymnast & juliet & grew & sedona & arizona \\ 
+porter2 & american & actress & villain & role & studio & club & 1950s & thriller & nation & champion & gymnast & juliet & grew & sedona & arizona \\ 
+paicehusk & am & actress & villain & rol & studio & club & 1950s & thril & nat & champ & gymnast & juliet & grew & sedon & arizon \\ 
+sstemmer & american & actress & villainous & role & studio & club & 1950 & thriller & national & champion & gymnast & juliet & grew & sedona & arizona \\ 
+krovetz & america & actress & villainous & role & studio & club & 1950s & thriller & national & champion & gymnast & juliet & grew & sedona & arizona \\ 
+lemmatized & american & actress & villainous & role & studio & club & 1950s & thriller & national & champion & gymnast & juliet & grow & sedona & arizona \\ 
+Example 88
+nostemmer & amy & lindsay & grew & houston & texas & graduated & university & texas & austin & degree & journalism & minor & drama \\ 
+trunc4 & amy & lind & grew & hous & texa & grad & univ & texa & aust & degr & jour & mino & dram \\ 
+trunc5 & amy & linds & grew & houst & texas & gradu & unive & texas & austi & degre & journ & minor & drama \\ 
+lovins & amy & lindsa & grew & houst & tic & gradu & univers & tic & austin & degre & journ & minor & dram \\ 
+porter & ami & lindsai & grew & houston & texa & graduat & univers & texa & austin & degre & journal & minor & drama \\ 
+porter2 & ami & lindsay & grew & houston & texa & graduat & univers & texa & austin & degre & journal & minor & drama \\ 
+paicehusk & amy & lindsay & grew & houston & texa & gradu & univers & texa & austin & degr & journ & min & dram \\ 
+sstemmer & amy & lindsay & grew & houston & texa & graduated & university & texa & austin & degree & journalism & minor & drama \\ 
+krovetz & amy & lindsay & grew & houston & texas & graduate & university & texas & austin & degree & journalism & minor & drama \\ 
+lemmatized & amy & lindsay & grow & houston & texas & graduate & university & texas & austin & degree & journalism & minor & drama \\ 
+Example 89
+nostemmer & lives & san & francisco & bay & area & member & teaches & academy & art & college & san & francisco \\ 
+trunc4 & live & san & fran & bay & area & memb & teac & acad & art & coll & san & fran \\ 
+trunc5 & lives & san & franc & bay & area & membe & teach & acade & art & colle & san & franc \\ 
+lovins & liv & san & francisc & bay & are & member & teach & academ & art & colleg & san & francisc \\ 
+porter & live & san & francisco & bai & area & member & teach & academi & art & colleg & san & francisco \\ 
+porter2 & live & san & francisco & bay & area & member & teach & academi & art & colleg & san & francisco \\ 
+paicehusk & liv & san & francisco & bay & are & memb & teach & academy & art & colleg & san & francisco \\ 
+sstemmer & live & san & francisco & bay & area & member & teache & academy & art & college & san & francisco \\ 
+krovetz & lives & san & francisco & bay & area & member & teach & academy & art & college & san & francisco \\ 
+lemmatized & life & san & francisco & bay & area & member & teach & academy & art & college & san & francisco \\ 
+Example 90
+nostemmer & peter & lundquist & news & reporter & anchor & wsvn & miami & florida & appeared & movies & television & series & miami & vice & reporter \\ 
+trunc4 & pete & lund & news & repo & anch & wsvn & miam & flor & appe & movi & tele & seri & miam & vice & repo \\ 
+trunc5 & peter & lundq & news & repor & ancho & wsvn & miami & flori & appea & movie & telev & serie & miami & vice & repor \\ 
+lovins & peter & lundqu & new & reporter & anchor & wsvn & miam & florid & appear & mov & televis & ser & miam & vic & reporter \\ 
+porter & peter & lundquist & new & report & anchor & wsvn & miami & florida & appear & movi & televis & seri & miami & vice & report \\ 
+porter2 & peter & lundquist & news & report & anchor & wsvn & miami & florida & appear & movi & televis & seri & miami & vice & report \\ 
+paicehusk & pet & lundqu & new & report & anch & wsvn & miam & florid & appear & movy & televid & sery & miam & vic & report \\ 
+sstemmer & peter & lundquist & new & reporter & anchor & wsvn & miami & florida & appeared & movy & television & sery & miami & vice & reporter \\ 
+krovetz & peter & lundquist & news & reporter & anchor & wsvn & miami & florida & appear & movies & television & series & miami & vice & reporter \\ 
+lemmatized & peter & lundquist & news & reporter & anchor & wsvn & miami & florida & appear & movie & television & series & miami & vice & reporter \\ 
+Example 91
+nostemmer & fixed & income & portfolio & manager & day & film & producer & night & michael & feels & blow & savings & financing & independent & film \\ 
+trunc4 & fixe & inco & port & mana & day & film & prod & nigh & mich & feel & blow & savi & fina & inde & film \\ 
+trunc5 & fixed & incom & portf & manag & day & film & produ & night & micha & feels & blow & savin & finan & indep & film \\ 
+lovins & fic & incom & portfoli & manager & day & film & producer & night & michael & feel & blow & sav & fin & indepens & film \\ 
+porter & fix & incom & portfolio & manag & dai & film & produc & night & michael & feel & blow & save & financ & independ & film \\ 
+porter2 & fix & incom & portfolio & manag & day & film & produc & night & michael & feel & blow & save & financ & independ & film \\ 
+paicehusk & fix & incom & portfolio & man & day & film & produc & night & michael & feel & blow & sav & fin & independ & film \\ 
+sstemmer & fixed & income & portfolio & manager & day & film & producer & night & michael & feel & blow & saving & financing & independent & film \\ 
+krovetz & fixed & income & portfolio & manager & day & film & producer & night & michael & feel & blow & savings & finance & independent & film \\ 
+lemmatized & fixed & income & portfolio & manager & day & film & producer & night & michael & feel & blow & saving & finance & independent & film \\ 
+Example 92
+nostemmer & giancarlo & magalli & performed & theatrical & plays & written & host & italy & successfull & shows & score \\ 
+trunc4 & gian & maga & perf & thea & play & writ & host & ital & succ & show & scor \\ 
+trunc5 & gianc & magal & perfo & theat & plays & writt & host & italy & succe & shows & score \\ 
+lovins & giancarl & magal & perform & theatr & play & writ & host & ita & successfl & show & scor \\ 
+porter & giancarlo & magal & perform & theatric & plai & written & host & itali & successful & show & score \\ 
+porter2 & giancarlo & magal & perform & theatric & play & written & host & itali & successful & show & score \\ 
+paicehusk & giancarlo & magall & perform & the & play & writ & host & ita & successful & show & scor \\ 
+sstemmer & giancarlo & magalli & performed & theatrical & play & written & host & italy & successfull & show & score \\ 
+krovetz & giancarlo & magalli & perform & theatrical & play & written & host & italy & successfull & show & score \\ 
+lemmatized & giancarlo & magalli & perform & theatrical & play & write & host & italy & successfull & show & score \\ 
+Example 93
+nostemmer & born & port & prince & haiti & lived & life & canada & directed & films & portrait & mireille & jerome & belle \\ 
+trunc4 & born & port & prin & hait & live & life & cana & dire & film & port & mire & jero & bell \\ 
+trunc5 & born & port & princ & haiti & lived & life & canad & direc & films & portr & mirei & jerom & belle \\ 
+lovins & born & port & princ & hait & liv & lif & canad & direct & film & portrait & mireil & jerom & bel \\ 
+porter & born & port & princ & haiti & live & life & canada & direct & film & portrait & mireil & jerom & bell \\ 
+porter2 & born & port & princ & haiti & live & life & canada & direct & film & portrait & mireill & jerom & bell \\ 
+paicehusk & born & port & print & hait & liv & lif & canad & direct & film & portrait & mireil & jerom & bel \\ 
+sstemmer & born & port & prince & haiti & lived & life & canada & directed & film & portrait & mireille & jerome & belle \\ 
+krovetz & born & port & prince & haiti & live & life & canada & direct & film & portrait & mireille & jerome & belle \\ 
+lemmatized & bear & port & prince & haiti & live & life & canada & direct & film & portrait & mireille & jerome & belle \\ 
+Example 94
+nostemmer & veejays & mtv & begun & career & nongiovane & young & programs & andrea & pezzi & fond & music & hosted & select & mtv & beach \\ 
+trunc4 & veej & mtv & begu & care & nong & youn & prog & andr & pezz & fond & musi & host & sele & mtv & beac \\ 
+trunc5 & veeja & mtv & begun & caree & nongi & young & progr & andre & pezzi & fond & music & hoste & selec & mtv & beach \\ 
+lovins & veejay & mtv & begun & career & nongiovan & young & program & andre & pezz & fons & mus & host & select & mtv & beach \\ 
+porter & veejai & mtv & begun & career & nongiovan & young & program & andrea & pezzi & fond & music & host & select & mtv & beach \\ 
+porter2 & veejay & mtv & begun & career & nongiovan & young & program & andrea & pezzi & fond & music & host & select & mtv & beach \\ 
+paicehusk & veejay & mtv & begun & car & nongiov & young & program & andre & pezz & fond & mus & host & select & mtv & beach \\ 
+sstemmer & veejay & mtv & begun & career & nongiovane & young & program & andrea & pezzi & fond & music & hosted & select & mtv & beach \\ 
+krovetz & veejay & mtv & begun & career & nongiovane & young & program & andrea & pezzi & fond & music & host & select & mtv & beach \\ 
+lemmatized & veejays & mtv & begin & career & nongiovane & young & program & andrea & pezzi & fond & music & host & select & mtv & beach \\ 
+Example 95
+nostemmer & french & actress & minor & success & 1950s & studied & conservatory & native & dijon & entering & films & 1952 & made & appearances \\ 
+trunc4 & fren & actr & mino & succ & 1950 & stud & cons & nati & dijo & ente & film & 1952 & made & appe \\ 
+trunc5 & frenc & actre & minor & succe & 1950s & studi & conse & nativ & dijon & enter & films & 1952 & made & appea \\ 
+lovins & french & actres & minor & succes & 1950 & stud & conserv & nat & dijon & enter & film & 1952 & mad & appear \\ 
+porter & french & actress & minor & success & 1950 & studi & conservatori & nativ & dijon & enter & film & 1952 & made & appear \\ 
+porter2 & french & actress & minor & success & 1950s & studi & conservatori & nativ & dijon & enter & film & 1952 & made & appear \\ 
+paicehusk & french & actress & min & success & 1950s & study & conserv & nat & dijon & ent & film & 1952 & mad & appear \\ 
+sstemmer & french & actress & minor & success & 1950 & studied & conservatory & native & dijon & entering & film & 1952 & made & appearance \\ 
+krovetz & france & actress & minor & success & 1950s & studied & conservatory & native & dijon & enter & film & 1952 & made & appearances \\ 
+lemmatized & french & actress & minor & success & 1950s & study & conservatory & native & dijon & enter & film & 1952 & make & appearance \\ 
+Example 96
+nostemmer & american & cowboy & actor & confused & english & dramatic & actor & james & mason \\ 
+trunc4 & amer & cowb & acto & conf & engl & dram & acto & jame & maso \\ 
+trunc5 & ameri & cowbo & actor & confu & engli & drama & actor & james & mason \\ 
+lovins & american & cowbo & act & confus & engl & dram & act & jam & mason \\ 
+porter & american & cowboi & actor & confus & english & dramat & actor & jame & mason \\ 
+porter2 & american & cowboy & actor & confus & english & dramat & actor & jame & mason \\ 
+paicehusk & am & cowboy & act & confus & engl & dram & act & jam & mason \\ 
+sstemmer & american & cowboy & actor & confused & english & dramatic & actor & jame & mason \\ 
+krovetz & america & cowboy & actor & confuse & english & dramatic & actor & james & mason \\ 
+lemmatized & american & cowboy & actor & confuse & english & dramatic & actor & james & mason \\ 
+Example 97
+nostemmer & bald & pated & character & actor & theatre & 1905 & films & films & portraying & butler \\ 
+trunc4 & bald & pate & char & acto & thea & 1905 & film & film & port & butl \\ 
+trunc5 & bald & pated & chara & actor & theat & 1905 & films & films & portr & butle \\ 
+lovins & bald & pat & character & act & theatr & 1905 & film & film & portra & butler \\ 
+porter & bald & pate & charact & actor & theatr & 1905 & film & film & portrai & butler \\ 
+porter2 & bald & pate & charact & actor & theatr & 1905 & film & film & portray & butler \\ 
+paicehusk & bald & pat & charact & act & the & 1905 & film & film & portray & butl \\ 
+sstemmer & bald & pated & character & actor & theatre & 1905 & film & film & portraying & butler \\ 
+krovetz & bald & pat & character & actor & theatre & 1905 & film & film & portray & butler \\ 
+lemmatized & bald & pated & character & actor & theatre & 1905 & film & film & portray & butler \\ 
+Example 98
+nostemmer & hollywood & juvenile & lead & popular & films & growth & adult & career & stunted & account & diminutive & stature & retired & screen & age \\ 
+trunc4 & holl & juve & lead & popu & film & grow & adul & care & stun & acco & dimi & stat & reti & scre & age \\ 
+trunc5 & holly & juven & lead & popul & films & growt & adult & caree & stunt & accou & dimin & statu & retir & scree & age \\ 
+lovins & hollywood & juvenil & lead & popl & film & growth & adult & career & stunt & account & diminut & st & retir & screen & ag \\ 
+porter & hollywood & juvenil & lead & popular & film & growth & adult & career & stunt & account & diminut & statur & retir & screen & ag \\ 
+porter2 & hollywood & juvenil & lead & popular & film & growth & adult & career & stunt & account & diminut & statur & retir & screen & age \\ 
+paicehusk & hollywood & juvenil & lead & popul & film & grow & adult & car & stunt & account & diminut & stat & retir & screen & ag \\ 
+sstemmer & hollywood & juvenile & lead & popular & film & growth & adult & career & stunted & account & diminutive & stature & retired & screen & age \\ 
+krovetz & hollywood & juvenile & lead & popular & film & growth & adult & career & stunt & account & diminutive & stature & retired & screen & age \\ 
+lemmatized & hollywood & juvenile & lead & popular & film & growth & adult & career & stunt & account & diminutive & stature & retire & screen & age \\ 
+Example 99
+nostemmer & marilyn & mills & retired & films & age & death & certificate & states & housewife & died \\ 
+trunc4 & mari & mill & reti & film & age & deat & cert & stat & hous & died \\ 
+trunc5 & maril & mills & retir & films & age & death & certi & state & house & died \\ 
+lovins & marilyn & mil & retir & film & ag & death & certific & st & housewif & di \\ 
+porter & marilyn & mill & retir & film & ag & death & certif & state & housewif & di \\ 
+porter2 & marilyn & mill & retir & film & age & death & certif & state & housewif & die \\ 
+paicehusk & marilyn & mil & retir & film & ag & dea & cert & stat & housew & died \\ 
+sstemmer & marilyn & mill & retired & film & age & death & certificate & state & housewife & died \\ 
+krovetz & marilyn & mill & retired & film & age & death & certificate & states & housewife & die \\ 
+lemmatized & marilyn & mill & retire & film & age & death & certificate & state & housewife & die \\ 
+Example 100
+nostemmer & died & france & influenza & serving & red & cross & buried & full & military & honors \\ 
+trunc4 & died & fran & infl & serv & red & cros & buri & full & mili & hono \\ 
+trunc5 & died & franc & influ & servi & red & cross & burie & full & milit & honor \\ 
+lovins & di & franc & influenz & serv & red & cros & bur & fl & milit & honor \\ 
+porter & di & franc & influenza & serv & red & cross & buri & full & militari & honor \\ 
+porter2 & die & franc & influenza & serv & red & cross & buri & full & militari & honor \\ 
+paicehusk & died & frant & influenz & serv & red & cross & bury & ful & milit & hon \\ 
+sstemmer & died & france & influenza & serving & red & cross & buried & full & military & honor \\ 
+krovetz & die & france & influenza & serving & red & cross & bury & full & military & honors \\ 
+lemmatized & die & france & influenza & serve & red & cross & bury & full & military & honor \\ 
+Example 101
+nostemmer & eliot & ness & born & 1903 & pete & emma & ness & pete & baker & eliot & wrote & book & untouchables & died & published \\ 
+trunc4 & elio & ness & born & 1903 & pete & emma & ness & pete & bake & elio & wrot & book & unto & died & publ \\ 
+trunc5 & eliot & ness & born & 1903 & pete & emma & ness & pete & baker & eliot & wrote & book & untou & died & publi \\ 
+lovins & eliot & nes & born & 1903 & pes & em & nes & pes & baker & eliot & wrot & book & untouchabl & di & publ \\ 
+porter & eliot & ness & born & 1903 & pete & emma & ness & pete & baker & eliot & wrote & book & untouch & di & publish \\ 
+porter2 & eliot & ness & born & 1903 & pete & emma & ness & pete & baker & eliot & wrote & book & untouch & die & publish \\ 
+paicehusk & eliot & ness & born & 1903 & pet & emm & ness & pet & bak & eliot & wrot & book & untouch & died & publ \\ 
+sstemmer & eliot & ness & born & 1903 & pete & emma & ness & pete & baker & eliot & wrote & book & untouchable & died & published \\ 
+krovetz & eliot & ness & born & 1903 & pete & emma & ness & pete & baker & eliot & wrote & book & untouchable & die & publish \\ 
+lemmatized & eliot & ness & bear & 1903 & pete & emma & ness & pete & baker & eliot & write & book & untouchable & die & publish \\ 
+Example 102
+nostemmer & chris & christopher & north & managing & director & amazon \\ 
+trunc4 & chri & chri & nort & mana & dire & amaz \\ 
+trunc5 & chris & chris & north & manag & direc & amazo \\ 
+lovins & chr & christopher & north & man & direct & amazon \\ 
+porter & chri & christoph & north & manag & director & amazon \\ 
+porter2 & chris & christoph & north & manag & director & amazon \\ 
+paicehusk & chry & christoph & nor & man & direct & amazon \\ 
+sstemmer & chri & christopher & north & managing & director & amazon \\ 
+krovetz & chri & christopher & north & manage & director & amazon \\ 
+lemmatized & chris & christopher & north & manage & director & amazon \\ 
+Example 103
+nostemmer & famous & french & singer & juliette & compared & edith & piaf & sold & 400 & 000 & albums & date & polydor & universal \\ 
+trunc4 & famo & fren & sing & juli & comp & edit & piaf & sold & 400 & 000 & albu & date & poly & univ \\ 
+trunc5 & famou & frenc & singe & julie & compa & edith & piaf & sold & 400 & 000 & album & date & polyd & unive \\ 
+lovins & fam & french & singer & julies & compar & edith & piaf & sold & 400 & 000 & album & dat & polydor & univers \\ 
+porter & famou & french & singer & juliett & compar & edith & piaf & sold & 400 & 000 & album & date & polydor & univers \\ 
+porter2 & famous & french & singer & juliett & compar & edith & piaf & sold & 400 & 000 & album & date & polydor & univers \\ 
+paicehusk & fam & french & sing & juliet & comp & edi & piaf & sold & 400 & 000 & album & dat & polyd & univers \\ 
+sstemmer & famous & french & singer & juliette & compared & edith & piaf & sold & 400 & 000 & album & date & polydor & universal \\ 
+krovetz & famous & france & singe & juliette & compare & edith & piaf & sold & 400 & 000 & album & date & polydor & universal \\ 
+lemmatized & famous & french & singer & juliette & compare & edith & piaf & sell & 400 & 000 & album & date & polydor & universal \\ 
+Example 104
+nostemmer & minor & film & producer & writer & blacklisted & 1950 & heyday & mccarthyism & chose & work & pseudonyms & major & dalton & trumbo \\ 
+trunc4 & mino & film & prod & writ & blac & 1950 & heyd & mcca & chos & work & pseu & majo & dalt & trum \\ 
+trunc5 & minor & film & produ & write & black & 1950 & heyda & mccar & chose & work & pseud & major & dalto & trumb \\ 
+lovins & minor & film & producer & writer & blacklist & 1950 & heyda & mccarthy & chos & work & pseudonym & major & dalt & trumb \\ 
+porter & minor & film & produc & writer & blacklist & 1950 & heydai & mccarthyism & chose & work & pseudonym & major & dalton & trumbo \\ 
+porter2 & minor & film & produc & writer & blacklist & 1950 & heyday & mccarthyism & chose & work & pseudonym & major & dalton & trumbo \\ 
+paicehusk & min & film & produc & writ & blackl & 1950 & heyday & mccarthy & chos & work & nyms & mas & dalton & trumbo \\ 
+sstemmer & minor & film & producer & writer & blacklisted & 1950 & heyday & mccarthyism & chose & work & pseudonym & major & dalton & trumbo \\ 
+krovetz & minor & film & producer & writer & blacklist & 1950 & heyday & mccarthyism & chose & work & pseudonym & major & dalton & trumbo \\ 
+lemmatized & minor & film & producer & writer & blacklist & 1950 & heyday & mccarthyism & choose & work & pseudonym & major & dalton & trumbo \\ 
+Example 105
+nostemmer & smarmy & tongued & hollywood & gossip & columnist & 40s & 50s & imbroglios & subjects & professional & rivals \\ 
+trunc4 & smar & tong & holl & goss & colu & 40s & 50s & imbr & subj & prof & riva \\ 
+trunc5 & smarm & tongu & holly & gossi & colum & 40s & 50s & imbro & subje & profe & rival \\ 
+lovins & smarm & tongu & hollywood & gossip & column & 40 & 50 & imbroglio & subject & profes & riv \\ 
+porter & smarmi & tongu & hollywood & gossip & columnist & 40 & 50 & imbroglio & subject & profession & rival \\ 
+porter2 & smarmi & tongu & hollywood & gossip & columnist & 40s & 50s & imbroglio & subject & profession & rival \\ 
+paicehusk & smarmy & tongu & hollywood & gossip & column & 40s & 50s & imbroglio & subject & profess & riv \\ 
+sstemmer & smarmy & tongued & hollywood & gossip & columnist & 40s & 50s & imbroglio & subject & professional & rival \\ 
+krovetz & smarmy & tongue & hollywood & gossip & columnist & 40s & 50s & imbroglio & subject & professional & rival \\ 
+lemmatized & smarmy & tongued & hollywood & gossip & columnist & 40 & 50 & imbroglio & subject & professional & rival \\ 
+Example 106
+nostemmer & stage & actor & appeared & sporadically & films & 20s & 30s \\ 
+trunc4 & stag & acto & appe & spor & film & 20s & 30s \\ 
+trunc5 & stage & actor & appea & spora & films & 20s & 30s \\ 
+lovins & stag & act & appear & sporad & film & 20 & 30 \\ 
+porter & stage & actor & appear & sporad & film & 20 & 30 \\ 
+porter2 & stage & actor & appear & sporad & film & 20s & 30s \\ 
+paicehusk & stag & act & appear & sporad & film & 20s & 30s \\ 
+sstemmer & stage & actor & appeared & sporadically & film & 20s & 30s \\ 
+krovetz & stage & actor & appear & sporadic & film & 20s & 30s \\ 
+lemmatized & stage & actor & appear & sporadically & film & 20 & 30 \\ 
+Example 107
+nostemmer & worked & films & departments & animal & trainer & commercials & dozen & print & ads & circus & carnival & consulting \\ 
+trunc4 & work & film & depa & anim & trai & comm & doze & prin & ads & circ & carn & cons \\ 
+trunc5 & worke & films & depar & anima & train & comme & dozen & print & ads & circu & carni & consu \\ 
+lovins & work & film & department & anim & trainer & commerc & doz & print & ad & circ & carniv & consult \\ 
+porter & work & film & depart & anim & trainer & commerci & dozen & print & ad & circu & carniv & consult \\ 
+porter2 & work & film & depart & anim & trainer & commerci & dozen & print & ad & circus & carniv & consult \\ 
+paicehusk & work & film & depart & anim & train & commerc & doz & print & ad & circ & carn & consult \\ 
+sstemmer & worked & film & department & animal & trainer & commercial & dozen & print & ads & circus & carnival & consulting \\ 
+krovetz & work & film & department & animal & train & commercial & dozen & print & ads & circus & carnival & consulting \\ 
+lemmatized & work & film & department & animal & trainer & commercial & dozen & print & ad & circus & carnival & consulting \\ 
+Example 108
+nostemmer & actress & remembered & heavily & mock & accented & mrs & nussbaum & fred & allen & popular & radio & series \\ 
+trunc4 & actr & reme & heav & mock & acce & mrs & nuss & fred & alle & popu & radi & seri \\ 
+trunc5 & actre & remem & heavi & mock & accen & mrs & nussb & fred & allen & popul & radio & serie \\ 
+lovins & actres & remember & heav & mock & accens & mr & nussbaum & fr & al & popl & radi & ser \\ 
+porter & actress & rememb & heavili & mock & accent & mr & nussbaum & fred & allen & popular & radio & seri \\ 
+porter2 & actress & rememb & heavili & mock & accent & mrs & nussbaum & fred & allen & popular & radio & seri \\ 
+paicehusk & actress & rememb & heavy & mock & acc & mrs & nussba & fred & al & popul & radio & sery \\ 
+sstemmer & actress & remembered & heavily & mock & accented & mrs & nussbaum & fred & allen & popular & radio & sery \\ 
+krovetz & actress & remember & heavy & mock & accent & mrs & nussbaum & fred & allen & popular & radio & series \\ 
+lemmatized & actress & remember & heavily & mock & accented & mr & nussbaum & fred & allen & popular & radio & series \\ 
+Example 109
+nostemmer & silent & screen & heroine & daft & headed & character & actress & films & 20s & 50s \\ 
+trunc4 & sile & scre & hero & daft & head & char & actr & film & 20s & 50s \\ 
+trunc5 & silen & scree & heroi & daft & heade & chara & actre & films & 20s & 50s \\ 
+lovins & silens & screen & hero & daft & head & character & actres & film & 20 & 50 \\ 
+porter & silent & screen & heroin & daft & head & charact & actress & film & 20 & 50 \\ 
+porter2 & silent & screen & heroin & daft & head & charact & actress & film & 20s & 50s \\ 
+paicehusk & sil & screen & heroin & daft & head & charact & actress & film & 20s & 50s \\ 
+sstemmer & silent & screen & heroine & daft & headed & character & actress & film & 20s & 50s \\ 
+krovetz & silent & screen & heroine & daft & head & character & actress & film & 20s & 50s \\ 
+lemmatized & silent & screen & heroine & daft & head & character & actress & film & 20 & 50 \\ 
+Example 110
+nostemmer & member & washington & arena & stage & repertory & company & 70s & worked & jane & alexander & james & earl & jones & robert & foxworth \\ 
+trunc4 & memb & wash & aren & stag & repe & comp & 70s & work & jane & alex & jame & earl & jone & robe & foxw \\ 
+trunc5 & membe & washi & arena & stage & reper & compa & 70s & worke & jane & alexa & james & earl & jones & rober & foxwo \\ 
+lovins & member & washingt & aren & stag & repertor & compan & 70 & work & jan & alexander & jam & earl & jon & robers & foxworth \\ 
+porter & member & washington & arena & stage & repertori & compani & 70 & work & jane & alexand & jame & earl & jone & robert & foxworth \\ 
+porter2 & member & washington & arena & stage & repertori & compani & 70s & work & jane & alexand & jame & earl & jone & robert & foxworth \\ 
+paicehusk & memb & washington & aren & stag & repert & company & 70s & work & jan & alexand & jam & earl & jon & robert & foxwor \\ 
+sstemmer & member & washington & arena & stage & repertory & company & 70s & worked & jane & alexander & jame & earl & jone & robert & foxworth \\ 
+krovetz & member & washington & arena & stage & repertory & company & 70s & work & jane & alexander & james & earl & jones & robert & foxworth \\ 
+lemmatized & member & washington & arena & stage & repertory & company & 70 & work & jane & alexander & james & earl & jones & robert & foxworth \\ 
+Example 111
+nostemmer & harry & led & quiet & happy & life & munching & grass & welsh & valleys \\ 
+trunc4 & harr & led & quie & happ & life & munc & gras & wels & vall \\ 
+trunc5 & harry & led & quiet & happy & life & munch & grass & welsh & valle \\ 
+lovins & har & led & quies & hap & lif & munch & gras & welsh & valley \\ 
+porter & harri & led & quiet & happi & life & munch & grass & welsh & vallei \\ 
+porter2 & harri & led & quiet & happi & life & munch & grass & welsh & valley \\ 
+paicehusk & harry & led & quiet & happy & lif & munch & grass & welsh & valley \\ 
+sstemmer & harry & led & quiet & happy & life & munching & grass & welsh & valley \\ 
+krovetz & harry & led & quiet & happy & life & munch & grass & welsh & valley \\ 
+lemmatized & harry & lead & quiet & happy & life & munch & grass & welsh & valley \\ 
+Example 112
+nostemmer & actress & remembered & portrayal & trixie & wife & norton & played & art & carney & jackie & gleason & long & running & honeymooners & series \\ 
+trunc4 & actr & reme & port & trix & wife & nort & play & art & carn & jack & glea & long & runn & hone & seri \\ 
+trunc5 & actre & remem & portr & trixi & wife & norto & playe & art & carne & jacki & gleas & long & runni & honey & serie \\ 
+lovins & actres & remember & portray & trixi & wif & nort & play & art & carne & jacki & gleason & long & run & honeymooner & ser \\ 
+porter & actress & rememb & portrayal & trixi & wife & norton & plai & art & carnei & jacki & gleason & long & runn & honeymooner & seri \\ 
+porter2 & actress & rememb & portray & trixi & wife & norton & play & art & carney & jacki & gleason & long & run & honeymoon & seri \\ 
+paicehusk & actress & rememb & portray & trixy & wif & norton & play & art & carney & jacky & gleason & long & run & honeymoon & sery \\ 
+sstemmer & actress & remembered & portrayal & trixie & wife & norton & played & art & carney & jackie & gleason & long & running & honeymooner & sery \\ 
+krovetz & actress & remember & portrayal & trixie & wife & norton & play & art & carney & jackie & gleason & long & running & honeymoon & series \\ 
+lemmatized & actress & remember & portrayal & trixie & wife & norton & play & art & carney & jackie & gleason & long & run & honeymooner & series \\ 
+Example 113
+nostemmer & leading & man & hollywood & silents & sound & films & character & player & year & died \\ 
+trunc4 & lead & man & holl & sile & soun & film & char & play & year & died \\ 
+trunc5 & leadi & man & holly & silen & sound & films & chara & playe & year & died \\ 
+lovins & lead & man & hollywood & silens & sound & film & character & player & year & di \\ 
+porter & lead & man & hollywood & silent & sound & film & charact & player & year & di \\ 
+porter2 & lead & man & hollywood & silent & sound & film & charact & player & year & die \\ 
+paicehusk & lead & man & hollywood & sil & sound & film & charact & play & year & died \\ 
+sstemmer & leading & man & hollywood & silent & sound & film & character & player & year & died \\ 
+krovetz & leading & man & hollywood & silent & sound & film & character & player & year & die \\ 
+lemmatized & lead & man & hollywood & silents & sound & film & character & player & year & die \\ 
+Example 114
+nostemmer & carlos & revilla & voice & hommer & simpson & director & voices & casting & spain & simpsons & series & beginning & show & death & 2000 \\ 
+trunc4 & carl & revi & voic & homm & simp & dire & voic & cast & spai & simp & seri & begi & show & deat & 2000 \\ 
+trunc5 & carlo & revil & voice & homme & simps & direc & voice & casti & spain & simps & serie & begin & show & death & 2000 \\ 
+lovins & carlo & revil & voic & hommer & simpson & direct & voic & cast & spain & simpson & ser & begin & show & death & 2000 \\ 
+porter & carlo & revilla & voic & hommer & simpson & director & voic & cast & spain & simpson & seri & beginn & show & death & 2000 \\ 
+porter2 & carlo & revilla & voic & hommer & simpson & director & voic & cast & spain & simpson & seri & begin & show & death & 2000 \\ 
+paicehusk & carlo & revill & voic & hom & simpson & direct & voic & cast & spain & simpson & sery & begin & show & dea & 2000 \\ 
+sstemmer & carlo & revilla & voice & hommer & simpson & director & voice & casting & spain & simpson & sery & beginning & show & death & 2000 \\ 
+krovetz & carlos & revilla & voice & hommer & simpson & director & voice & casting & spain & simpson & series & beginning & show & death & 2000 \\ 
+lemmatized & carlos & revilla & voice & hommer & simpson & director & voice & cast & spain & simpson & series & beginning & show & death & 2000 \\ 
+Example 115
+nostemmer & star & actress & silents & hollywood & character & player & sound & era & typically & portraying & stern & autocratic & elders \\ 
+trunc4 & star & actr & sile & holl & char & play & soun & era & typi & port & ster & auto & elde \\ 
+trunc5 & star & actre & silen & holly & chara & playe & sound & era & typic & portr & stern & autoc & elder \\ 
+lovins & star & actres & silens & hollywood & character & player & sound & er & typ & portra & stern & autocr & elder \\ 
+porter & star & actress & silent & hollywood & charact & player & sound & era & typicalli & portrai & stern & autocrat & elder \\ 
+porter2 & star & actress & silent & hollywood & charact & player & sound & era & typic & portray & stern & autocrat & elder \\ 
+paicehusk & star & actress & sil & hollywood & charact & play & sound & er & typic & portray & stern & autocr & eld \\ 
+sstemmer & star & actress & silent & hollywood & character & player & sound & era & typically & portraying & stern & autocratic & elder \\ 
+krovetz & star & actress & silent & hollywood & character & player & sound & era & typically & portray & stern & autocrat & elder \\ 
+lemmatized & star & actress & silents & hollywood & character & player & sound & era & typically & portray & stern & autocratic & elder \\ 
+Example 116
+nostemmer & brent & graduated & pattonville & high & school & bridgeton & missouri & class & president & captain & wrestling & team & rhodes & scholar \\ 
+trunc4 & bren & grad & patt & high & scho & brid & miss & clas & pres & capt & wres & team & rhod & scho \\ 
+trunc5 & brent & gradu & patto & high & schoo & bridg & misso & class & presi & capta & wrest & team & rhode & schol \\ 
+lovins & brens & gradu & pattonvil & high & school & bridges & missour & clas & presid & captain & wrestl & team & rhod & schol \\ 
+porter & brent & graduat & pattonvil & high & school & bridgeton & missouri & class & presid & captain & wrestl & team & rhode & scholar \\ 
+porter2 & brent & graduat & pattonvill & high & school & bridgeton & missouri & class & presid & captain & wrestl & team & rhode & scholar \\ 
+paicehusk & brent & gradu & pattonvil & high & school & bridgeton & missour & class & presid & captain & wrestl & team & rhod & schol \\ 
+sstemmer & brent & graduated & pattonville & high & school & bridgeton & missouri & class & president & captain & wrestling & team & rhode & scholar \\ 
+krovetz & brent & graduate & pattonville & high & school & bridgeton & missouri & class & president & captain & wrestle & team & rhodes & scholar \\ 
+lemmatized & brent & graduate & pattonville & high & school & bridgeton & missouri & class & president & captain & wrestling & team & rhodes & scholar \\ 
+Example 117
+nostemmer & dylan & started & acting & age & commercials & plays & shows & movies & attends & earl & haig & secondary & school & arts \\ 
+trunc4 & dyla & star & acti & age & comm & play & show & movi & atte & earl & haig & seco & scho & arts \\ 
+trunc5 & dylan & start & actin & age & comme & plays & shows & movie & atten & earl & haig & secon & schoo & arts \\ 
+lovins & dylan & start & act & ag & commerc & play & show & mov & attens & earl & haig & secons & school & art \\ 
+porter & dylan & start & act & ag & commerci & plai & show & movi & attend & earl & haig & secondari & school & art \\ 
+porter2 & dylan & start & act & age & commerci & play & show & movi & attend & earl & haig & secondari & school & art \\ 
+paicehusk & dylan & start & act & ag & commerc & play & show & movy & attend & earl & haig & second & school & art \\ 
+sstemmer & dylan & started & acting & age & commercial & play & show & movy & attend & earl & haig & secondary & school & art \\ 
+krovetz & dylan & start & acting & age & commercial & play & show & movies & attend & earl & haig & secondary & school & arts \\ 
+lemmatized & dylan & start & act & age & commercial & play & show & movie & attend & earl & haig & secondary & school & art \\ 
+Example 118
+nostemmer & son & naval & officer & born & portsmouth & father & daughter & enjoys & thrill & sports & avid & downhill & skier \\ 
+trunc4 & son & nava & offi & born & port & fath & daug & enjo & thri & spor & avid & down & skie \\ 
+trunc5 & son & naval & offic & born & ports & fathe & daugh & enjoy & thril & sport & avid & downh & skier \\ 
+lovins & son & nav & officer & born & portsmouth & father & daughter & enjoy & thril & sport & avid & downhil & sk \\ 
+porter & son & naval & offic & born & portsmouth & father & daughter & enjoi & thrill & sport & avid & downhil & skier \\ 
+porter2 & son & naval & offic & born & portsmouth & father & daughter & enjoy & thrill & sport & avid & downhil & skier \\ 
+paicehusk & son & nav & off & born & portsmou & fath & daught & enjoy & thril & sport & avid & downhil & sky \\ 
+sstemmer & son & naval & officer & born & portsmouth & father & daughter & enjoy & thrill & sport & avid & downhill & skier \\ 
+krovetz & son & naval & officer & born & portsmouth & father & daughter & enjoy & thrill & sports & avid & downhill & sky \\ 
+lemmatized & son & naval & officer & bear & portsmouth & father & daughter & enjoy & thrill & sport & avid & downhill & skier \\ 
+Example 119
+nostemmer & lucille & possibly & female & studio & executives & hollywood & formed & director & mgm & talent & department & louis & mayer \\ 
+trunc4 & luci & poss & fema & stud & exec & holl & form & dire & mgm & tale & depa & loui & maye \\ 
+trunc5 & lucil & possi & femal & studi & execu & holly & forme & direc & mgm & talen & depar & louis & mayer \\ 
+lovins & lucil & pos & femal & studi & executiv & hollywood & form & direct & mgm & talens & departm & lou & mayer \\ 
+porter & lucil & possibl & femal & studio & execut & hollywood & form & director & mgm & talent & depart & loui & mayer \\ 
+porter2 & lucill & possibl & femal & studio & execut & hollywood & form & director & mgm & talent & depart & loui & mayer \\ 
+paicehusk & lucil & poss & fem & studio & execut & hollywood & form & direct & mgm & tal & depart & lou & may \\ 
+sstemmer & lucille & possibly & female & studio & executive & hollywood & formed & director & mgm & talent & department & loui & mayer \\ 
+krovetz & lucille & possibly & female & studio & executive & hollywood & form & director & mgm & talent & department & louis & may \\ 
+lemmatized & lucille & possibly & female & studio & executive & hollywood & form & director & mgm & talent & department & louis & mayer \\ 
+Example 120
+nostemmer & salvatore & boston & massachusetts & acting & modeling & age & older & sister & younger & brother & act & model \\ 
+trunc4 & salv & bost & mass & acti & mode & age & olde & sist & youn & brot & act & mode \\ 
+trunc5 & salva & bosto & massa & actin & model & age & older & siste & young & broth & act & model \\ 
+lovins & salvator & bost & massachuses & act & model & ag & older & sister & younger & brother & act & model \\ 
+porter & salvator & boston & massachusett & act & model & ag & older & sister & younger & brother & act & model \\ 
+porter2 & salvator & boston & massachusett & act & model & age & older & sister & younger & brother & act & model \\ 
+paicehusk & salv & boston & massachuset & act & model & ag & old & sist & young & broth & act & model \\ 
+sstemmer & salvatore & boston & massachusett & acting & modeling & age & older & sister & younger & brother & act & model \\ 
+krovetz & salvatore & boston & massachusetts & acting & model & age & old & sister & younger & brother & act & model \\ 
+lemmatized & salvatore & boston & massachusetts & act & modeling & age & old & sister & young & brother & act & model \\ 
+Example 121
+nostemmer & ash & anna & born & utah & child & actress & athletic & abundance & energy & stamina & dancing & gymnastics \\ 
+trunc4 & ash & anna & born & utah & chil & actr & athl & abun & ener & stam & danc & gymn \\ 
+trunc5 & ash & anna & born & utah & child & actre & athle & abund & energ & stami & danci & gymna \\ 
+lovins & ash & an & born & utah & child & actres & athles & abund & energ & stamin & danc & gymnast \\ 
+porter & ash & anna & born & utah & child & actress & athlet & abund & energi & stamina & danc & gymnastic \\ 
+porter2 & ash & anna & born & utah & child & actress & athlet & abund & energi & stamina & danc & gymnast \\ 
+paicehusk & ash & ann & born & utah & child & actress & athlet & abund & energy & stamin & dant & gymnast \\ 
+sstemmer & ash & anna & born & utah & child & actress & athletic & abundance & energy & stamina & dancing & gymnastic \\ 
+krovetz & ash & anna & born & utah & child & actress & athletic & abundance & energy & stamina & dance & gymnastics \\ 
+lemmatized & ash & anna & bear & utah & child & actress & athletic & abundance & energy & stamen & dancing & gymnastics \\ 
+Example 122
+nostemmer & kyle & younger & brother & canadian & model & actor & corey & sevier & young & models & raised & parents & bruce & lynda & sever \\ 
+trunc4 & kyle & youn & brot & cana & mode & acto & core & sevi & youn & mode & rais & pare & bruc & lynd & seve \\ 
+trunc5 & kyle & young & broth & canad & model & actor & corey & sevie & young & model & raise & paren & bruce & lynda & sever \\ 
+lovins & kyl & younger & brother & canad & model & act & core & sev & young & model & rais & parens & bruc & lynd & sever \\ 
+porter & kyle & younger & brother & canadian & model & actor & corei & sevier & young & model & rais & parent & bruce & lynda & sever \\ 
+porter2 & kyle & younger & brother & canadian & model & actor & corey & sevier & young & model & rais & parent & bruce & lynda & sever \\ 
+paicehusk & kyle & young & broth & canad & model & act & corey & sevy & young & model & rais & par & bruc & lynda & sev \\ 
+sstemmer & kyle & younger & brother & canadian & model & actor & corey & sevier & young & model & raised & parent & bruce & lynda & sever \\ 
+krovetz & kyle & younger & brother & canada & model & actor & corey & sevier & young & model & raise & parent & bruce & lynda & sever \\ 
+lemmatized & kyle & young & brother & canadian & model & actor & corey & sevier & young & model & raise & parent & bruce & lynda & sever \\ 
+Example 123
+nostemmer & half & legendary & vaudeville & team & gallagher & shean & played & character & parts & hollywood & films & 1935 & 1940s \\ 
+trunc4 & half & lege & vaud & team & gall & shea & play & char & part & holl & film & 1935 & 1940 \\ 
+trunc5 & half & legen & vaude & team & galla & shean & playe & chara & parts & holly & films & 1935 & 1940s \\ 
+lovins & half & legens & vaudevil & team & gallaghes & shean & play & character & part & hollywood & film & 1935 & 1940 \\ 
+porter & half & legendari & vaudevil & team & gallagh & shean & plai & charact & part & hollywood & film & 1935 & 1940 \\ 
+porter2 & half & legendari & vaudevill & team & gallagh & shean & play & charact & part & hollywood & film & 1935 & 1940s \\ 
+paicehusk & half & legend & vaudevil & team & gallagh & she & play & charact & part & hollywood & film & 1935 & 1940s \\ 
+sstemmer & half & legendary & vaudeville & team & gallagher & shean & played & character & part & hollywood & film & 1935 & 1940 \\ 
+krovetz & half & legendary & vaudeville & team & gallagher & shean & play & character & parts & hollywood & film & 1935 & 1940s \\ 
+lemmatized & half & legendary & vaudeville & team & gallagher & shean & play & character & part & hollywood & film & 1935 & 1940s \\ 
+Example 124
+nostemmer & baggy & trousered & banjo & strumming & comedian & played & small & parts & films & performed & pantomime & guest & appearances \\ 
+trunc4 & bagg & trou & banj & stru & come & play & smal & part & film & perf & pant & gues & appe \\ 
+trunc5 & baggy & trous & banjo & strum & comed & playe & small & parts & films & perfo & panto & guest & appea \\ 
+lovins & bag & trouser & banj & strum & comed & play & smal & part & film & perform & pantomim & guest & appear \\ 
+porter & baggi & trouser & banjo & strumm & comedian & plai & small & part & film & perform & pantomim & guest & appear \\ 
+porter2 & baggi & trouser & banjo & strum & comedian & play & small & part & film & perform & pantomim & guest & appear \\ 
+paicehusk & baggy & trous & banjo & strum & com & play & smal & part & film & perform & pantomim & guest & appear \\ 
+sstemmer & baggy & trousered & banjo & strumming & comedian & played & small & part & film & performed & pantomime & guest & appearance \\ 
+krovetz & baggy & trouser & banjo & strum & comedian & play & small & parts & film & perform & pantomime & guest & appearances \\ 
+lemmatized & baggy & trousered & banjo & strum & comedian & play & small & part & film & perform & pantomime & guest & appearance \\ 
+Example 125
+nostemmer & child & actress & graduated & leading & lady & roles & hollywood & pictures & played & occasional & character & parts \\ 
+trunc4 & chil & actr & grad & lead & lady & role & holl & pict & play & occa & char & part \\ 
+trunc5 & child & actre & gradu & leadi & lady & roles & holly & pictu & playe & occas & chara & parts \\ 
+lovins & child & actres & gradu & lead & lad & rol & hollywood & pictur & play & occas & character & part \\ 
+porter & child & actress & graduat & lead & ladi & role & hollywood & pictur & plai & occasion & charact & part \\ 
+porter2 & child & actress & graduat & lead & ladi & role & hollywood & pictur & play & occasion & charact & part \\ 
+paicehusk & child & actress & gradu & lead & lady & rol & hollywood & pict & play & occas & charact & part \\ 
+sstemmer & child & actress & graduated & leading & lady & role & hollywood & picture & played & occasional & character & part \\ 
+krovetz & child & actress & graduate & leading & lady & role & hollywood & pictures & play & occasional & character & parts \\ 
+lemmatized & child & actress & graduate & lead & lady & role & hollywood & picture & play & occasional & character & part \\ 
+Example 126
+nostemmer & began & acting & aspirations & age & musical & theatre & enjoyed & playing & violin & winning & tennis & competitions & avid & reader & working \\ 
+trunc4 & bega & acti & aspi & age & musi & thea & enjo & play & viol & winn & tenn & comp & avid & read & work \\ 
+trunc5 & began & actin & aspir & age & music & theat & enjoy & playi & violi & winni & tenni & compe & avid & reade & worki \\ 
+lovins & began & act & aspir & ag & mus & theatr & enjoy & pla & violin & win & ten & competit & avid & reader & work \\ 
+porter & began & act & aspir & ag & music & theatr & enjoi & plai & violin & winn & tenni & competit & avid & reader & work \\ 
+porter2 & began & act & aspir & age & music & theatr & enjoy & play & violin & win & tenni & competit & avid & reader & work \\ 
+paicehusk & beg & act & aspir & ag & mus & the & enjoy & play & violin & win & ten & competit & avid & read & work \\ 
+sstemmer & began & acting & aspiration & age & musical & theatre & enjoyed & playing & violin & winning & tenni & competition & avid & reader & working \\ 
+krovetz & began & acting & aspiration & age & musical & theatre & enjoy & play & violin & winning & tennis & competition & avid & reader & working \\ 
+lemmatized & begin & act & aspiration & age & musical & theatre & enjoy & play & violin & win & tennis & competition & avid & reader & work \\ 
+Example 127
+nostemmer & perky & small & blonde & joanna & storm & performed & flicks & 80s & sense & humor & comedic & ability & sex & appeal \\ 
+trunc4 & perk & smal & blon & joan & stor & perf & flic & 80s & sens & humo & come & abil & sex & appe \\ 
+trunc5 & perky & small & blond & joann & storm & perfo & flick & 80s & sense & humor & comed & abili & sex & appea \\ 
+lovins & perk & smal & blons & joan & storm & perform & flick & 80 & sens & humor & comed & abil & sec & appe \\ 
+porter & perki & small & blond & joanna & storm & perform & flick & 80 & sens & humor & comed & abil & sex & appeal \\ 
+porter2 & perki & small & blond & joanna & storm & perform & flick & 80s & sens & humor & comed & abil & sex & appeal \\ 
+paicehusk & perky & smal & blond & joann & storm & perform & flick & 80s & sens & hum & com & abl & sex & ap \\ 
+sstemmer & perky & small & blonde & joanna & storm & performed & flick & 80s & sense & humor & comedic & ability & sex & appeal \\ 
+krovetz & perky & small & blonde & joanna & storm & perform & flicks & 80s & sense & humor & comedy & ability & sex & appeal \\ 
+lemmatized & perky & small & blonde & joanna & storm & perform & flick & 80 & sense & humor & comedic & ability & sex & appeal \\ 
+Example 128
+nostemmer & lauren & storm & board & directors & kids & olive & crest & charity & orginaztions & graduated & age & excelsior & school & los & angeles \\ 
+trunc4 & laur & stor & boar & dire & kids & oliv & cres & char & orgi & grad & age & exce & scho & los & ange \\ 
+trunc5 & laure & storm & board & direc & kids & olive & crest & chari & orgin & gradu & age & excel & schoo & los & angel \\ 
+lovins & laur & storm & board & director & kid & ol & crest & char & orginazt & gradu & ag & excelsior & school & lo & angel \\ 
+porter & lauren & storm & board & director & kid & oliv & crest & chariti & orginazt & graduat & ag & excelsior & school & lo & angel \\ 
+porter2 & lauren & storm & board & director & kid & oliv & crest & chariti & orginazt & graduat & age & excelsior & school & los & angel \\ 
+paicehusk & laur & storm & board & direct & kid & ol & crest & char & orginazt & gradu & ag & excelsy & school & los & angel \\ 
+sstemmer & lauren & storm & board & director & kid & olive & crest & charity & orginaztion & graduated & age & excelsior & school & los & angele \\ 
+krovetz & lauren & storm & board & director & kid & olive & crest & charity & orginaztion & graduate & age & excelsior & school & los & angeles \\ 
+lemmatized & lauren & storm & board & director & kid & olive & crest & charity & orginaztions & graduate & age & excelsior & school & los & angeles \\ 
+Example 129
+nostemmer & child & actor & chuck & stubbs & served & world & war & war & los & angeles & businessman & civic & leader \\ 
+trunc4 & chil & acto & chuc & stub & serv & worl & war & war & los & ange & busi & civi & lead \\ 
+trunc5 & child & actor & chuck & stubb & serve & world & war & war & los & angel & busin & civic & leade \\ 
+lovins & child & act & chuck & stubb & serv & world & war & war & lo & angel & businessman & civ & leader \\ 
+porter & child & actor & chuck & stubb & serv & world & war & war & lo & angel & businessman & civic & leader \\ 
+porter2 & child & actor & chuck & stubb & serv & world & war & war & los & angel & businessman & civic & leader \\ 
+paicehusk & child & act & chuck & stub & serv & world & war & war & los & angel & businessm & civ & lead \\ 
+sstemmer & child & actor & chuck & stubb & served & world & war & war & los & angele & businessman & civic & leader \\ 
+krovetz & child & actor & chuck & stubb & serve & world & war & war & los & angeles & businessman & civic & leader \\ 
+lemmatized & child & actor & chuck & stubbs & serve & world & war & war & los & angeles & businessman & civic & leader \\ 
+Example 130
+nostemmer & anglo & irish & author & celebrated & gulliver & travels & 1726 & called & foremost & prose & satirist & english & language \\ 
+trunc4 & angl & iris & auth & cele & gull & trav & 1726 & call & fore & pros & sati & engl & lang \\ 
+trunc5 & anglo & irish & autho & celeb & gulli & trave & 1726 & calle & forem & prose & satir & engli & langu \\ 
+lovins & angl & irish & author & celebr & gulliver & travel & 1726 & cal & foremost & pros & satir & engl & langu \\ 
+porter & anglo & irish & author & celebrat & gulliv & travel & 1726 & call & foremost & prose & satirist & english & languag \\ 
+porter2 & anglo & irish & author & celebr & gulliv & travel & 1726 & call & foremost & prose & satirist & english & languag \\ 
+paicehusk & anglo & ir & auth & celebr & gul & travel & 1726 & cal & foremost & pros & satir & engl & langu \\ 
+sstemmer & anglo & irish & author & celebrated & gulliver & travel & 1726 & called & foremost & prose & satirist & english & language \\ 
+krovetz & anglo & ireland & author & celebrated & gulliver & travels & 1726 & call & foremost & prose & satirist & english & language \\ 
+lemmatized & anglo & irish & author & celebrated & gulliver & travel & 1726 & call & foremost & prose & satirist & english & language \\ 
+Example 131
+nostemmer & meral & tasbas & turkey & lives & sweden & memeber & reality & show & baren & released & single \\ 
+trunc4 & mera & tasb & turk & live & swed & meme & real & show & bare & rele & sing \\ 
+trunc5 & meral & tasba & turke & lives & swede & memeb & reali & show & baren & relea & singl \\ 
+lovins & mer & tasb & turke & liv & swed & memeber & re & show & bar & releas & singl \\ 
+porter & meral & tasba & turkei & live & sweden & memeb & realiti & show & baren & releas & singl \\ 
+porter2 & meral & tasba & turkey & live & sweden & memeb & realiti & show & baren & releas & singl \\ 
+paicehusk & mer & tasba & turkey & liv & swed & memeb & real & show & bar & releas & singl \\ 
+sstemmer & meral & tasba & turkey & live & sweden & memeber & reality & show & baren & released & single \\ 
+krovetz & mere & tasba & turkey & lives & sweden & memeber & reality & show & baren & release & single \\ 
+lemmatized & meral & tasbas & turkey & live & sweden & memeber & reality & show & baren & release & single \\ 
+Example 132
+nostemmer & rugged & leading & man & hollywood & low & budgeters & serials & 30s & 40s \\ 
+trunc4 & rugg & lead & man & holl & low & budg & seri & 30s & 40s \\ 
+trunc5 & rugge & leadi & man & holly & low & budge & seria & 30s & 40s \\ 
+lovins & rug & lead & man & hollywood & low & budgeter & ser & 30 & 40 \\ 
+porter & rugg & lead & man & hollywood & low & budget & serial & 30 & 40 \\ 
+porter2 & rug & lead & man & hollywood & low & budget & serial & 30s & 40s \\ 
+paicehusk & rug & lead & man & hollywood & low & budget & ser & 30s & 40s \\ 
+sstemmer & rugged & leading & man & hollywood & low & budgeter & serial & 30s & 40s \\ 
+krovetz & rugged & leading & man & hollywood & low & budget & serial & 30s & 40s \\ 
+lemmatized & rugged & lead & man & hollywood & low & budgeters & serial & 30 & 40 \\ 
+Example 133
+nostemmer & peter & thoms & lives & works & duesseldorf & germany & drummer & bands & plays & jazz & mambo & kinds & music \\ 
+trunc4 & pete & thom & live & work & dues & germ & drum & band & play & jazz & mamb & kind & musi \\ 
+trunc5 & peter & thoms & lives & works & duess & germa & drumm & bands & plays & jazz & mambo & kinds & music \\ 
+lovins & peter & thom & liv & work & duesseldorf & german & drummer & band & play & jazz & mamb & kind & mus \\ 
+porter & peter & thom & live & work & duesseldorf & germani & drummer & band & plai & jazz & mambo & kind & music \\ 
+porter2 & peter & thom & live & work & duesseldorf & germani & drummer & band & play & jazz & mambo & kind & music \\ 
+paicehusk & pet & thom & liv & work & duesseldorf & germany & drum & band & play & jazz & mambo & kind & mus \\ 
+sstemmer & peter & thom & live & work & duesseldorf & germany & drummer & band & play & jazz & mambo & kind & music \\ 
+krovetz & peter & thom & lives & works & duesseldorf & germany & drummer & band & play & jazz & mambo & kind & music \\ 
+lemmatized & peter & thoms & live & work & duesseldorf & germany & drummer & band & play & jazz & mambo & kind & music \\ 
+Example 134
+nostemmer & bald & headed & character & player & films & decades & 1934 & portraying & genial & individuals & weak & willed & shady & types \\ 
+trunc4 & bald & head & char & play & film & deca & 1934 & port & geni & indi & weak & will & shad & type \\ 
+trunc5 & bald & heade & chara & playe & films & decad & 1934 & portr & genia & indiv & weak & wille & shady & types \\ 
+lovins & bald & head & character & player & film & decad & 1934 & portra & gen & individu & weak & wil & shad & typ \\ 
+porter & bald & head & charact & player & film & decad & 1934 & portrai & genial & individu & weak & will & shadi & type \\ 
+porter2 & bald & head & charact & player & film & decad & 1934 & portray & genial & individu & weak & will & shadi & type \\ 
+paicehusk & bald & head & charact & play & film & decad & 1934 & portray & gen & individ & weak & wil & shady & type \\ 
+sstemmer & bald & headed & character & player & film & decade & 1934 & portraying & genial & individual & weak & willed & shady & type \\ 
+krovetz & bald & head & character & player & film & decade & 1934 & portray & genial & individual & weak & will & shady & type \\ 
+lemmatized & bald & head & character & player & film & decade & 1934 & portray & genial & individual & weak & willed & shady & type \\ 
+Example 135
+nostemmer & born & 1945 & wales & studies & film & worked & cameraman & cutter & 1971 & 1982 & worked & news & editor & bbc \\ 
+trunc4 & born & 1945 & wale & stud & film & work & came & cutt & 1971 & 1982 & work & news & edit & bbc \\ 
+trunc5 & born & 1945 & wales & studi & film & worke & camer & cutte & 1971 & 1982 & worke & news & edito & bbc \\ 
+lovins & born & 1945 & wal & stud & film & work & cameraman & cutter & 1971 & 1982 & work & new & edit & bbc \\ 
+porter & born & 1945 & wale & studi & film & work & cameraman & cutter & 1971 & 1982 & work & new & editor & bbc \\ 
+porter2 & born & 1945 & wale & studi & film & work & cameraman & cutter & 1971 & 1982 & work & news & editor & bbc \\ 
+paicehusk & born & 1945 & wal & study & film & work & cameram & cut & 1971 & 1982 & work & new & edit & bbc \\ 
+sstemmer & born & 1945 & wale & study & film & worked & cameraman & cutter & 1971 & 1982 & worked & new & editor & bbc \\ 
+krovetz & born & 1945 & wales & study & film & work & cameraman & cutter & 1971 & 1982 & work & news & editor & bbc \\ 
+lemmatized & bear & 1945 & wale & study & film & work & cameraman & cutter & 1971 & 1982 & work & news & editor & bbc \\ 
+Example 136
+nostemmer & writer & novels & music & drama & criticism & 1920s & marvelous & photographs & harlem & wrote & cats & cat & breeding \\ 
+trunc4 & writ & nove & musi & dram & crit & 1920 & marv & phot & harl & wrot & cats & cat & bree \\ 
+trunc5 & write & novel & music & drama & criti & 1920s & marve & photo & harle & wrote & cats & cat & breed \\ 
+lovins & writer & novel & mus & dram & crit & 1920 & marvel & photograph & harlem & wrot & cat & cat & breed \\ 
+porter & writer & novel & music & drama & critic & 1920 & marvel & photograph & harlem & wrote & cat & cat & breed \\ 
+porter2 & writer & novel & music & drama & critic & 1920s & marvel & photograph & harlem & wrote & cat & cat & breed \\ 
+paicehusk & writ & novel & mus & dram & crit & 1920s & marvel & photograph & harlem & wrot & cat & cat & bree \\ 
+sstemmer & writer & novel & music & drama & criticism & 1920 & marvelous & photograph & harlem & wrote & cat & cat & breeding \\ 
+krovetz & writer & novel & music & drama & criticism & 1920s & marvelous & photograph & harlem & wrote & cat & cat & breeding \\ 
+lemmatized & writer & novel & music & drama & criticism & 1920s & marvelous & photograph & harlem & write & cat & cat & breeding \\ 
+Example 137
+nostemmer & eve & whitney & ended & career & 1952 & quitting & films & employed & real & estate & lending & agent & years \\ 
+trunc4 & eve & whit & ende & care & 1952 & quit & film & empl & real & esta & lend & agen & year \\ 
+trunc5 & eve & whitn & ended & caree & 1952 & quitt & films & emplo & real & estat & lendi & agent & years \\ 
+lovins & ev & whitne & ens & career & 1952 & quit & film & employ & real & est & lens & agens & year \\ 
+porter & ev & whitnei & end & career & 1952 & quitt & film & emploi & real & estat & lend & agent & year \\ 
+porter2 & eve & whitney & end & career & 1952 & quit & film & employ & real & estat & lend & agent & year \\ 
+paicehusk & ev & whitney & end & car & 1952 & quit & film & employ & real & est & lend & ag & year \\ 
+sstemmer & eve & whitney & ended & career & 1952 & quitting & film & employed & real & estate & lending & agent & year \\ 
+krovetz & eve & whitney & end & career & 1952 & quit & film & employ & real & estate & lend & agent & years \\ 
+lemmatized & eve & whitney & end & career & 1952 & quit & film & employ & real & estate & lending & agent & year \\ 
+Example 138
+nostemmer & chris & born & oldest & children & earned & mfa & sculpture & texas & christian & university & graduated & northfield & mount & hermon & dartmouth \\ 
+trunc4 & chri & born & olde & chil & earn & mfa & scul & texa & chri & univ & grad & nort & moun & herm & dart \\ 
+trunc5 & chris & born & oldes & child & earne & mfa & sculp & texas & chris & unive & gradu & north & mount & hermo & dartm \\ 
+lovins & chr & born & oldest & childr & earn & mf & sculptur & tic & christ & univers & gradu & northfield & mount & hermon & dartmouth \\ 
+porter & chri & born & oldest & children & earn & mfa & sculptur & texa & christian & univers & graduat & northfield & mount & hermon & dartmouth \\ 
+porter2 & chris & born & oldest & children & earn & mfa & sculptur & texa & christian & univers & graduat & northfield & mount & hermon & dartmouth \\ 
+paicehusk & chry & born & oldest & childr & earn & mfa & sculpt & texa & christ & univers & gradu & northfield & mount & hermon & dartmou \\ 
+sstemmer & chri & born & oldest & children & earned & mfa & sculpture & texa & christian & university & graduated & northfield & mount & hermon & dartmouth \\ 
+krovetz & chri & born & oldest & children & earn & mfa & sculpture & texas & christian & university & graduate & northfield & mount & hermon & dartmouth \\ 
+lemmatized & chris & bear & old & child & earn & mfa & sculpture & texas & christian & university & graduate & northfield & mount & hermon & dartmouth \\ 
+Example 139
+nostemmer & tara & wilson & born & canada & resides & york & los & angeles & graduated & american & academy & dramatic & arts & york & city \\ 
+trunc4 & tara & wils & born & cana & resi & york & los & ange & grad & amer & acad & dram & arts & york & city \\ 
+trunc5 & tara & wilso & born & canad & resid & york & los & angel & gradu & ameri & acade & drama & arts & york & city \\ 
+lovins & tar & wilson & born & canad & resid & york & lo & angel & gradu & american & academ & dram & art & york & cit \\ 
+porter & tara & wilson & born & canada & resid & york & lo & angel & graduat & american & academi & dramat & art & york & citi \\ 
+porter2 & tara & wilson & born & canada & resid & york & los & angel & graduat & american & academi & dramat & art & york & citi \\ 
+paicehusk & tar & wilson & born & canad & resid & york & los & angel & gradu & am & academy & dram & art & york & city \\ 
+sstemmer & tara & wilson & born & canada & reside & york & los & angele & graduated & american & academy & dramatic & art & york & city \\ 
+krovetz & tara & wilson & born & canada & reside & york & los & angeles & graduate & america & academy & dramatic & arts & york & city \\ 
+lemmatized & tara & wilson & bear & canada & reside & york & los & angeles & graduate & american & academy & dramatic & art & york & city \\ 
+Example 140
+nostemmer & studied & acting & dalhousie & university & halifax & nova & scotia & canada & hobbies & include & painting & singing & jazz & playing & guitar \\ 
+trunc4 & stud & acti & dalh & univ & hali & nova & scot & cana & hobb & incl & pain & sing & jazz & play & guit \\ 
+trunc5 & studi & actin & dalho & unive & halif & nova & scoti & canad & hobbi & inclu & paint & singi & jazz & playi & guita \\ 
+lovins & stud & act & dalhousi & univers & halifac & nov & scot & canad & hobb & inclus & paint & sing & jazz & pla & guitar \\ 
+porter & studi & act & dalhousi & univers & halifax & nova & scotia & canada & hobbi & includ & paint & sing & jazz & plai & guitar \\ 
+porter2 & studi & act & dalhousi & univers & halifax & nova & scotia & canada & hobbi & includ & paint & sing & jazz & play & guitar \\ 
+paicehusk & study & act & dalhousy & univers & halifax & nov & scot & canad & hobby & includ & paint & sing & jazz & play & guit \\ 
+sstemmer & studied & acting & dalhousie & university & halifax & nova & scotia & canada & hobby & include & painting & singing & jazz & playing & guitar \\ 
+krovetz & studied & acting & dalhousie & university & halifax & nova & scotia & canada & hobby & include & painting & singing & jazz & play & guitar \\ 
+lemmatized & study & act & dalhousie & university & halifax & nova & scotia & canada & hobby & include & painting & singing & jazz & play & guitar \\ 
