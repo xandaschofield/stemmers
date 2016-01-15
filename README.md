@@ -2,7 +2,12 @@
 Storing code for running large batches of stemmed topic models and their
 evaluations on HTCondor with Mallet.
 
-## Files ### Useful scripts
+## Files
+
+### Useful scripts
+
+**prepdirs.sh**: Creates all the useful output directories necessary for the
+different types of output and evaluation these scripts produce.
 
 **finddiffs.py**: First writes out the resulting vocabulary size of every
 stemming treatment, then prints out examples of short pieces of text that
