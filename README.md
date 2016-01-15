@@ -22,3 +22,7 @@ using the training data as the vocabulary source for the test data.
 allow adaptive hyperparameters with asymmetric alpha and writes out a whole bunch
 of types of output for later use, including some diagnostics of topic coherence
 (though it's based on the stemmed corpora, so it's not necessarily comparable).
+
+**pull_out_betas.[py,condor]**: Finds the probability on the test set of a
+single-topic training set, useful for normalizing across different corpora when
+looking at held-out likelihood.

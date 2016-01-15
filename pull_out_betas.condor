@@ -1,0 +1,9 @@
+universe = vanilla
+executable = pull_out_betas.py
+notification = Never
+output = logs/pull_out_betas_$(Process).out
+error = logs/pull_out_betas_$(Process).err
+log = logs/pull_out_betas_$(Process).log
+getenv = True
+arguments = $(Process)
+queue 10

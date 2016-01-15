@@ -6,4 +6,4 @@ error = logs/import-datasets-$(Process).err
 log = logs/import-datasets-$(Process).log
 arguments = $(Process)
 getenv = True
-queue 1
+queue 10

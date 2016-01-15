@@ -4,13 +4,13 @@ from itertools import combinations
 corp = sys.argv[1]
 ty = sys.argv[2]
 
-stoplist = set([line.strip() for line in open('~/Mallet/stoplists/en.txt')])
+stoplist = set([line.strip() for line in open('/home/aks249/Mallet/stoplists/en.txt')])
 
 stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
-readfiles = [open('{}-{}-{}.txt'.format(corp, ty, stemmer)) for stemmer in stemmers]
-writefiles = [open('{}-{}-{}-stopped.txt'.format(corp, ty, stemmer), mode='w') for stemmer in stemmers]
-with open('{}-{}-nostemmer.txt'.format(corp, ty)) as readref:
-    with open('{}-{}-nostemmer.txt'.format(corp, ty)) as writeref:
+readfiles = [open('corpora/{}-{}-{}.txt'.format(corp, ty, stemmer)) for stemmer in stemmers]
+writefiles = [open('corpora/{}-{}-{}-stopped.txt'.format(corp, ty, stemmer), mode='w') for stemmer in stemmers]
+with open('corpora/{}-{}-nostemmer.txt'.format(corp, ty)) as readref:
+    with open('corpora/{}-{}-nostemmer.txt'.format(corp, ty)) as writeref:
         for line in readref:
             readlines = [f.readline() for f in readfiles]
             if not any(readlines):
