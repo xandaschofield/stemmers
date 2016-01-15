@@ -1,0 +1,31 @@
+universe = vanilla
+executable = VOI.sh
+notification = Never
+output = logs/VOI-$(Process).out
+error = logs/VOI-$(Process).err
+log = logs/VOI.log
+getenv = True
+arguments = arxiv 10 $(Process)
+queue 100
+arguments = arxiv 50 $(Process)
+queue 100
+arguments = arxiv 200 $(Process)
+queue 100
+arguments = imdb 10 $(Process)
+queue 100
+arguments = imdb 50 $(Process)
+queue 100
+arguments = imdb 200 $(Process)
+queue 100
+arguments = nyt 10 $(Process)
+queue 100
+arguments = nyt 50 $(Process)
+queue 100
+arguments = nyt 200 $(Process)
+queue 100
+arguments = yelp 10 $(Process)
+queue 100
+arguments = yelp 50 $(Process)
+queue 100
+arguments = yelp 200 $(Process)
+queue 100

@@ -1,0 +1,15 @@
+universe = vanilla
+executable = runevals.sh
+notification = Never
+output = logs/runevals-$(Process).out
+error = logs/runevals-$(Process).err
+log = logs/runevals.log
+getenv = True
+arguments = $(Process) arxiv
+queue 10
+arguments = $(Process) imdb
+queue 10
+arguments = $(Process) nyt
+queue 10
+arguments = $(Process) yelp
+queue 10
