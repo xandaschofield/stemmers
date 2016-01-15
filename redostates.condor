@@ -1,0 +1,7 @@
+universe = vanilla
+executable = combine_states.py
+notification = Never
+output = logs/redo-$(Cluster).out
+error = logs/redo-$(Cluster).err
+log = logs/redo-$(Cluster).log
+getenv = True

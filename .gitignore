@@ -1,10 +1,14 @@
 **.class
+**.log
+**.pyc
+special.condor
 corpora/**
 diagnostics/**
 docprobs/**
 evaluators/**
 keys/**
 logs/**
+modstates/**
 oneoutprobs/**
 ones/**
 outprobs/**
