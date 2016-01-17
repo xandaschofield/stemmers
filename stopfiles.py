@@ -4,10 +4,17 @@ from itertools import combinations
 corp = sys.argv[1]
 ty = sys.argv[2]
 
+def rootdir(str):
+    if str == 'krovetz' or str == 'lemmatized':
+        basedir = 'corpora/'
+    else:
+        basedir = '../stemround2/corpus/'
+    return basedir
+
 stoplist = set([line.strip() for line in open('/home/aks249/Mallet/stoplists/en.txt')])
 
 stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
-readfiles = [open('corpora/{}-{}-{}.txt'.format(corp, ty, stemmer)) for stemmer in stemmers]
+readfiles = [open('{}/{}-{}-{}.txt'.format(rootdir(stemmer), corp, ty, stemmer)) for stemmer in stemmers]
 writefiles = [open('corpora/{}-{}-{}-stopped.txt'.format(corp, ty, stemmer), mode='w') for stemmer in stemmers]
 with open('corpora/{}-{}-nostemmer.txt'.format(corp, ty)) as readref:
     with open('corpora/{}-{}-nostemmer.txt'.format(corp, ty)) as writeref:
@@ -29,8 +36,8 @@ with open('corpora/{}-{}-nostemmer.txt'.format(corp, ty)) as readref:
                     raise Exception('Misaligned sentences:\n{}\n{}'.format(wordlists[0], wl))
 
             # Figure out which words to delete from each and delete 'em
-            stopwordmask = [len(wd) > 2 and wd not in stoplist for wd in wordlists[0]]
-            writelists = [[wd for wd, mask in zip(wl, stopwordmask) if mask] for wl in wordlists]
+            stopwordmask = [any([ch.isdigit() for ch in wd]) or wd in stoplist for wd in wordlists[0]]
+            writelists = [[wd for wd, mask in zip(wl, stopwordmask) if not mask] for wl in wordlists]
 
             # Reformat into lines of text and write out
             writelines = ['{}\t{}\t{}\n'.format(rc[0], rc[1], ' '.join(wl)) for rc, wl in zip(readchunks, writelists)]
