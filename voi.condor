@@ -1,9 +1,9 @@
 universe = vanilla
-executable = VOI.sh
+executable = voi.sh
 notification = Never
-output = logs/VOI-$(Process).out
-error = logs/VOI-$(Process).err
-log = logs/VOI.log
+output = logs/voi-$(Process).out
+error = logs/voi-$(Process).err
+log = logs/voi.log
 getenv = True
 arguments = arxiv 10 $(Process)
 queue 100

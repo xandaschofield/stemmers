@@ -13,7 +13,7 @@ oneoutprobs/**
 ones/**
 outprobs/**
 outs/**
-single-evaluators/**
+oneevaluators/**
 states/**
-VOIs/**
+vois/**
 wordprobs/**

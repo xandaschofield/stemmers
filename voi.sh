@@ -5,12 +5,12 @@ T=$2
 let "i = ( $3 / 10 ) % 10"
 let "j = $3 % 10"
 if [ $i -le $j ]; then
-if [ ! -f VOIs/VOI-$N-$T-${arr[$i]}-${arr[$j]}.voi ]; then
+if [ ! -f vois/voi-$N-$T-${arr[$i]}-${arr[$j]}.voi ]; then
     for filea in states/$N-${arr[$i]}-$T-*.gz
     do
         for fileb in states/$N-${arr[$j]}-$T-*.gz
         do
-            java VariationOfInformation $T $filea $fileb >> VOIs/VOI-$N-$T-${arr[$i]}-${arr[$j]}.voi
+            java VariationOfInformation $T $filea $fileb >> vois/voi-$N-$T-${arr[$i]}-${arr[$j]}.voi
         done
     done
 fi
