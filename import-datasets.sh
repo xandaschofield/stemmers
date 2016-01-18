@@ -1,8 +1,8 @@
 #!/bin/sh
 # DATA=(arxiv imdb nyt yelp)
-STEMMER=(krovetz lovins nostemmer paicehusk porter porter2 sstemmer trunc4 trunc5 lemmatized)
-# let "d=$1/9"
-let "s=$1%9"
+STEMMER=(lemmatized krovetz lovins nostemmer paicehusk porter porter2 sstemmer trunc4 trunc5)
+# let "d=$1/10"
+let "s=$1%10"
 st=${STEMMER[$s]}
 for da in arxiv imdb nyt yelp
 do
