@@ -1,10 +1,11 @@
+from bs4 import BeautifulSoup
 from collections import defaultdict
 import matplotlib
 matplotlib.use('Agg')
 from matplotlib import cm
 from matplotlib import pyplot as plt
 from matplotlib.font_manager import FontProperties
-import numpy
+import numpy as np
 import os
 
 
@@ -36,74 +37,58 @@ cname = {
 }
 
 stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
-corpuses = ['arxiv', 'nyt', 'imdb', 'yelp']
+corpora = ['arxiv', 'nyt', 'imdb'] #, 'yelp']
 topiccts = ('10', '50', '200')
 patterns = ('/', '-', '++', 'x', '\\', '*', 'o', 'O', '.', '||')
 
 # Step 1: get log likelihoods
-lls = defaultdict(list)
-for root, subdirs, files in os.walk('outprobs/'):
+chs = defaultdict(list)
+for root, subdirs, files in os.walk('diagnostics/'):
     for fname in files:
-        if fname.endswith('.outprob'):
-            regfile = os.path.join(root, fname)
-            singletopicfile = regfile.replace('outprobs', 'oneoutprobs').replace('.outprob', '-ones.outprob')
-            if not os.path.exists(singletopicfile):
-                print singletopicfile, 'absent'
-                continue
-            f = open(regfile, 'r')
-            lltext = f.readline()
-            if not lltext:
-                print singletopicfile, 'empty'
-                continue
-            ll = float(lltext)
-            f.close()
+        if fname.endswith('.xml'):
             corpus, stemmer, topicct, idetc = fname.split('-')
-            ptll = ll / count[corpus]
-            try:
-                g = open(singletopicfile, 'r')
-            except Exception:
-                continue
-            line = g.readline()
-            single_ptll = float(line) / count[corpus]
-            g.close()
-            lls[(corpus, stemmer, topicct)] += [ptll - single_ptll]
+            with open(os.path.join(root, fname), 'r') as f:
+                coherence_text = f.read()
+            bs = BeautifulSoup(coherence_text)
+            coherences = [float(t.get('coherence')) for t in bs.find_all('topic')]
+            chs[(corpus, stemmer, topicct)] += coherences
 
 # Step 2: compute normalized per token log likelihoods
 means = {}
-stdevs = {}
-for corpus, stemmer, topicct in lls.iterkeys():
-    normed_ptlls = lls[(corpus, stemmer, topicct)]
-    means[(corpus, stemmer, topicct)] = numpy.mean(normed_ptlls)
-    stdevs[(corpus, stemmer, topicct)] = numpy.std(normed_ptlls, ddof=1)
+stderrs = {}
+for corpus, stemmer, topicct in chs.iterkeys():
+    current_chs = chs[(corpus, stemmer, topicct)]
+    means[(corpus, stemmer, topicct)] = np.mean(current_chs)
+    stderrs[(corpus, stemmer, topicct)] = np.std(current_chs, ddof=1)
 
 # Step 3: plot things
 matplotlib.rcParams['figure.figsize'] = 9, 14
 matplotlib.rcParams['figure.subplot.bottom'] = 0.1
-ind = numpy.arange(3)
+ind = np.arange(3)
 width = 0.9 / len(stemmers)
 
 plt.figure(1)
-for subp, corpus in enumerate(corpuses):
+for subp, corpus in enumerate(corpora):
     stemlabels = [stemtokey[stem] for stem in stemmers]
     plt.subplot(410 + subp + 1)
     rects = {}
     ymax = 0
     for i, stemmer in enumerate(stemmers):
         stemmeans = [means[(corpus, stemmer, topicct)] for topicct in topiccts]
-        stemstds = [1.96 * stdevs[(corpus, stemmer, topicct)] for topicct in topiccts]
+        stemstds = [1.96 * stderrs[(corpus, stemmer, topicct)] for topicct in topiccts]
         ymax = max(ymax, max(stemmeans))
         rects[stemmer] = plt.bar(ind + (i * width) + 0.05, stemmeans, width, yerr=stemstds, label=stemlabels, color='white', ecolor='black', hatch=patterns[i])
-    plt.ylabel('Normalized LL')
-    plt.ylim(ymin=0.0, ymax=ymax + 0.15)
-    plt.title('Normalized LL for {0}'.format(cname[corpus]))
+    plt.ylabel('Topic Coherence')
+    plt.ylim(ymin=0.0, ymax=1.2*ymax)
+    plt.title('{0}'.format(cname[corpus]))
     xtx = [0.05 + width/2 + (width * j) + i for i in xrange(len(topiccts)) for j in xrange(len(stemmers))]
     plt.xticks(xtx, stemlabels * 3)
-    plt.grid(b=True, which='major', color='.5', linestyle='--') 
+    plt.grid(b=True, which='major', color='.5', linestyle='--')
     # Label the raw counts and the percentages below the x-axis...
     bin_centers = ind + 0.5
     for count, x in zip(topiccts, bin_centers):
         # Label the raw counts
-        plt.text(x, ymax + 0.1, count + ' topics', va='top', ha='center', fontsize=14)
+        plt.text(x, 1.1*ymax, count + ' topics', va='top', ha='center', fontsize=14)
 
 
-plt.savefig('llplots.png', bbox_inches='tight')
+plt.savefig('diagnostics.png', bbox_inches='tight')

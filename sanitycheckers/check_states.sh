@@ -1,8 +1,9 @@
 #!/bin/sh
+stempath=~/stemstopped
 extension=-out.txt
 for corp in arxiv imdb nyt yelp; do
     for stemmer in lemmatized krovetz lovins nostemmer paicehusk porter porter2 sstemmer trunc4 trunc5; do
-        for file in ../outs/$corp-$stemmer-*$extension; do
+        for file in $stempath/outs/$corp-$stemmer-*$extension; do
             head -n 4 $file | tail -n 1 >> statestmpfile-$corp-$stemmer.txt
         done
     done

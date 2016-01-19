@@ -1,7 +1,9 @@
 **.class
 **.log
+**.png
 **.pyc
 special.condor
+coherences/**
 corpora/**
 diagnostics/**
 docprobs/**

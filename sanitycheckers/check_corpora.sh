@@ -1,10 +1,14 @@
 #!/bin/sh
+stempath=~/stemstopped
 extension=-stopped.txt
 for corp in arxiv imdb nyt yelp; do
     for t in test train; do
-        wc ../corpora/$corp-$t-*$extension > corporatmpfile-$corp-$t.txt
-        ntokens=`cat corporatmpfile-$corp-$t.txt | grep -v total | sed 's/  */ /g' | cut -d' ' -f 2-3 | sort | uniq | wc -l`
-        nchars=`cat corporatmpfile-$corp-$t.txt | grep -v total | sed 's/  */ /g' | cut -d' ' -f 4 | sort | uniq | wc -l`
+        for file in ${stempath}/corpora/${corp}-$t-*$extension; do
+            wc=`cut -f 3 $file | wc`
+            echo $wc $file >> corporatmpfile-$corp-$t.txt
+        done
+        ntokens=`cat corporatmpfile-$corp-$t.txt | grep -v total | sed 's/  */ /g' | cut -d' ' -f 1-2 | sort | uniq | wc -l`
+        nchars=`cat corporatmpfile-$corp-$t.txt | grep -v total | sed 's/  */ /g' | cut -d' ' -f 3 | sort | uniq | wc -l`
         nfiles=`cat corporatmpfile-$corp-$t.txt | grep -v total | wc -l`
         if (( $ntokens == 1 )); then
             echo $corp $t : correct number of tokens
