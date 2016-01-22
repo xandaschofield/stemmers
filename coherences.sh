@@ -6,5 +6,5 @@ let "i = $3 % 10"
 for file in modstates/$N-${arr[$i]}-$T-*.gz
 do
     bname=`basename $file .gz`
-    ~/Mallet/bin/mallet train-topics --input corpora/$N-train-nostemmer.seq --input-state $file --num-topics $T --no-inference --diagnostics-file pmis/$bname.xml --num-top-words 15 &> pmiouts/$bname.out
+    ~/Mallet/bin/mallet train-topics --input corpora/$N-train-nostemmer.seq --input-state $file --num-topics $T --no-inference --diagnostics-file coherences/$bname.xml --num-top-words 15 &> coherenceouts/$bname.out
 done

@@ -4,6 +4,7 @@
 **.pyc
 special.condor
 coherences/**
+coherenceouts/**
 corpora/**
 diagnostics/**
 docprobs/**

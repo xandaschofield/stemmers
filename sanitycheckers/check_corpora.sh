@@ -12,6 +12,7 @@ for corp in arxiv imdb nyt yelp; do
         nfiles=`cat corporatmpfile-$corp-$t.txt | grep -v total | wc -l`
         if (( $ntokens == 1 )); then
             echo $corp $t : correct number of tokens
+            head -n 1 corporatmpfile-$corp-$t.txt | sed 's/  */ /g' | cut -d' ' -f 1-2
         else
             echo $corp $t : ERROR incorrect number of tokens
             cat corporatmpfile-$corp-$t.txt

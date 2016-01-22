@@ -50,6 +50,10 @@ it to have the unstemmed tokens again. This allows the production of more
 comparable coherence measures with new PMI scores via Mallet (via Newman and
 Mimno).
 
+**join_vois.sh**: Takes the outputs of voi.sh/condor and joins them into one
+file per corpus, topic count pair. (You probably should not need a script for
+this but the cat command takes less effort than the Python alternative).
+
 ### Condor queue jobs
 
 **import-datasets.[sh,condor]**: Converts existing datasets to Mallet .seq
@@ -57,28 +61,35 @@ files, using the training data as the vocabulary source for the test data.
 
 **train.[sh,condor]**: Trains lots of topic models using Mallet. These
 arguments allow adaptive hyperparameters with asymmetric alpha and writes out a
-whole bunch of types of output for later use, including some diagnostics of
-topic coherence (though it is based on the stemmed corpora and not necessarily
-comparable).
+whole bunch of types of output for later use. Topic models go in states/,
+evaluators in evaluators/, keys in keys/, and diagnostics in diagnostics/.
+The printed text from the Mallet run that would usually go to stderr goes to
+outs/.
 
 **pull_out_betas.[py,condor]**: Finds the probability on the test set of a
 single-topic training set, useful for normalizing across different corpora when
-looking at held-out likelihood.
+looking at held-out likelihood. The relevant outputs are the total likelihoods
+stored in oneoutprobs/.
 
 **runevals.[sh,condor]**: Computes the held-out likelihood of each topic model
 on a test set with Mallet using left-to-right estimation (Wallach, 2009). This
 includes total likelihoods as well as per-document and per-token likelihoods.
+Outputs go to outprobs/, docprobs/, and wordprobs/, respectively.
 
-**VOI.[sh,condor]**: Uses the VariationOfInformation script to compute pairwise
+**voi.[sh,condor]**: Uses the VariationOfInformation script to compute pairwise
 variations of information across all stemmers for each choice of topic count
-and corpus.
+and corpus. The voi files go into vois/.
 
 **redo_states.[sh,condor]**: Uses the combine_states script to create unstemmed
 versions of all state files one by one. Unlike other setups, where one would
 submit one condor job, redo_states.sh creates and submits a separate job for
 each state file, recreating a condor file from redo_states.condor and extra
 lines in special.condor. This hinders job tracking but makes choosing the file
-for each job easier.
+for each job easier. The resulting states go to modstates/.
+
+**coherences.[sh,condor]**: Takes the states redone with redo_states and
+uses Mallet to generate coherence scores for the resulting topics on the
+untreated corpus, outputting diagnostics files to coherences/.
 
 ### Sanity checks
 
@@ -112,8 +123,13 @@ letter characters, the former will produce one token and the latter none.
 **gather_ptlls.py**: Looks through the evaluator outputs and the single-topic
 evaluator outputs to compute normalized per-token log likelihoods for every
 state file, then aggregating them into bar charts split by corpus and topic
-count.
+count. This saves as llplots.png.
 
 **gather_coherences.py**: Looks through the diagnostic file outputs and builds
 bar charts of topic coherence for each treatment much like those output by
-gather_ptlls. Requires BeautifulSoup.
+gather_ptlls. Requires BeautifulSoup, and saves as diagnostics.png.
+
+**gather_vois.py**: Takes the voi outputs (combined into single files with the
+join_vois.sh script) and uses them to build a heatmap of variation of
+information between corpora for each corpus, topic count pair with numbers
+superimposed on each square. Saves as vois_all.png.

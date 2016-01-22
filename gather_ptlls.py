@@ -9,10 +9,10 @@ import os
 
 
 count = {
-   'arxiv': 43592980 - (2 * 5710),
-   'nyt':   6352224 - (2 * 9788),
-   'imdb':  5963149 - (2 * 28215),
-   'yelp':  37323903 - (2 * 281349),
+   'arxiv': 19463144,
+   'imdb':  3052551,
+   'nyt':   2978288,
+   'yelp':  14358387,
 }
 
 stemtokey = {
@@ -36,9 +36,9 @@ cname = {
 }
 
 stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
-corpuses = ['arxiv', 'nyt', 'imdb', 'yelp']
+corpora = ['arxiv', 'imdb', 'nyt', 'yelp']
 topiccts = ('10', '50', '200')
-patterns = ('/', '-', '++', 'x', '\\', '*', 'o', 'O', '.', '||')
+colors = ('0.7', '0.4', '0.1', '0.8', '0.5', '0.2', '0.9', '0.6', '0.3', '1.0')
 
 # Step 1: get log likelihoods
 lls = defaultdict(list)
@@ -53,7 +53,7 @@ for root, subdirs, files in os.walk('outprobs/'):
             f = open(regfile, 'r')
             lltext = f.readline()
             if not lltext:
-                print singletopicfile, 'empty'
+                print regfile, 'empty'
                 continue
             ll = float(lltext)
             f.close()
@@ -70,11 +70,11 @@ for root, subdirs, files in os.walk('outprobs/'):
 
 # Step 2: compute normalized per token log likelihoods
 means = {}
-stdevs = {}
+stderrs = {}
 for corpus, stemmer, topicct in lls.iterkeys():
     normed_ptlls = lls[(corpus, stemmer, topicct)]
     means[(corpus, stemmer, topicct)] = numpy.mean(normed_ptlls)
-    stdevs[(corpus, stemmer, topicct)] = numpy.std(normed_ptlls, ddof=1)
+    stderrs[(corpus, stemmer, topicct)] = numpy.std(normed_ptlls, ddof=1)
 
 # Step 3: plot things
 matplotlib.rcParams['figure.figsize'] = 9, 14
@@ -83,27 +83,27 @@ ind = numpy.arange(3)
 width = 0.9 / len(stemmers)
 
 plt.figure(1)
-for subp, corpus in enumerate(corpuses):
+for subp, corpus in enumerate(corpora):
     stemlabels = [stemtokey[stem] for stem in stemmers]
-    plt.subplot(410 + subp + 1)
+    ax = plt.subplot(410 + subp + 1)
     rects = {}
     ymax = 0
     for i, stemmer in enumerate(stemmers):
         stemmeans = [means[(corpus, stemmer, topicct)] for topicct in topiccts]
-        stemstds = [1.96 * stdevs[(corpus, stemmer, topicct)] for topicct in topiccts]
+        stemstds = [2.58 * stderrs[(corpus, stemmer, topicct)] for topicct in topiccts]
         ymax = max(ymax, max(stemmeans))
-        rects[stemmer] = plt.bar(ind + (i * width) + 0.05, stemmeans, width, yerr=stemstds, label=stemlabels, color='white', ecolor='black', hatch=patterns[i])
-    plt.ylabel('Normalized LL')
-    plt.ylim(ymin=0.0, ymax=ymax + 0.15)
-    plt.title('Normalized LL for {0}'.format(cname[corpus]))
+        rects[stemmer] = plt.bar(ind + (i * width) + 0.05, stemmeans, width, yerr=stemstds, label=stemlabels, color=colors[i], ecolor='black')
+    # plt.ylabel('Negative Topic Coherence')
+    plt.ylim(ymin=0.0, ymax=1.2*ymax)
+    plt.title('{0}'.format(cname[corpus]))
     xtx = [0.05 + width/2 + (width * j) + i for i in xrange(len(topiccts)) for j in xrange(len(stemmers))]
     plt.xticks(xtx, stemlabels * 3)
-    plt.grid(b=True, which='major', color='.5', linestyle='--') 
+    ax.yaxis.grid(True, which='major')
+    ax.xaxis.grid(False)
     # Label the raw counts and the percentages below the x-axis...
     bin_centers = ind + 0.5
     for count, x in zip(topiccts, bin_centers):
         # Label the raw counts
-        plt.text(x, ymax + 0.1, count + ' topics', va='top', ha='center', fontsize=14)
-
+        plt.text(x, 1.1*ymax, count + ' topics', va='top', ha='center', fontsize=14)
 
 plt.savefig('llplots.png', bbox_inches='tight')

@@ -26,7 +26,7 @@ stemtokey = {
     'sstemmer': 'SS',
     'lemmatized': 'WL',
     'krovetz': 'KR',
-    'nostemmer': 'US',
+    'nostemmer': 'NS',
 }
 
 cname = {
@@ -37,13 +37,14 @@ cname = {
 }
 
 stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
-corpora = ['arxiv', 'nyt', 'imdb'] #, 'yelp']
+corpora = ['arxiv', 'imdb', 'nyt', 'yelp']
 topiccts = ('10', '50', '200')
-patterns = ('/', '-', '++', 'x', '\\', '*', 'o', 'O', '.', '||')
+colors = ('0.7', '0.4', '0.1', '0.8', '0.5', '0.2', '0.9', '0.6', '0.3', '1.0')
 
-# Step 1: get log likelihoods
+# Step 1: get coherences and average for each topic model
 chs = defaultdict(list)
-for root, subdirs, files in os.walk('diagnostics/'):
+maxchs = defaultdict(list)
+for root, subdirs, files in os.walk('coherences/'):
     for fname in files:
         if fname.endswith('.xml'):
             corpus, stemmer, topicct, idetc = fname.split('-')
@@ -52,12 +53,13 @@ for root, subdirs, files in os.walk('diagnostics/'):
             bs = BeautifulSoup(coherence_text)
             coherences = [float(t.get('coherence')) for t in bs.find_all('topic')]
             chs[(corpus, stemmer, topicct)] += coherences
+            maxchs[(corpus, stemmer, topicct)] += [np.average(coherences)]
 
-# Step 2: compute normalized per token log likelihoods
+# Step 2: compute average coherences per treatment
 means = {}
 stderrs = {}
 for corpus, stemmer, topicct in chs.iterkeys():
-    current_chs = chs[(corpus, stemmer, topicct)]
+    current_chs = maxchs[(corpus, stemmer, topicct)]
     means[(corpus, stemmer, topicct)] = np.mean(current_chs)
     stderrs[(corpus, stemmer, topicct)] = np.std(current_chs, ddof=1)
 
@@ -70,20 +72,21 @@ width = 0.9 / len(stemmers)
 plt.figure(1)
 for subp, corpus in enumerate(corpora):
     stemlabels = [stemtokey[stem] for stem in stemmers]
-    plt.subplot(410 + subp + 1)
+    ax = plt.subplot(410 + subp + 1)
     rects = {}
     ymax = 0
     for i, stemmer in enumerate(stemmers):
-        stemmeans = [means[(corpus, stemmer, topicct)] for topicct in topiccts]
-        stemstds = [1.96 * stderrs[(corpus, stemmer, topicct)] for topicct in topiccts]
+        stemmeans = [-means[(corpus, stemmer, topicct)] for topicct in topiccts]
+        stemstds = [2.58 * stderrs[(corpus, stemmer, topicct)] for topicct in topiccts]
         ymax = max(ymax, max(stemmeans))
-        rects[stemmer] = plt.bar(ind + (i * width) + 0.05, stemmeans, width, yerr=stemstds, label=stemlabels, color='white', ecolor='black', hatch=patterns[i])
-    plt.ylabel('Topic Coherence')
+        rects[stemmer] = plt.bar(ind + (i * width) + 0.05, stemmeans, width, yerr=stemstds, label=stemlabels, color=colors[i], ecolor='black')
+    # plt.ylabel('Negative Topic Coherence')
     plt.ylim(ymin=0.0, ymax=1.2*ymax)
     plt.title('{0}'.format(cname[corpus]))
     xtx = [0.05 + width/2 + (width * j) + i for i in xrange(len(topiccts)) for j in xrange(len(stemmers))]
     plt.xticks(xtx, stemlabels * 3)
-    plt.grid(b=True, which='major', color='.5', linestyle='--')
+    ax.yaxis.grid(True, which='major')
+    ax.xaxis.grid(False)
     # Label the raw counts and the percentages below the x-axis...
     bin_centers = ind + 0.5
     for count, x in zip(topiccts, bin_centers):

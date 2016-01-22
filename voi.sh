@@ -4,7 +4,9 @@ N=$1
 T=$2
 let "i = ( $3 / 10 ) % 10"
 let "j = $3 % 10"
+ulimit -v unlimited
 if [ $i -le $j ]; then
+echo vois/voi-$N-$T-${arr[$i]}-${arr[$j]}.voi
 if [ ! -f vois/voi-$N-$T-${arr[$i]}-${arr[$j]}.voi ]; then
     for filea in states/$N-${arr[$i]}-$T-*.gz
     do

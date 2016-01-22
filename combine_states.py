@@ -3,10 +3,10 @@ import gzip
 import sys
 
 reffilenames = {
-        'arxiv': 'arxiv-nostemmer-10-58334123.gz',
-        'imdb': 'imdb-nostemmer-10-58334303.gz',
-        'nyt': 'nyt-nostemmer-10-58334603.gz',
-        'yelp': 'yelp-nostemmer-10-583341023.gz',
+        'arxiv': 'arxiv-nostemmer-10-61040123.gz',
+        'imdb': 'imdb-nostemmer-10-61040303.gz',
+        'nyt': 'nyt-nostemmer-10-61115603.gz',
+        'yelp': 'yelp-nostemmer-10-61324123.gz',
 }
 
 fname = sys.argv[1]
@@ -16,9 +16,9 @@ for c in reffilenames.keys():
         corp = c
 refname = reffilenames[corp]
 
+r = gzip.open('states/' + refname)
 f = gzip.open(fname)
 g = gzip.open(gname, 'w')
-r = gzip.open('states/' + refname)
 
 for line in f:
     linechunks = line.split()

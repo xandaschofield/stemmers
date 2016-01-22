@@ -7,7 +7,6 @@ for file in evaluators/$T-$S-*-*.evaluator
 do
     bname=`basename $file .evaluator`
     if [ ! -f outprobs/$bname.outprob ]; then
-        ~/Mallet/bin/mallet evaluate-topics --show-words --input corpora/$T-test-$S.seq --evaluator $file --output-prob outprobs/$bname.outprob --output-doc-probs docprobs/$bname.docprobs > wordprobs/$bname.wordprobs &
+        ~/Mallet/bin/mallet evaluate-topics --show-words --input corpora/$T-test-$S.seq --evaluator $file --output-prob outprobs/$bname.outprob --output-doc-probs docprobs/$bname.docprobs > wordprobs/$bname.wordprobs
     fi
 done
-wait
