@@ -41,6 +41,9 @@ for the figure.
 files and removes stopwords from them based on an unstemmed stoplist (at
 present, 'en.txt' stolen from Mallet).
 
+**average_token_length.py**: Looks at the training set for each corpus and
+treatment and computes the average token length for the set.
+
 **VariationOfInformation.java**: Written by David Mimno. Compares two state
 files and uses assignments of words to topics to compute variation of
 information (VOI), a distance metric between clusterings (Meila, 2003).

@@ -4,7 +4,7 @@ from itertools import combinations
 corp = sys.argv[1]
 ty = sys.argv[2]
 
-stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
+stemmers = ['nostemmer', 'krovetz', 'sstemmer', 'lemmatized', 'porter', 'porter2', 'lovins', 'paicehusk', 'trunc5', 'trunc4']
 readfiles = [open('corpora/{}-{}-{}-stopped.txt'.format(corp, ty, stemmer)) for stemmer in stemmers]
 specialfile = open('corpora/{}-tables.txt'.format(corp), 'w')
 vocabs = [set() for stemmer in stemmers]

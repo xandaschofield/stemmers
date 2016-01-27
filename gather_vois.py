@@ -42,6 +42,7 @@ ymax = {
 }
 
 nstemmers = 10
+stemmers = ['nostemmer', 'krovetz', 'sstemmer', 'lemmatized', 'porter', 'porter2', 'lovins', 'paicehusk', 'trunc5', 'trunc4']
 validfiles = set(['states/' + file for file in os.listdir('states')])
 
 
@@ -67,8 +68,6 @@ for plotx, corp in enumerate(('arxiv', 'imdb', 'nyt', 'yelp')):
         voislists[i] = defaultdict(list)
         vois[i] = np.zeros((nstemmers, nstemmers))
         voierrs[i] = np.zeros((nstemmers, nstemmers))
-
-        stemmers = set()
 
         voifile = open('vois/{0}-{1}.voi'.format(corp, i), 'r')
         currentline = ''
@@ -97,8 +96,6 @@ for plotx, corp in enumerate(('arxiv', 'imdb', 'nyt', 'yelp')):
                 if stemmer1 != stemmer2 or id1 != id2:
                     voislists[topics][(stemmer1, stemmer2)] += [float(voi)]
                     voislists[topics][(stemmer2, stemmer1)] += [float(voi)]
-                stemmers.add(stemmer1)
-                stemmers.add(stemmer2)
                 currentline = line
                 seen.add((leftfile, rightfile))
         voifile.close()
@@ -114,10 +111,9 @@ for plotx, corp in enumerate(('arxiv', 'imdb', 'nyt', 'yelp')):
 
     for ploty, topics in enumerate(('10', '50', '200')):
         ax = fig.add_subplot(4, 3, plotx * 3 + ploty + 1)
-        sortedstemmers = sorted(stemmers, key=lambda x : 0 if x=='nostemmer' else (sum(voislists[topics][('nostemmer', x)]))/len(voislists[topics][('nostemmer', x)]))
-        stemmerlabels = [stemtokey[stem] for stem in sortedstemmers]
-        for i in range(len(sortedstemmers)):
-            stemmer1 = sortedstemmers[i]
+        stemmerlabels = [stemtokey[stem] for stem in stemmers]
+        for i in range(len(stemmers)):
+            stemmer1 = stemmers[i]
             voisum = sum(voislists[topics][(stemmer1, stemmer1)])
             voict = len(voislists[topics][(stemmer1, stemmer1)])
             voival = voisum / voict
@@ -125,8 +121,8 @@ for plotx, corp in enumerate(('arxiv', 'imdb', 'nyt', 'yelp')):
             voierrs[topics][i][i] = stdev
             vois[topics][i][i] = voival
 
-            for j in range(i + 1, len(sortedstemmers)):
-                stemmer2 = sortedstemmers[j]
+            for j in range(i + 1, len(stemmers)):
+                stemmer2 = stemmers[j]
                 current_voilist = voislists[topics][(stemmer1, stemmer2)] + voislists[topics][(stemmer2, stemmer1)]
                 voisum = sum(current_voilist)
                 voict = len(current_voilist)
@@ -140,7 +136,7 @@ for plotx, corp in enumerate(('arxiv', 'imdb', 'nyt', 'yelp')):
 
         sigval = np.max(np.diagonal(voierrs[topics]))*2.58
 
-        ax.set_title('{0}, {1} topics\np=0.05 significance at {2:.1}'.format(cname[corp], topics, sigval))
+        ax.set_title('{0}, {1} topics\np=0.01 significance at {2:.1}'.format(cname[corp], topics, sigval))
         heatmap = ax.pcolor(vois[topics], cmap='gray') # vmin=ymin[topics], vmax=ymax[topics])
         ax.set_aspect('equal')
         ax.set_xticks(np.arange(0, nstemmers) + 0.5)

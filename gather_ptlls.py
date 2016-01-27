@@ -35,7 +35,7 @@ cname = {
    'yelp':  'Yelp',
 }
 
-stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
+stemmers = ['nostemmer', 'krovetz', 'sstemmer', 'lemmatized', 'porter', 'porter2', 'lovins', 'paicehusk', 'trunc5', 'trunc4']
 corpora = ['arxiv', 'imdb', 'nyt', 'yelp']
 topiccts = ('10', '50', '200')
 colors = ('0.7', '0.4', '0.1', '0.8', '0.5', '0.2', '0.9', '0.6', '0.3', '1.0')

@@ -2,7 +2,7 @@
 import os
 import sys
 
-stemmers = ('trunc4', 'trunc5', 'paicehusk', 'lovins', 'porter2', 'porter', 'sstemmer', 'lemmatized', 'nostemmer', 'krovetz')
+stemmers = ['nostemmer', 'krovetz', 'sstemmer', 'lemmatized', 'porter', 'porter2', 'lovins', 'paicehusk', 'trunc5', 'trunc4']
 
 for root, dirs, files in os.walk("outs/"):
     for fname in files:

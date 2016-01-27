@@ -13,7 +13,7 @@ def rootdir(str):
 
 stoplist = set([line.strip() for line in open('/home/aks249/Mallet/stoplists/en.txt')])
 
-stemmers = ['nostemmer', 'trunc4', 'trunc5', 'lovins', 'porter', 'porter2', 'paicehusk', 'sstemmer', 'krovetz', 'lemmatized']
+stemmers = ['nostemmer', 'krovetz', 'sstemmer', 'lemmatized', 'porter', 'porter2', 'lovins', 'paicehusk', 'trunc5', 'trunc4']
 readfiles = [open('{}/{}-{}-{}.txt'.format(rootdir(stemmer), corp, ty, stemmer)) for stemmer in stemmers]
 writefiles = [open('corpora/{}-{}-{}-stopped.txt'.format(corp, ty, stemmer), mode='w') for stemmer in stemmers]
 with open('corpora/{}-{}-nostemmer.txt'.format(corp, ty)) as readref:
