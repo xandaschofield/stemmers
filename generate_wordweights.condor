@@ -1,0 +1,31 @@
+universe = vanilla
+executable = generate_wordweights.sh
+notification = Never
+output = logs/generate_wordweights-$(Process).out
+error = logs/generate_wordweights-$(Process).err
+log = logs/generate_wordweights.log
+getenv = True
+arguments = $(Process) arxiv 10
+queue 10
+arguments = $(Process) imdb 10
+queue 10
+arguments = $(Process) nyt 10
+queue 10
+arguments = $(Process) yelp 10
+queue 10
+arguments = $(Process) arxiv 50
+queue 10
+arguments = $(Process) imdb 50
+queue 10
+arguments = $(Process) nyt 50
+queue 10
+arguments = $(Process) yelp 50
+queue 10
+arguments = $(Process) arxiv 200
+queue 10
+arguments = $(Process) imdb 200
+queue 10
+arguments = $(Process) nyt 200
+queue 10
+arguments = $(Process) yelp 200
+queue 10

@@ -57,7 +57,12 @@ Mimno).
 file per corpus, topic count pair. (You probably should not need a script for
 this but the cat command takes less effort than the Python alternative).
 
-### Condor queue jobs
+**generate_wordweights.py**: Generates the word-topic count files needed for
+word_entropy.py. This should not be necessary to use but was helpful when
+previous versions of train.sh did not generate these files. If it needs to
+be done in bulk, generate_wordweights.condor is also available.
+
+### Core HTCondor queue jobs
 
 **import-datasets.[sh,condor]**: Converts existing datasets to Mallet .seq
 files, using the training data as the vocabulary source for the test data.
@@ -93,6 +98,16 @@ for each job easier. The resulting states go to modstates/.
 **coherences.[sh,condor]**: Takes the states redone with redo_states and
 uses Mallet to generate coherence scores for the resulting topics on the
 untreated corpus, outputting diagnostics files to coherences/.
+
+**word_entropy.[py,condor]**: Computes the average change in entropy
+between stemmed and unstemmed versions of words for the stemmed treatments
+(only seven of the ten total treatments). Lists of the top and bottom words
+by entropy difference are put in wordlists/.
+
+**word_probability.[py,condor]**: Computes the average change in held-out
+log probability for each unstemmed word form, weighted by the idf of the
+word. Lists of top and bottom words by probability difference are put in
+wordlistsidf/.
 
 ### Sanity checks
 

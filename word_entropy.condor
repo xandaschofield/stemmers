@@ -1,0 +1,31 @@
+universe = vanilla
+executable = word_entropy.py
+notification = Never
+output = logs/wordent-$(Process).out
+error = logs/wordent-$(Process).err
+log = logs/wordent.log
+getenv = True
+arguments = arxiv 10 $(Process)
+queue 7
+arguments = imdb 10 $(Process)
+queue 7
+arguments = nyt 10 $(Process)
+queue 7
+arguments = yelp 10 $(Process)
+queue 7
+arguments = arxiv 50 $(Process)
+queue 7
+arguments = imdb 50 $(Process)
+queue 7
+arguments = nyt 50 $(Process)
+queue 7
+arguments = yelp 50 $(Process)
+queue 7
+arguments = arxiv 200 $(Process)
+queue 7
+arguments = imdb 200 $(Process)
+queue 7
+arguments = nyt 200 $(Process)
+queue 7
+arguments = yelp 200 $(Process)
+queue 7

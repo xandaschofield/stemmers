@@ -19,5 +19,7 @@ outs/**
 oneevaluators/**
 states/**
 vois/**
+wordlists/**
+wordlistsidf/**
 wordprobs/**
 wordweights/**
