@@ -1,4 +1,5 @@
 #!/home/aks249/anaconda/bin/python
+from collections import Counter
 from collections import defaultdict
 import numpy as np
 import os
@@ -19,6 +20,7 @@ def sort_by_relative_entropy(corpus, topicct, stemmer):
 
     # get the mapping from unstemmed to stemmed words
     stemmed_to_unstemmed = defaultdict(set)
+    unstemmed_counts = Counter()
     with open(stemmed_corpus_file) as f, open(unstemmed_corpus_file) as g:
         for stemmed_line in f:
             stemmed_words = stemmed_line.split()[3:]
@@ -26,6 +28,7 @@ def sort_by_relative_entropy(corpus, topicct, stemmer):
             assert(len(stemmed_words) == len(unstemmed_words))
             for uword, sword in zip(unstemmed_words, stemmed_words):
                 stemmed_to_unstemmed[sword].add(uword)
+                unstemmed_counts[uword] += 1
 
     # for each file; for each word; get the entropy
     stemmed_entropies = defaultdict(list)
@@ -43,8 +46,9 @@ def sort_by_relative_entropy(corpus, topicct, stemmer):
     stemmed_vocab = stemmed_to_unstemmed.keys()
     entropy_diffs = np.zeros(len(stemmed_vocab))
     for i, sword in enumerate(stemmed_vocab):
+        n_tokens = sum([unstemmed_counts[w] for w in stemmed_to_unstemmed[sword]])
         entropy_diffs[i] = (np.mean(stemmed_entropies[sword]) - sum([
-                np.mean(unstemmed_entropies[uword])
+                np.mean(unstemmed_entropies[uword]) * unstemmed_counts[uword] / n_tokens
                 for uword
                 in stemmed_to_unstemmed[sword]
             ])
@@ -54,7 +58,7 @@ def sort_by_relative_entropy(corpus, topicct, stemmer):
     min_indices = np.argpartition(entropy_diffs, 50)[:50]
     max_indices = np.argpartition(entropy_diffs, -50)[-50:]
     with open('wordlists/{}-{}-{}.txt'.format(corpus, stemmer, topicct), 'w') as wf:
-        wf.write('Lowest entropy differences (stemmer is better)\n')
+        wf.write('Lowest entropy differences (stemmed is better)\n')
         for i in min_indices:
             wf.write('{}\t{}\t{}\n'.format(entropy_diffs[i], stemmed_vocab[i], ' '.join(stemmed_to_unstemmed[stemmed_vocab[i]])))
         wf.write('Highest entropy differences (unstemmed is better)\n')
@@ -77,7 +81,7 @@ def get_entropy_per_word(file):
             total_count = sum(topic_frequencies)
             topic_probs = [tf/total_count for tf in topic_frequencies]
             # we're using Shannon entropy with a maximum likelihood estimate of probability
-            entropy = sum([tp * np.log2(tp) for tp in topic_probs])
+            entropy = sum([-tp * np.log2(tp) for tp in topic_probs])
             entropy_dict[word_type] = entropy
     return entropy_dict
 
