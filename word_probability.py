@@ -65,10 +65,10 @@ def sort_by_idf_probability(corpus, topicct, stemmer):
     min_indices = np.argpartition(idfprob_diffs, 50)[:50]
     max_indices = np.argpartition(idfprob_diffs, -50)[-50:]
     with open('wordlistsidf/{}-{}-{}.txt'.format(corpus, stemmer, topicct), 'w') as wf:
-        wf.write('Lowest prob-idf differences (stemmer is better)\n')
+        wf.write('Lowest prob-idf differences (unstemmed is better)\n')
         for i in min_indices:
             wf.write('{}\t{}\n'.format(idfprob_diffs[i], unstemmed_vocab[i]))
-        wf.write('Highest prob-idf differences (unstemmed is better)\n')
+        wf.write('Highest prob-idf differences (stemmer is better)\n')
         for i in max_indices:
             wf.write('{}\t{}\n'.format(idfprob_diffs[i], unstemmed_vocab[i]))
 

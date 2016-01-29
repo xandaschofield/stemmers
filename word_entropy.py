@@ -34,25 +34,19 @@ def sort_by_relative_entropy(corpus, topicct, stemmer):
     stemmed_entropies = defaultdict(list)
     unstemmed_entropies = defaultdict(list)
     for file in stemmed_weights:
-        entropy_dict = get_entropy_per_word(file)
+        entropy_dict = get_stemmed_entropy_per_word(file)
         for k, v in entropy_dict.iteritems():
             stemmed_entropies[k].append(v)
     for file in unstemmed_weights:
-        entropy_dict = get_entropy_per_word(file)
+        entropy_dict = get_unstemmed_entropy_per_word(file, stemmed_to_unstemmed, int(topicct))
         for k, v in entropy_dict.iteritems():
             unstemmed_entropies[k].append(v)
 
     # compute difference of average entropies
-    stemmed_vocab = stemmed_to_unstemmed.keys()
+    stemmed_vocab = [sword for sword, uwords in stemmed_to_unstemmed.iteritems() if len(uwords) > 1]
     entropy_diffs = np.zeros(len(stemmed_vocab))
     for i, sword in enumerate(stemmed_vocab):
-        n_tokens = sum([unstemmed_counts[w] for w in stemmed_to_unstemmed[sword]])
-        entropy_diffs[i] = (np.mean(stemmed_entropies[sword]) - sum([
-                np.mean(unstemmed_entropies[uword]) * unstemmed_counts[uword] / n_tokens
-                for uword
-                in stemmed_to_unstemmed[sword]
-            ])
-        )
+        entropy_diffs[i] = np.mean(stemmed_entropies[sword]) - np.mean(unstemmed_entropies[sword])
 
     # find top 50 maximum and minimum entropies
     min_indices = np.argpartition(entropy_diffs, 50)[:50]
@@ -66,7 +60,33 @@ def sort_by_relative_entropy(corpus, topicct, stemmer):
             wf.write('{}\t{}\t{}\n'.format(entropy_diffs[i], stemmed_vocab[i], ' '.join(stemmed_to_unstemmed[stemmed_vocab[i]])))
 
 
-def get_entropy_per_word(file):
+def get_unstemmed_entropy_per_word(file, stemmed_to_unstemmed, topicct):
+    entropy_dict = {}
+    topic_frequencies = {}
+    with open(file) as f:
+        # each line corresponds to one word, with the format
+        # wid word t1:ct1 t2:ct2...
+        # for each topic ti and associated count ci that is greater than zero
+        for line in f:
+            frequency_chunks = line.split()
+            word_type = frequency_chunks[1]
+            topic_freq = np.zeros(topicct)
+            for chunk in frequency_chunks[2:]:
+                topic, freq = [int(c) for c in chunk.split(':')]
+                topic_freq[topic] = freq
+            topic_frequencies[word_type] = topic_freq
+    for sword, uwords in stemmed_to_unstemmed.iteritems():
+        topic_freq_sum = np.zeros(topicct)
+        for uword in uwords:
+            topic_freq_sum += topic_frequencies[uword]
+        # we're using Shannon entropy with a maximum likelihood estimate of probability
+        total_count = sum(topic_freq_sum)
+        topic_probs = [tf/total_count for tf in topic_freq_sum]
+        entropy = sum([-tp * np.log2(tp) for tp in topic_probs if tp > 0])
+        entropy_dict[sword] = entropy
+    return entropy_dict
+
+def get_stemmed_entropy_per_word(file):
     entropy_dict = {}
     with open(file) as f:
         # each line corresponds to one word, with the format
